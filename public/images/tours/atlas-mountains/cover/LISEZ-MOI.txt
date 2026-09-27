@@ -1,0 +1,20 @@
+📸 PHOTO DE COUVERTURE — ATLAS MOYEN (1 jour)
+=============================================
+Placez ici UNE seule photo principale pour la carte de ce circuit.
+
+Nom du fichier : cover.jpg  (ou cover.webp)
+
+Idée de photo :
+  - Vue panoramique des forêts de cèdres avec les singes (macaques de Barbarie)
+  - Paysage de montagne avec neige (en hiver) ou verdure (en été)
+  - Le Lion d'Ifrane dans les jardins
+  - Collines verdoyantes de l'Atlas Moyen au coucher du soleil
+
+Dimensions recommandées : 800 × 530 px
+Poids maximum : 150 KB (utilisez squoosh.app ou tinypng.com pour compresser)
+Format : JPG ou WebP
+
+Une fois ajoutée, remplacez dans tour-atlas-mountains.html la ligne :
+  <div class="tour-hero-bg tour-img--atlas-mid"></div>
+par :
+  <div class="tour-hero-bg" style="background-image:url('public/images/tours/atlas-mountains/cover/cover.jpg'); background-size:cover; background-position:center;"></div>

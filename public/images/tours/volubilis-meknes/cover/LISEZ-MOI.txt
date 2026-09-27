@@ -1,0 +1,20 @@
+📸 PHOTO DE COUVERTURE — VOLUBILIS / MEKNES (1 jour)
+=====================================================
+Placez ici UNE seule photo principale pour la carte de ce circuit.
+
+Nom du fichier : cover.jpg  (ou cover.webp)
+
+Idée de photo :
+  - Vue panoramique de l'arc de triomphe de Caracalla à Volubilis
+  - Colonnes romaines avec le ciel marocain en arrière-plan
+  - Bab Mansour à Meknes au coucher du soleil
+  - Vue aérienne des ruines romaines de Volubilis
+
+Dimensions recommandées : 800 × 530 px
+Poids maximum : 150 KB (utilisez squoosh.app ou tinypng.com pour compresser)
+Format : JPG ou WebP
+
+Une fois ajoutée, remplacez dans tour-volubilis-meknes.html la ligne :
+  <div class="tour-hero-bg tour-img--volubilis"></div>
+par :
+  <div class="tour-hero-bg" style="background-image:url('public/images/tours/volubilis-meknes/cover/cover.jpg'); background-size:cover; background-position:center;"></div>

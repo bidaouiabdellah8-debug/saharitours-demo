@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leave a Review – Saharitours</title>
+  <meta name="description" content="Tell us about your trip with Saharitours. Share your rating and experience — your feedback helps other travelers and helps us keep improving.">
+
+  <meta property="og:title" content="Leave a Review – Saharitours">
+  <meta property="og:description" content="Share your rating and experience from your Morocco tour with Saharitours.">
+  <meta property="og:type" content="website">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="public/images/favicon.png" type="image/png" sizes="64x64">
+  <link rel="apple-touch-icon" href="public/images/favicon.png">
+  <style>
+    .star-rating { display: flex; flex-direction: row-reverse; justify-content: flex-end; gap: .15rem; }
+    .star-rating input { position: absolute; opacity: 0; width: 0; height: 0; }
+    .star-rating label { font-size: 2.2rem; line-height: 1; color: #ddd; cursor: pointer; transition: color .15s ease; }
+    .star-rating input:checked ~ label,
+    .star-rating label:hover,
+    .star-rating label:hover ~ label { color: var(--gold); }
+    .star-rating input:focus-visible + label { outline: 2px solid var(--gold); outline-offset: 2px; border-radius: 4px; }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header id="header">
+    <nav class="nav-container" role="navigation" aria-label="Main navigation">
+      <a href="index.html" class="nav-logo" aria-label="Saharitours – home">
+        <img src="public/images/logo.png" alt="Saharitours logo" height="52"
+          onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+        <span class="logo-fallback" style="display:none">SAHARITOURS</span>
+      </a>
+      <ul class="nav-links" id="navLinks" role="list">
+        <li><a href="index.html"         class="nav-link" data-i18n="nav_home">Home</a></li>
+        <li><a href="index.html#tours"   class="nav-link" data-i18n="nav_tours">Tours</a></li>
+        <li><a href="index.html#about"   class="nav-link" data-i18n="nav_about">About</a></li>
+        <li><a href="index.html#why-us"  class="nav-link" data-i18n="nav_whyus">Why Us</a></li>
+        <li><a href="transfers.html" class="nav-link" data-i18n="nav_transfers">Transfers</a></li>
+        <li><a href="index.html#contact" class="nav-link" data-i18n="nav_contact">Contact</a></li>
+      </ul>
+      <div class="lang-switcher" role="group" aria-label="Select language">
+        <button class="lang-btn active" data-lang="en" aria-pressed="true">EN</button>
+        <button class="lang-btn" data-lang="fr" aria-pressed="false">FR</button>
+        <button class="lang-btn" data-lang="es" aria-pressed="false">ES</button>
+        <button class="lang-btn" data-lang="ar" aria-pressed="false">AR</button>
+        <button class="lang-btn" data-lang="it" aria-pressed="false">IT</button>
+      </div>
+      <a href="index.html#contact" class="btn btn-gold nav-cta" data-i18n="nav_book">Book Now</a>
+      <button class="hamburger" id="hamburger"
+        aria-label="Open navigation menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb-bar">
+      <div class="container">
+        <a href="index.html">Home</a>
+        <span aria-hidden="true">›</span>
+        <span data-i18n="breadcrumb_current">Leave a Review</span>
+      </div>
+    </div>
+
+    <!-- ═══════════════════════════ MAIN CONTENT ═══════════════════════════ -->
+    <section class="section">
+      <div class="container" style="max-width:720px;">
+
+        <div class="section-header" style="text-align:center; margin-bottom:2.5rem;">
+          <span class="section-tag" data-i18n="hero_tag">Share Your Experience</span>
+          <h1 style="margin-top:.6rem;" data-i18n="hero_h1">Tell Us About Your Trip</h1>
+          <p style="color:var(--text-mid);" data-i18n="hero_p">Just back from Morocco with us? Your review helps future travelers choose with confidence — and helps us keep improving. It only takes a minute.</p>
+        </div>
+
+        <form class="contact-form" id="contactForm" name="review" novalidate>
+          <input type="hidden" name="form-name" value="review">
+          <p style="position:absolute; left:-9999px;" aria-hidden="true">
+            <label>Don't fill this out if you're human: <input name="bot-field" tabindex="-1" autocomplete="off"></label>
+          </p>
+
+          <div class="form-group" style="text-align:center; margin-bottom:1.75rem;">
+            <label style="display:block; margin-bottom:.6rem;"><span data-i18n="form_rating">Your Rating</span> <span aria-hidden="true">*</span></label>
+            <div class="star-rating" role="radiogroup" aria-label="Star rating">
+              <input type="radio" id="star5" name="rating" value="5" required><label for="star5" title="5 stars">★</label>
+              <input type="radio" id="star4" name="rating" value="4"><label for="star4" title="4 stars">★</label>
+              <input type="radio" id="star3" name="rating" value="3"><label for="star3" title="3 stars">★</label>
+              <input type="radio" id="star2" name="rating" value="2"><label for="star2" title="2 stars">★</label>
+              <input type="radio" id="star1" name="rating" value="1"><label for="star1" title="1 star">★</label>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="firstName"><span data-i18n="form_firstname">First Name</span> <span aria-hidden="true">*</span></label>
+              <input type="text" id="firstName" name="firstName" required autocomplete="given-name" placeholder="Your first name" data-i18n-ph="form_firstname_ph">
+            </div>
+            <div class="form-group">
+              <label for="lastName"><span data-i18n="form_lastname">Last Name</span> <span aria-hidden="true">*</span></label>
+              <input type="text" id="lastName" name="lastName" required autocomplete="family-name" placeholder="Your last name" data-i18n-ph="form_lastname_ph">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="email"><span data-i18n="form_email">Email Address</span> <span aria-hidden="true">*</span></label>
+            <input type="email" id="email" name="email" required autocomplete="email" placeholder="you@example.com" data-i18n-ph="form_email_ph">
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="reviewTour"><span data-i18n="form_review_tour">Tour Taken</span> <span aria-hidden="true">*</span></label>
+              <select id="reviewTour" name="tour" required>
+                <option value="" data-i18n-opt="form_review_tour_default">— Select a tour —</option>
+                <option value="Fes · Chefchaouen · Rabat · Casablanca (3 Days)" data-i18n-opt="opt_t_fes_chef_rabat_casa">Fes · Chefchaouen · Rabat · Casablanca (3 Days)</option>
+                <option value="Chefchaouen Day Trip" data-i18n-opt="opt_t_chefchaouen_day">Chefchaouen Day Trip</option>
+                <option value="Volubilis · Moulay Idriss · Meknes" data-i18n-opt="opt_t_volubilis_meknes">Volubilis · Moulay Idriss · Meknes</option>
+                <option value="Middle Atlas Mountains (Ifrane & Azrou)" data-i18n-opt="opt_t_atlas_mountains">Middle Atlas Mountains (Ifrane &amp; Azrou)</option>
+                <option value="Fes to Marrakech via Sahara (4 Days)" data-i18n-opt="opt_t_fes_marrakech_sahara">Fes to Marrakech via Sahara (4 Days)</option>
+                <option value="Sahara Desert 3-Day Tour (Merzouga)" data-i18n-opt="opt_t_sahara_merzouga">Sahara Desert 3-Day Tour (Merzouga)</option>
+                <option value="10-Day Grand Morocco Tour" data-i18n-opt="opt_t_grand_morocco">10-Day Grand Morocco Tour</option>
+                <option value="Bhalil · Sefrou Day Trip" data-i18n-opt="opt_t_bhalil_sefrou">Bhalil · Sefrou Day Trip</option>
+                <option value="Rabat Day Trip" data-i18n-opt="opt_t_rabat_day">Rabat Day Trip</option>
+                <option value="Tetouan · Martil Day Trip" data-i18n-opt="opt_t_tetouan_martil">Tetouan · Martil Day Trip</option>
+                <option value="Essaouira Day Trip" data-i18n-opt="opt_t_essaouira">Essaouira Day Trip</option>
+                <option value="Ait Benhaddou · Ouarzazate Day Trip" data-i18n-opt="opt_t_ait_benhaddou">Ait Benhaddou · Ouarzazate Day Trip</option>
+                <option value="Ouzoud Falls Day Trip" data-i18n-opt="opt_t_ouzoud_falls">Ouzoud Falls Day Trip</option>
+                <option value="Ourika Valley Day Trip" data-i18n-opt="opt_t_ourika_valley">Ourika Valley Day Trip</option>
+                <option value="Agadir Day Trip" data-i18n-opt="opt_t_agadir">Agadir Day Trip</option>
+                <option value="Marrakech Day Trip (from Casablanca)" data-i18n-opt="opt_t_casablanca_marrakech">Marrakech Day Trip (from Casablanca)</option>
+                <option value="Fes Medina City Tour" data-i18n-opt="opt_t_fes_city">Fes Medina City Tour</option>
+                <option value="Sahara Desert 2-Day Express" data-i18n-opt="opt_t_desert_2day">Sahara Desert 2-Day Express</option>
+                <option value="Marrakech Desert Loop" data-i18n-opt="opt_t_marrakech_loop">Marrakech Desert Loop</option>
+                <option value="Fes to Marrakech via Sahara + Marrakech City Day (4 Days)" data-i18n-opt="opt_t_fes_marrakech_city">Fes to Marrakech via Sahara + Marrakech City Day (4 Days)</option>
+                <option value="Fes to Marrakech via Merzouga — 2 Nights in the Sahara (4 Days)" data-i18n-opt="opt_t_fes_merzouga_ouarzazate">Fes to Marrakech via Merzouga — 2 Nights in the Sahara (4 Days)</option>
+                <option value="Airport / Intercity Transfer" data-i18n-opt="opt_t_transfer">Airport / Intercity Transfer</option>
+                <option value="Other" data-i18n-opt="opt_t_other">Other / Custom Trip</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="travelDate" data-i18n="form_date">Approximate Travel Dates</label>
+              <input type="text" id="travelDate" name="travelDate" placeholder="e.g. March 2026" data-i18n-ph="form_review_date_ph">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="message"><span data-i18n="form_review_text">Your Review</span> <span aria-hidden="true">*</span></label>
+            <textarea id="message" name="message" rows="5" required placeholder="Tell us how your trip went — your guide, the itinerary, what stood out..." data-i18n-ph="form_review_text_ph"></textarea>
+          </div>
+
+          <div class="form-group" style="display:flex; align-items:flex-start; gap:.6rem;">
+            <input type="checkbox" id="reviewConsent" name="consent" required style="margin-top:.3rem; flex-shrink:0; width:auto;">
+            <label for="reviewConsent" style="font-weight:400; font-size:.85rem; color:var(--text-mid);" data-i18n="form_review_consent">I agree that Saharitours may publish this review (my name and review text) on their website.</label>
+          </div>
+
+          <button type="submit" class="btn btn-gold btn-full" id="submitBtn">
+            <span class="btn-text" data-i18n="form_review_submit">Submit My Review</span>
+            <span class="btn-loading" aria-hidden="true" style="display:none" data-i18n="form_sending">Sending...</span>
+          </button>
+          <p class="form-note" data-i18n="form_review_note">Thank you for taking the time — we read every review.</p>
+          <div id="formSuccess" class="form-success" role="alert" style="display:none" data-i18n="form_review_success">Thank you! Your review has been received — we really appreciate you sharing your experience.</div>
+          <div id="formError" class="form-error" role="alert" style="display:none" data-i18n="form_error">Something went wrong. Please email us directly at info@saharitours.com</div>
+        </form>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" aria-label="Saharitours home">
+            <img src="public/images/logo.png" alt="Saharitours" height="48" onerror="this.style.display='none'">
+            <span class="footer-logo-text">SAHARITOURS</span>
+          </a>
+          <p>Your authentic guide to the wonders of Morocco. Crafting unforgettable journeys since 2009.</p>
+          <p class="footer-license">Licensed by ONMT · Morocco National Tourism Office</p>
+        </div>
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <h4 data-i18n="footer_quicklinks">Quick Links</h4>
+          <ul role="list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#tours">Our Tours</a></li>
+            <li><a href="index.html#about">About Us</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+            <li><a href="transfers.html">Transfers</a></li>
+            <li><a href="leave-a-review.html" data-i18n="footer_leave_review">Leave a Review</a></li>
+          </ul>
+        </nav>
+        <div class="footer-tours">
+          <h4 data-i18n="footer_tours_title">Our Tours</h4>
+          <ul role="list">
+            <li><a href="tour-grand-morocco-10days.html">10-Day Grand Morocco Tour</a></li>
+            <li><a href="tour-fes-marrakech-sahara.html">Fes &middot; Sahara &middot; Marrakech (4 Days)</a></li>
+            <li><a href="tour-marrakech-desert-loop.html">Marrakech Desert Loop</a></li>
+            <li><a href="tour-sahara-merzouga.html">Sahara Desert 3-Day Tour</a></li>
+            <li><a href="tour-desert-2day-fes.html">Sahara Desert 2-Day Express</a></li>
+            <li><a href="tour-fes-chefchaouen.html">Fes &middot; Chefchaouen &middot; Rabat &middot; Casablanca</a></li>
+            <li><a href="tour-fes-city.html">Fes Medina City Tour</a></li>
+            <li><a href="tour-rabat-day.html">Rabat Day Trip</a></li>
+            <li><a href="index.html#tours">View All 21 Tours &rarr;</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4 data-i18n="footer_contact_title">Get in Touch</h4>
+          <ul role="list">
+            <li><a href="tel:+212600000000">+212 600 000 000</a></li>
+            <li><a href="mailto:info@saharitours.com">info@saharitours.com</a></li>
+            <li>Marrakech, Morocco</li>
+          </ul>
+          <a href="https://wa.me/212600000000" class="footer-whatsapp"
+            target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            <span data-i18n="footer_whatsapp">Chat on WhatsApp</span>
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> Saharitours. <span data-i18n="footer_rights">All rights reserved.</span></p>
+        <div class="footer-bottom-links">
+          <a href="privacy.html" data-i18n="footer_privacy">Privacy Policy</a>
+          <a href="terms.html" data-i18n="footer_terms">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/212600000000" class="whatsapp-float"
+    target="_blank" rel="noopener noreferrer" aria-label="Chat with us on WhatsApp">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+  <script>
+    const PAGE_TRANSLATIONS = {
+      en: {
+        form_review_success: "Thank you! Your review has been received — we really appreciate you sharing your experience.",
+      },
+      fr: {
+        breadcrumb_current: 'Laisser un avis',
+        hero_tag: 'Partagez votre expérience',
+        hero_h1: 'Racontez-nous votre voyage',
+        hero_p: "Vous revenez tout juste du Maroc avec nous ? Votre avis aide les futurs voyageurs à choisir en toute confiance — et nous aide à nous améliorer. Cela ne prend qu'une minute.",
+        form_rating: 'Votre note',
+        form_review_tour: 'Circuit effectué',
+        form_review_tour_default: '— Sélectionnez un circuit —',
+        opt_t_fes_chef_rabat_casa: 'Fès · Chefchaouen · Rabat · Casablanca (3 jours)',
+        opt_t_chefchaouen_day: 'Excursion à Chefchaouen',
+        opt_t_volubilis_meknes: 'Volubilis · Moulay Idriss · Meknès',
+        opt_t_atlas_mountains: 'Moyen Atlas (Ifrane et Azrou)',
+        opt_t_fes_marrakech_sahara: 'Fès à Marrakech via le Sahara (4 jours)',
+        opt_t_sahara_merzouga: 'Désert du Sahara, 3 jours (Merzouga)',
+        opt_t_grand_morocco: 'Grand Maroc, 10 jours',
+        opt_t_bhalil_sefrou: 'Excursion Bhalil · Sefrou',
+        opt_t_rabat_day: 'Excursion à Rabat',
+        opt_t_tetouan_martil: 'Excursion Tétouan · Martil',
+        opt_t_essaouira: 'Excursion à Essaouira',
+        opt_t_ait_benhaddou: 'Excursion Ait Benhaddou · Ouarzazate',
+        opt_t_ouzoud_falls: 'Excursion aux cascades d’Ouzoud',
+        opt_t_ourika_valley: 'Excursion vallée de l’Ourika',
+        opt_t_agadir: 'Excursion à Agadir',
+        opt_t_casablanca_marrakech: 'Excursion à Marrakech (depuis Casablanca)',
+        opt_t_fes_city: 'Circuit médina de Fès',
+        opt_t_desert_2day: 'Désert du Sahara Express, 2 jours',
+        opt_t_marrakech_loop: 'Boucle désert depuis Marrakech',
+        opt_t_fes_marrakech_city: 'Fès à Marrakech via le Sahara + journée à Marrakech (4 jours)',
+        opt_t_fes_merzouga_ouarzazate: 'Fès à Marrakech via Merzouga — 2 nuits dans le Sahara (4 jours)',
+        opt_t_transfer: 'Transfert aéroport / intercity',
+        opt_t_other: 'Autre / voyage sur mesure',
+        form_review_date_ph: 'ex. mars 2026',
+        form_review_text: 'Votre avis',
+        form_review_text_ph: 'Racontez-nous comment s’est passé votre voyage — votre guide, l’itinéraire, ce qui vous a marqué...',
+        form_review_consent: 'J’accepte que Saharitours puisse publier cet avis (mon nom et le texte de l’avis) sur son site web.',
+        form_review_submit: 'Envoyer mon avis',
+        form_review_note: 'Merci de prendre le temps — nous lisons chaque avis.',
+        form_review_success: 'Merci ! Votre avis a bien été reçu — nous apprécions vraiment que vous partagiez votre expérience.',
+      },
+      es: {
+        breadcrumb_current: 'Dejar una reseña',
+        hero_tag: 'Comparte tu experiencia',
+        hero_h1: 'Cuéntanos sobre tu viaje',
+        hero_p: '¿Acabas de volver de Marruecos con nosotros? Tu reseña ayuda a futuros viajeros a elegir con confianza — y nos ayuda a mejorar. Solo toma un minuto.',
+        form_rating: 'Tu valoración',
+        form_review_tour: 'Tour realizado',
+        form_review_tour_default: '— Selecciona un tour —',
+        opt_t_fes_chef_rabat_casa: 'Fez · Chefchaouen · Rabat · Casablanca (3 días)',
+        opt_t_chefchaouen_day: 'Excursión a Chefchaouen',
+        opt_t_volubilis_meknes: 'Volubilis · Moulay Idriss · Mequinez',
+        opt_t_atlas_mountains: 'Medio Atlas (Ifrane y Azrou)',
+        opt_t_fes_marrakech_sahara: 'De Fez a Marrakech vía el Sahara (4 días)',
+        opt_t_sahara_merzouga: 'Desierto del Sahara, 3 días (Merzouga)',
+        opt_t_grand_morocco: 'Gran Marruecos, 10 días',
+        opt_t_bhalil_sefrou: 'Excursión Bhalil · Sefrou',
+        opt_t_rabat_day: 'Excursión a Rabat',
+        opt_t_tetouan_martil: 'Excursión Tetuán · Martil',
+        opt_t_essaouira: 'Excursión a Essaouira',
+        opt_t_ait_benhaddou: 'Excursión Ait Benhaddou · Ouarzazate',
+        opt_t_ouzoud_falls: 'Excursión a las cascadas de Ouzoud',
+        opt_t_ourika_valley: 'Excursión al valle de Ourika',
+        opt_t_agadir: 'Excursión a Agadir',
+        opt_t_casablanca_marrakech: 'Excursión a Marrakech (desde Casablanca)',
+        opt_t_fes_city: 'Tour de la medina de Fez',
+        opt_t_desert_2day: 'Desierto del Sahara Express, 2 días',
+        opt_t_marrakech_loop: 'Ruta del desierto desde Marrakech',
+        opt_t_fes_marrakech_city: 'De Fez a Marrakech vía el Sahara + día en Marrakech (4 días)',
+        opt_t_fes_merzouga_ouarzazate: 'De Fez a Marrakech vía Merzouga — 2 noches en el Sahara (4 días)',
+        opt_t_transfer: 'Traslado aeropuerto / intercity',
+        opt_t_other: 'Otro / viaje personalizado',
+        form_review_date_ph: 'ej. marzo de 2026',
+        form_review_text: 'Tu reseña',
+        form_review_text_ph: 'Cuéntanos cómo fue tu viaje — tu guía, el itinerario, lo que más te gustó...',
+        form_review_consent: 'Acepto que Saharitours pueda publicar esta reseña (mi nombre y el texto) en su sitio web.',
+        form_review_submit: 'Enviar mi reseña',
+        form_review_note: 'Gracias por tomarte el tiempo — leemos cada reseña.',
+        form_review_success: '¡Gracias! Tu reseña ha sido recibida — apreciamos mucho que compartas tu experiencia.',
+      },
+      ar: {
+        breadcrumb_current: 'اترك تقييماً',
+        hero_tag: 'شاركنا تجربتك',
+        hero_h1: 'أخبرنا عن رحلتك',
+        hero_p: 'هل عدت للتو من المغرب معنا؟ تقييمك يساعد المسافرين القادمين على الاختيار بثقة — ويساعدنا على التحسّن. لن يستغرق الأمر سوى دقيقة واحدة.',
+        form_rating: 'تقييمك',
+        form_review_tour: 'الجولة التي قمت بها',
+        form_review_tour_default: '— اختر جولة —',
+        opt_t_fes_chef_rabat_casa: 'فاس · شفشاون · الرباط · الدار البيضاء (3 أيام)',
+        opt_t_chefchaouen_day: 'رحلة يوم إلى شفشاون',
+        opt_t_volubilis_meknes: 'وليلي · مولاي إدريس · مكناس',
+        opt_t_atlas_mountains: 'الأطلس المتوسط (إفران وآزرو)',
+        opt_t_fes_marrakech_sahara: 'من فاس إلى مراكش عبر الصحراء (4 أيام)',
+        opt_t_sahara_merzouga: 'صحراء مرزوقة، 3 أيام',
+        opt_t_grand_morocco: 'جولة المغرب الكبرى، 10 أيام',
+        opt_t_bhalil_sefrou: 'رحلة بهاليل · صفرو',
+        opt_t_rabat_day: 'رحلة يوم إلى الرباط',
+        opt_t_tetouan_martil: 'رحلة تطوان · مارتيل',
+        opt_t_essaouira: 'رحلة يوم إلى الصويرة',
+        opt_t_ait_benhaddou: 'رحلة آيت بن حدو · ورزازات',
+        opt_t_ouzoud_falls: 'رحلة إلى شلالات أوزود',
+        opt_t_ourika_valley: 'رحلة إلى وادي أوريكا',
+        opt_t_agadir: 'رحلة يوم إلى أكادير',
+        opt_t_casablanca_marrakech: 'رحلة إلى مراكش (من الدار البيضاء)',
+        opt_t_fes_city: 'جولة مدينة فاس القديمة',
+        opt_t_desert_2day: 'صحراء إكسبريس، يومان',
+        opt_t_marrakech_loop: 'جولة الصحراء من مراكش',
+        opt_t_fes_marrakech_city: 'من فاس إلى مراكش عبر الصحراء + يوم في مراكش (4 أيام)',
+        opt_t_fes_merzouga_ouarzazate: 'من فاس إلى مراكش عبر مرزوقة — ليلتان في الصحراء (4 أيام)',
+        opt_t_transfer: 'نقل من/إلى المطار أو بين المدن',
+        opt_t_other: 'أخرى / رحلة مخصصة',
+        form_review_date_ph: 'مثال: مارس 2026',
+        form_review_text: 'تقييمك',
+        form_review_text_ph: 'أخبرنا كيف كانت رحلتك — مرشدك، البرنامج، وما أعجبك أكثر...',
+        form_review_consent: 'أوافق على أن تنشر Saharitours هذا التقييم (اسمي ونص التقييم) على موقعها الإلكتروني.',
+        form_review_submit: 'إرسال تقييمي',
+        form_review_note: 'شكراً لوقتك — نقرأ كل تقييم يصلنا.',
+        form_review_success: 'شكراً لك! تم استلام تقييمك — نقدّر حقاً مشاركتك لتجربتك.',
+      },
+      it: {
+        breadcrumb_current: 'Lascia una recensione',
+        hero_tag: 'Condividi la tua esperienza',
+        hero_h1: 'Raccontaci il tuo viaggio',
+        hero_p: 'Sei appena tornato dal Marocco con noi? La tua recensione aiuta i futuri viaggiatori a scegliere con fiducia — e ci aiuta a migliorare. Basta un minuto.',
+        form_rating: 'La tua valutazione',
+        form_review_tour: 'Tour effettuato',
+        form_review_tour_default: '— Seleziona un tour —',
+        opt_t_fes_chef_rabat_casa: 'Fès · Chefchaouen · Rabat · Casablanca (3 giorni)',
+        opt_t_chefchaouen_day: 'Escursione a Chefchaouen',
+        opt_t_volubilis_meknes: 'Volubilis · Moulay Idriss · Meknes',
+        opt_t_atlas_mountains: 'Medio Atlante (Ifrane e Azrou)',
+        opt_t_fes_marrakech_sahara: 'Da Fès a Marrakech via il Sahara (4 giorni)',
+        opt_t_sahara_merzouga: 'Deserto del Sahara, 3 giorni (Merzouga)',
+        opt_t_grand_morocco: 'Grande Marocco, 10 giorni',
+        opt_t_bhalil_sefrou: 'Escursione Bhalil · Sefrou',
+        opt_t_rabat_day: 'Escursione a Rabat',
+        opt_t_tetouan_martil: 'Escursione Tétouan · Martil',
+        opt_t_essaouira: 'Escursione a Essaouira',
+        opt_t_ait_benhaddou: 'Escursione Ait Benhaddou · Ouarzazate',
+        opt_t_ouzoud_falls: 'Escursione alle cascate di Ouzoud',
+        opt_t_ourika_valley: 'Escursione alla valle dell’Ourika',
+        opt_t_agadir: 'Escursione ad Agadir',
+        opt_t_casablanca_marrakech: 'Escursione a Marrakech (da Casablanca)',
+        opt_t_fes_city: 'Tour della medina di Fès',
+        opt_t_desert_2day: 'Sahara Express, 2 giorni',
+        opt_t_marrakech_loop: 'Circuito nel deserto da Marrakech',
+        opt_t_fes_marrakech_city: 'Da Fès a Marrakech via il Sahara + giornata a Marrakech (4 giorni)',
+        opt_t_fes_merzouga_ouarzazate: 'Da Fès a Marrakech via Merzouga — 2 notti nel Sahara (4 giorni)',
+        opt_t_transfer: 'Trasferimento aeroporto / intercity',
+        opt_t_other: 'Altro / viaggio personalizzato',
+        form_review_date_ph: 'es. marzo 2026',
+        form_review_text: 'La tua recensione',
+        form_review_text_ph: 'Raccontaci com’è andato il tuo viaggio — la tua guida, l’itinerario, cosa ti è piaciuto di più...',
+        form_review_consent: 'Accetto che Saharitours possa pubblicare questa recensione (il mio nome e il testo) sul proprio sito web.',
+        form_review_submit: 'Invia la mia recensione',
+        form_review_note: 'Grazie per il tuo tempo — leggiamo ogni recensione.',
+        form_review_success: 'Grazie! La tua recensione è stata ricevuta — apprezziamo molto che tu abbia condiviso la tua esperienza.',
+      },
+    };
+  </script>
+  <script src="js/main.js" defer></script>
+  <script src="js/i18n.js" defer></script>
+</body>
+</html>

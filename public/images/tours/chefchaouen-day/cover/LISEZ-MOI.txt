@@ -1,0 +1,23 @@
+📸 PHOTO DE COUVERTURE — CHEFCHAOUEN (1 jour)
+=============================================
+Placez ici UNE seule photo principale pour la carte de ce circuit.
+
+Nom du fichier : cover.jpg  (ou cover.webp)
+
+Idée de photo :
+  - Vue panoramique de la ville bleue depuis le Mosquée Espagnole
+  - Ruelle bleue emblématique avec des pots de fleurs
+  - Vue sur la Place Uta el-Hammam et la mosquée
+  - Coucher de soleil sur les toits bleus depuis les hauteurs
+
+⭐ CONSEIL : La photo de couverture est la plus importante — choisissez
+une image aux tons bleus vibrants, bien éclairée, avec un sujet central fort.
+
+Dimensions recommandées : 800 × 530 px
+Poids maximum : 150 KB (utilisez squoosh.app ou tinypng.com)
+Format : JPG ou WebP
+
+Une fois ajoutée, remplacez dans tour-chefchaouen-day.html la ligne :
+  <div class="tour-hero-bg tour-img--chefchaouen"></div>
+par :
+  <div class="tour-hero-bg" style="background-image:url('public/images/tours/chefchaouen-day/cover/cover.jpg'); background-size:cover; background-position:center;"></div>

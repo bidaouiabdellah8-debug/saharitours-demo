@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Airport &amp; Intercity Transfers – Saharitours</title>
+  <meta name="description" content="Private airport transfers at 7 Moroccan airports (Fes, Casablanca, Marrakech, Rabat, Tangier, Agadir, Nador) plus intercity transfers across the country. Meet & greet, flight tracking, door-to-door service. Casablanca–Fes from $120/vehicle.">
+
+  <meta property="og:title" content="Airport & Intercity Transfers – Saharitours">
+  <meta property="og:description" content="Private, driver-led transfers between 7 Moroccan airports and cities nationwide — meet & greet, flight tracking, and comfortable door-to-door travel.">
+  <meta property="og:type" content="website">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="public/images/favicon.png" type="image/png" sizes="64x64">
+  <link rel="apple-touch-icon" href="public/images/favicon.png">
+  <style>
+    .transfer-pick:hover, .transfer-pick:focus-visible { border-color: var(--gold) !important; background: var(--gold-pale) !important; }
+    .transfer-pick.selected { border-color: var(--gold) !important; background: var(--gold-pale) !important; }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header id="header">
+    <nav class="nav-container" role="navigation" aria-label="Main navigation">
+      <a href="index.html" class="nav-logo" aria-label="Saharitours – home">
+        <img src="public/images/logo.png" alt="Saharitours logo" height="52"
+          onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+        <span class="logo-fallback" style="display:none">SAHARITOURS</span>
+      </a>
+      <ul class="nav-links" id="navLinks" role="list">
+        <li><a href="index.html"         class="nav-link" data-i18n="nav_home">Home</a></li>
+        <li><a href="index.html#tours"   class="nav-link" data-i18n="nav_tours">Tours</a></li>
+        <li><a href="index.html#about"   class="nav-link" data-i18n="nav_about">About</a></li>
+        <li><a href="index.html#why-us"  class="nav-link" data-i18n="nav_whyus">Why Us</a></li>
+        <li><a href="transfers.html" class="nav-link" data-i18n="nav_transfers">Transfers</a></li>
+        <li><a href="index.html#contact" class="nav-link" data-i18n="nav_contact">Contact</a></li>
+      </ul>
+      <div class="lang-switcher" role="group" aria-label="Select language">
+        <button class="lang-btn active" data-lang="en" aria-pressed="true">EN</button>
+        <button class="lang-btn" data-lang="fr" aria-pressed="false">FR</button>
+        <button class="lang-btn" data-lang="es" aria-pressed="false">ES</button>
+        <button class="lang-btn" data-lang="ar" aria-pressed="false">AR</button>
+        <button class="lang-btn" data-lang="it" aria-pressed="false">IT</button>
+      </div>
+      <a href="index.html#contact" class="btn btn-gold nav-cta" data-i18n="nav_book">Book Now</a>
+      <button class="hamburger" id="hamburger"
+        aria-label="Open navigation menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb-bar">
+      <div class="container">
+        <a href="index.html">Home</a>
+        <span aria-hidden="true">›</span>
+        <span data-i18n="breadcrumb_current">Airport &amp; Intercity Transfers</span>
+      </div>
+    </div>
+
+    <!-- ═══════════════════════════ MAIN CONTENT ═══════════════════════════ -->
+    <section class="section">
+      <div class="container">
+
+        <div class="section-header">
+          <span class="section-tag" data-i18n="section_tag">Ground Transportation</span>
+          <h1 data-i18n="hero_h1">Airport &amp; Intercity Transfers</h1>
+          <p data-i18n="hero_intro">Landing in Morocco or moving between cities? We run private, driver-led transfers across the country — no shared shuttles, no waiting around, just a comfortable car and a driver who knows exactly where to be and when.</p>
+        </div>
+
+        <img src="public/images/tours/transfers/cover/cover.jpg"
+          alt="Modern airport terminal exterior in Morocco, representing our private airport transfer service"
+          style="width:100%; max-height:420px; object-fit:cover; border-radius:var(--radius-lg); margin-bottom:3rem;"
+          loading="lazy">
+
+        <!-- Service cards -->
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:1.5rem; margin-bottom:3rem;">
+
+          <div class="tour-section" style="margin-bottom:0; background:var(--cream); border-radius:var(--radius-lg); padding:1.5rem;">
+            <h2 style="font-size:1.1rem; margin-bottom:.6rem;">🚗 <span data-i18n="card1_h2">City-to-City Transfers</span></h2>
+            <p style="font-size:.9rem; color:var(--text-mid); line-height:1.7;" data-i18n="card1_p">Need to get from one Moroccan city straight to another? We arrange private one-way transfers between any two cities, at a time that suits your itinerary — see the routes we run most often below.</p>
+          </div>
+
+          <div class="tour-section" style="margin-bottom:0; background:var(--cream); border-radius:var(--radius-lg); padding:1.5rem;">
+            <h2 style="font-size:1.1rem; margin-bottom:.6rem;">🗺️ <span data-i18n="card2_h2">Customized Transfers</span></h2>
+            <p style="font-size:.9rem; color:var(--text-mid); line-height:1.7;" data-i18n="card2_p">Flying into one city and touring several others before heading home? We build multi-stop private transfers around your exact route, with stops for meals, photos, or sightseeing built in along the way.</p>
+          </div>
+
+          <div class="tour-section" style="margin-bottom:0; background:var(--cream); border-radius:var(--radius-lg); padding:1.5rem;">
+            <h2 style="font-size:1.1rem; margin-bottom:.6rem;">🧳 <span data-i18n="card3_h2">Meet &amp; Greet, Every Time</span></h2>
+            <p style="font-size:.9rem; color:var(--text-mid); line-height:1.7;" data-i18n="card3_p">Every transfer includes a driver waiting with a name board, help with luggage, and a clean, comfortable, air-conditioned vehicle sized to your group — no matter which route you're booking.</p>
+          </div>
+
+          <div class="tour-section" style="margin-bottom:0; background:var(--cream); border-radius:var(--radius-lg); padding:1.5rem;">
+            <h2 style="font-size:1.1rem; margin-bottom:.6rem;">↩️ <span data-i18n="card4_h2">Free Cancellation</span></h2>
+            <p style="font-size:.9rem; color:var(--text-mid); line-height:1.7;" data-i18n="card4_p">Plans change — flights get delayed, itineraries shift. Cancel any transfer free of charge up to 24h before pick-up, same as all our tours.</p>
+          </div>
+
+        </div>
+
+        <!-- ═══ Airport Transfers pricing ═══ -->
+        <div style="margin-bottom:3rem;">
+          <h2 style="font-size:1.2rem; margin-bottom:1rem;">✈️ <span data-i18n="airport_h2">Airport Transfers — By City</span></h2>
+          <p style="font-size:.9rem; color:var(--text-mid); line-height:1.7; margin-bottom:1.25rem;" data-i18n="airport_intro">Private car pick-up and drop-off at every major Moroccan airport. Your driver waits inside arrivals with a name board, and we track your flight so a delay never means an empty pick-up point.</p>
+          <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(200px, 1fr)); gap:.9rem;">
+            <div class="transfer-pick" role="button" tabindex="0" onclick="selectTransfer('fes-airport')" onkeydown="if(event.key==='Enter')selectTransfer('fes-airport')" style="background:var(--cream); border:2px solid transparent; border-radius:var(--radius); padding:1rem 1.1rem; display:flex; justify-content:space-between; align-items:center; cursor:pointer; transition:border-color .15s ease;">
+              <span style="font-size:.88rem; font-weight:700; color:var(--brown);">Fes–Saïss</span>
+              <span style="font-size:.85rem; color:var(--gold-dark); font-weight:700;"><span data-i18n="lbl_from">From</span> <span class="price-value" data-price-usd="25">$25</span></span>
+            </div>
+            <div class="transfer-pick" role="button" tabindex="0" onclick="selectTransfer('casablanca-airport')" onkeydown="if(event.key==='Enter')selectTransfer('casablanca-airport')" style="background:var(--cream); border:2px solid transparent; border-radius:var(--radius); padding:1rem 1.1rem; display:flex; justify-content:space-between; align-items:center; cursor:pointer; transition:border-color .15s ease;">
+              <span style="font-size:.88rem; font-weight:700; color:var(--brown);">Casablanca Mohammed V</span>
+              <span style="font-size:.85rem; color:var(--gold-dark); font-weight:700;"><span data-i18n="lbl_from">From</span> <span class="price-value" data-price-usd="35">$35</span></span>
+            </div>
+            <div class="transfer-pick" role="button" tabindex="0" onclick="selectTransfer('marrakech-airport')" onkeydown="if(event.key==='Enter')selectTransfer('marrakech-airport')" style="background:var(--cream); border:2px solid transparent; border-radius:var(--radius); padding:1rem 1.1rem; display:flex; justify-content:space-between; align-items:center; cursor:pointer; transition:border-color .15s ease;">
+              <span style="font-size:.88rem; font-weight:700; color:var(--brown);">Marrakech Menara</span>
+              <span style="font-size:.85rem; color:var(--gold-dark); font-weight:700;"><span data-i18n="lbl_from">From</span> <span class="price-value" data-price-usd="20">$20</span></span>
+            </div>
+            <div class="transfer-pick" role="button" tabindex="0" onclick="selectTransfer('rabat-airport')" onkeydown="if(event.key==='Enter')selectTransfer('rabat-airport')" style="background:var(--cream); border:2px solid transparent; border-radius:var(--radius); padding:1rem 1.1rem; display:flex; justify-content:space-between; align-items:center; cursor:pointer; transition:border-color .15s ease;">
+              <span style="font-size:.88rem; font-weight:700; color:var(--brown);">Rabat–Salé</span>
+              <span style="font-size:.85rem; color:var(--gold-dark); font-weight:700;"><span data-i18n="lbl_from">From</span> <span class="price-value" data-price-usd="28">$28</span></span>
+            </div>
+            <div class="transfer-pick" role="button" tabindex="0" onclick="selectTransfer('tangier-airport')" onkeydown="if(event.key==='Enter')selectTransfer('tangier-airport')" style="background:var(--cream); border:2px solid transparent; border-radius:var(--radius); padding:1rem 1.1rem; display:flex; justify-content:space-between; align-items:center; cursor:pointer; transition:border-color .15s ease;">
+              <span style="font-size:.88rem; font-weight:700; color:var(--brown);">Tangier Ibn Battouta</span>
+              <span style="font-size:.85rem; color:var(--gold-dark); font-weight:700;"><span data-i18n="lbl_from">From</span> <span class="price-value" data-price-usd="22">$22</span></span>
+            </div>
+            <div class="transfer-pick" role="button" tabindex="0" onclick="selectTransfer('agadir-airport')" onkeydown="if(event.key==='Enter')selectTransfer('agadir-airport')" style="background:var(--cream); border:2px solid transparent; border-radius:var(--radius); padding:1rem 1.1rem; display:flex; justify-content:space-between; align-items:center; cursor:pointer; transition:border-color .15s ease;">
+              <span style="font-size:.88rem; font-weight:700; color:var(--brown);">Agadir Al Massira</span>
+              <span style="font-size:.85rem; color:var(--gold-dark); font-weight:700;"><span data-i18n="lbl_from">From</span> <span class="price-value" data-price-usd="30">$30</span></span>
+            </div>
+            <div class="transfer-pick" role="button" tabindex="0" onclick="selectTransfer('nador-airport')" onkeydown="if(event.key==='Enter')selectTransfer('nador-airport')" style="background:var(--cream); border:2px solid transparent; border-radius:var(--radius); padding:1rem 1.1rem; display:flex; justify-content:space-between; align-items:center; cursor:pointer; transition:border-color .15s ease;">
+              <span style="font-size:.88rem; font-weight:700; color:var(--brown);">Nador Al Aroui</span>
+              <span style="font-size:.85rem; color:var(--gold-dark); font-weight:700;"><span data-i18n="lbl_from">From</span> <span class="price-value" data-price-usd="32">$32</span></span>
+            </div>
+          </div>
+          <p style="font-size:.78rem; color:var(--text-light); margin-top:.75rem;"><span data-i18n="airport_note">Prices are per vehicle (up to 3 passengers), one-way, for pick-up within that airport's own city. Larger groups or minivans quoted on request.</span> <span data-i18n="click_to_choose">Click any option above to select it.</span></p>
+        </div>
+
+        <!-- ═══ City-to-City route grid ═══ -->
+        <div style="margin-bottom:3rem;">
+          <h2 style="font-size:1.2rem; margin-bottom:1rem;">🛣️ <span data-i18n="route_h2">Popular Intercity Routes</span></h2>
+          <p style="font-size:.9rem; color:var(--text-mid); line-height:1.7; margin-bottom:1.25rem;" data-i18n="route_intro">Our most-booked private transfers depart from Fes, our home base — every route runs in both directions, and any city pair not listed here is available on request.</p>
+          <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(190px, 1fr)); gap:.75rem;">
+            <div style="background:var(--cream); border-radius:var(--radius); padding:.85rem 1rem;"><strong style="font-size:.85rem; color:var(--brown);">Fes ⇄ Casablanca</strong><span style="display:block; font-size:.75rem; color:var(--text-light); margin-top:.15rem;" data-i18n="route1_dur">~4 hours</span></div>
+            <div style="background:var(--cream); border-radius:var(--radius); padding:.85rem 1rem;"><strong style="font-size:.85rem; color:var(--brown);">Fes ⇄ Marrakech</strong><span style="display:block; font-size:.75rem; color:var(--text-light); margin-top:.15rem;" data-i18n="route2_dur">~7-8 hours</span></div>
+            <div style="background:var(--cream); border-radius:var(--radius); padding:.85rem 1rem;"><strong style="font-size:.85rem; color:var(--brown);">Fes ⇄ Rabat</strong><span style="display:block; font-size:.75rem; color:var(--text-light); margin-top:.15rem;" data-i18n="route3_dur">~2.5 hours</span></div>
+            <div style="background:var(--cream); border-radius:var(--radius); padding:.85rem 1rem;"><strong style="font-size:.85rem; color:var(--brown);">Fes ⇄ Chefchaouen</strong><span style="display:block; font-size:.75rem; color:var(--text-light); margin-top:.15rem;" data-i18n="route4_dur">~3 hours</span></div>
+            <div style="background:var(--cream); border-radius:var(--radius); padding:.85rem 1rem;"><strong style="font-size:.85rem; color:var(--brown);">Fes ⇄ Tangier</strong><span style="display:block; font-size:.75rem; color:var(--text-light); margin-top:.15rem;" data-i18n="route5_dur">~4 hours</span></div>
+            <div style="background:var(--cream); border-radius:var(--radius); padding:.85rem 1rem;"><strong style="font-size:.85rem; color:var(--brown);">Fes ⇄ Tetouan</strong><span style="display:block; font-size:.75rem; color:var(--text-light); margin-top:.15rem;" data-i18n="route6_dur">~3.5 hours</span></div>
+            <div style="background:var(--cream); border-radius:var(--radius); padding:.85rem 1rem;"><strong style="font-size:.85rem; color:var(--brown);">Fes ⇄ Essaouira</strong><span style="display:block; font-size:.75rem; color:var(--text-light); margin-top:.15rem;" data-i18n="route7_dur">~8 hours</span></div>
+            <div style="background:var(--cream); border-radius:var(--radius); padding:.85rem 1rem;"><strong style="font-size:.85rem; color:var(--brown);">Fes ⇄ Agadir</strong><span style="display:block; font-size:.75rem; color:var(--text-light); margin-top:.15rem;" data-i18n="route8_dur">~9 hours</span></div>
+            <div style="background:var(--cream); border-radius:var(--radius); padding:.85rem 1rem;"><strong style="font-size:.85rem; color:var(--brown);">Fes ⇄ Nador</strong><span style="display:block; font-size:.75rem; color:var(--text-light); margin-top:.15rem;" data-i18n="route9_dur">~4 hours</span></div>
+            <div style="background:var(--cream); border-radius:var(--radius); padding:.85rem 1rem;"><strong style="font-size:.85rem; color:var(--brown);">Fes ⇄ Saïdia</strong><span style="display:block; font-size:.75rem; color:var(--text-light); margin-top:.15rem;" data-i18n="route10_dur">~3.5 hours</span></div>
+            <div style="background:var(--cream); border-radius:var(--radius); padding:.85rem 1rem;"><strong style="font-size:.85rem; color:var(--brown);">Marrakech ⇄ Essaouira</strong><span style="display:block; font-size:.75rem; color:var(--text-light); margin-top:.15rem;" data-i18n="route11_dur">~2.5 hours</span></div>
+            <div style="background:var(--cream); border-radius:var(--radius); padding:.85rem 1rem;"><strong style="font-size:.85rem; color:var(--brown);">Casablanca ⇄ Marrakech</strong><span style="display:block; font-size:.75rem; color:var(--text-light); margin-top:.15rem;" data-i18n="route12_dur">~3 hours</span></div>
+            <div style="background:var(--cream); border-radius:var(--radius); padding:.85rem 1rem;"><strong style="font-size:.85rem; color:var(--brown);">Meknes ⇄ Fes</strong><span style="display:block; font-size:.75rem; color:var(--text-light); margin-top:.15rem;" data-i18n="route13_dur">~30 min</span></div>
+            <div style="background:var(--cream); border-radius:var(--radius); padding:.85rem 1rem;"><strong style="font-size:.85rem; color:var(--brown);">Meknes ⇄ Chefchaouen</strong><span style="display:block; font-size:.75rem; color:var(--text-light); margin-top:.15rem;" data-i18n="route14_dur">~3.5 hours</span></div>
+            <div style="background:var(--cream); border-radius:var(--radius); padding:.85rem 1rem;"><strong style="font-size:.85rem; color:var(--brown);">Meknes ⇄ Rabat</strong><span style="display:block; font-size:.75rem; color:var(--text-light); margin-top:.15rem;" data-i18n="route15_dur">~2 hours</span></div>
+            <div style="background:var(--cream); border-radius:var(--radius); padding:.85rem 1rem;"><strong style="font-size:.85rem; color:var(--brown);">Meknes ⇄ Casablanca</strong><span style="display:block; font-size:.75rem; color:var(--text-light); margin-top:.15rem;" data-i18n="route16_dur">~3.5 hours</span></div>
+            <div style="background:var(--cream); border-radius:var(--radius); padding:.85rem 1rem;"><strong style="font-size:.85rem; color:var(--brown);">Meknes ⇄ Marrakech</strong><span style="display:block; font-size:.75rem; color:var(--text-light); margin-top:.15rem;" data-i18n="route17_dur">~7 hours</span></div>
+            <div style="background:var(--cream); border-radius:var(--radius); padding:.85rem 1rem;"><strong style="font-size:.85rem; color:var(--brown);">Meknes ⇄ Tangier</strong><span style="display:block; font-size:.75rem; color:var(--text-light); margin-top:.15rem;" data-i18n="route18_dur">~4 hours</span></div>
+            <div style="background:var(--cream); border-radius:var(--radius); padding:.85rem 1rem;"><strong style="font-size:.85rem; color:var(--brown);">Meknes ⇄ Tetouan</strong><span style="display:block; font-size:.75rem; color:var(--text-light); margin-top:.15rem;" data-i18n="route19_dur">~3.5 hours</span></div>
+            <div style="background:var(--cream); border-radius:var(--radius); padding:.85rem 1rem;"><strong style="font-size:.85rem; color:var(--brown);">Meknes ⇄ Nador</strong><span style="display:block; font-size:.75rem; color:var(--text-light); margin-top:.15rem;" data-i18n="route20_dur">~4 hours</span></div>
+            <div style="background:var(--cream); border-radius:var(--radius); padding:.85rem 1rem;"><strong style="font-size:.85rem; color:var(--brown);">Meknes ⇄ Saïdia</strong><span style="display:block; font-size:.75rem; color:var(--text-light); margin-top:.15rem;" data-i18n="route21_dur">~4 hours</span></div>
+            <div style="background:var(--cream); border-radius:var(--radius); padding:.85rem 1rem;"><strong style="font-size:.85rem; color:var(--brown);">Meknes ⇄ Agadir</strong><span style="display:block; font-size:.75rem; color:var(--text-light); margin-top:.15rem;" data-i18n="route22_dur">~9 hours</span></div>
+            <div style="background:var(--cream); border-radius:var(--radius); padding:.85rem 1rem;"><strong style="font-size:.85rem; color:var(--brown);">Meknes ⇄ Essaouira</strong><span style="display:block; font-size:.75rem; color:var(--text-light); margin-top:.15rem;" data-i18n="route23_dur">~8 hours</span></div>
+          </div>
+        </div>
+
+        <!-- Highlighted popular routes -->
+        <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:1.25rem; margin-bottom:2.5rem;">
+          <div style="background:var(--cream); border:2px solid var(--gold); border-radius:var(--radius-lg); padding:1.5rem;">
+            <span style="background:var(--gold); color:white; padding:.3rem .9rem; border-radius:50px; font-size:.72rem; font-weight:700;" data-i18n="hl1_badge">Most Booked</span>
+            <h3 style="font-size:1.05rem; margin:.75rem 0 .5rem;">Casablanca ⇄ Fes Door-to-Door</h3>
+            <p style="font-size:.85rem; color:var(--text-mid); line-height:1.6; margin:0 0 .75rem;" data-i18n="hl1_p">Direct private ride between Casablanca Mohammed V Airport (or city centre) and your hotel or riad in Fes, roughly 4 hours by road.</p>
+            <div style="font-size:1.4rem; font-weight:700; color:var(--gold-dark); margin-bottom:1rem;"><span data-i18n="lbl_from">From</span> <span class="price-value" data-price-usd="120">$120</span> <span style="font-size:.7rem; font-weight:400; color:var(--text-light);" data-i18n="lbl_per_vehicle">per vehicle</span></div>
+            <button type="button" class="btn btn-outline-brown btn-full" onclick="selectTransfer('casablanca-fes')" data-i18n="choose_this_transfer">Choose This Transfer →</button>
+          </div>
+          <div style="background:var(--cream); border:2px solid var(--cream-dark); border-radius:var(--radius-lg); padding:1.5rem;">
+            <span style="background:var(--brown); color:white; padding:.3rem .9rem; border-radius:50px; font-size:.72rem; font-weight:700;" data-i18n="hl2_badge">Long Distance</span>
+            <h3 style="font-size:1.05rem; margin:.75rem 0 .5rem;">Fes ⇄ Marrakech Door-to-Door</h3>
+            <p style="font-size:.85rem; color:var(--text-mid); line-height:1.6; margin:0 0 .75rem;" data-i18n="hl2_p">A private crossing of the country in one comfortable ride, with stops for lunch and photos along the way — no overnight stay required.</p>
+            <div style="font-size:1.4rem; font-weight:700; color:var(--gold-dark); margin-bottom:1rem;"><span data-i18n="lbl_from">From</span> <span class="price-value" data-price-usd="220">$220</span> <span style="font-size:.7rem; font-weight:400; color:var(--text-light);" data-i18n="lbl_per_vehicle">per vehicle</span></div>
+            <button type="button" class="btn btn-outline-brown btn-full" onclick="selectTransfer('fes-marrakech')" data-i18n="choose_this_transfer">Choose This Transfer →</button>
+          </div>
+          <div style="background:var(--cream); border:2px solid var(--cream-dark); border-radius:var(--radius-lg); padding:1.5rem;">
+            <span style="background:var(--brown); color:white; padding:.3rem .9rem; border-radius:50px; font-size:.72rem; font-weight:700;" data-i18n="hl3_badge">Northern Route</span>
+            <h3 style="font-size:1.05rem; margin:.75rem 0 .5rem;">Fes ⇄ Tangier Door-to-Door</h3>
+            <p style="font-size:.85rem; color:var(--text-mid); line-height:1.6; margin:0 0 .75rem;" data-i18n="hl3_p">A direct link between the imperial city and the ferry port/airport gateway to Europe, via the scenic Rif foothills.</p>
+            <div style="font-size:1.4rem; font-weight:700; color:var(--gold-dark); margin-bottom:1rem;"><span data-i18n="lbl_from">From</span> <span class="price-value" data-price-usd="135">$135</span> <span style="font-size:.7rem; font-weight:400; color:var(--text-light);" data-i18n="lbl_per_vehicle">per vehicle</span></div>
+            <button type="button" class="btn btn-outline-brown btn-full" onclick="selectTransfer('fes-tangier')" data-i18n="choose_this_transfer">Choose This Transfer →</button>
+          </div>
+        </div>
+
+        <!-- ═══ Booking form ═══ -->
+        <section id="transferForm" class="tour-section" style="background:var(--cream); border-radius:var(--radius-lg); padding:clamp(1.5rem,4vw,2.5rem); scroll-margin-top:90px;">
+          <div style="text-align:center; max-width:640px; margin:0 auto 2rem;">
+            <span class="section-tag" data-i18n="booking_tag">Book Your Transfer</span>
+            <h2 style="margin-top:.6rem;" data-i18n="booking_h2">Finalize Your Booking</h2>
+            <p style="color:var(--text-mid);" data-i18n="booking_p">Pick an option above, or choose it below, then fill in your details — we'll confirm your transfer within 24 hours.</p>
+          </div>
+
+          <form class="contact-form" id="contactForm" name="transfer-booking" novalidate style="max-width:640px; margin:0 auto;">
+            <input type="hidden" name="form-name" value="transfer-booking">
+            <p style="position:absolute; left:-9999px;" aria-hidden="true">
+              <label>Don't fill this out if you're human: <input name="bot-field" tabindex="-1" autocomplete="off"></label>
+            </p>
+            <div class="form-group">
+              <label for="transferChoice"><span data-i18n="form_transfer">Selected Transfer</span> <span aria-hidden="true">*</span></label>
+              <select id="transferChoice" name="transferChoice" required>
+                <option value="" data-i18n-opt="form_transfer_default">— Select a transfer —</option>
+                <option value="fes-airport" data-i18n-opt="opt_fes_airport">Fes–Saïss Airport Transfer</option>
+                <option value="casablanca-airport" data-i18n-opt="opt_casablanca_airport">Casablanca Mohammed V Airport Transfer</option>
+                <option value="marrakech-airport" data-i18n-opt="opt_marrakech_airport">Marrakech Menara Airport Transfer</option>
+                <option value="rabat-airport" data-i18n-opt="opt_rabat_airport">Rabat–Salé Airport Transfer</option>
+                <option value="tangier-airport" data-i18n-opt="opt_tangier_airport">Tangier Ibn Battouta Airport Transfer</option>
+                <option value="agadir-airport" data-i18n-opt="opt_agadir_airport">Agadir Al Massira Airport Transfer</option>
+                <option value="nador-airport" data-i18n-opt="opt_nador_airport">Nador Al Aroui Airport Transfer</option>
+                <option value="casablanca-fes" data-i18n-opt="opt_casablanca_fes">Casablanca ⇄ Fes Door-to-Door</option>
+                <option value="fes-marrakech" data-i18n-opt="opt_fes_marrakech">Fes ⇄ Marrakech Door-to-Door</option>
+                <option value="fes-tangier" data-i18n-opt="opt_fes_tangier">Fes ⇄ Tangier Door-to-Door</option>
+                <option value="meknes-fes" data-i18n-opt="opt_meknes_fes">Meknes ⇄ Fes</option>
+                <option value="meknes-chefchaouen" data-i18n-opt="opt_meknes_chefchaouen">Meknes ⇄ Chefchaouen</option>
+                <option value="meknes-rabat" data-i18n-opt="opt_meknes_rabat">Meknes ⇄ Rabat</option>
+                <option value="meknes-casablanca" data-i18n-opt="opt_meknes_casablanca">Meknes ⇄ Casablanca</option>
+                <option value="meknes-marrakech" data-i18n-opt="opt_meknes_marrakech">Meknes ⇄ Marrakech</option>
+                <option value="meknes-tangier" data-i18n-opt="opt_meknes_tangier">Meknes ⇄ Tangier</option>
+                <option value="meknes-tetouan" data-i18n-opt="opt_meknes_tetouan">Meknes ⇄ Tetouan</option>
+                <option value="meknes-nador" data-i18n-opt="opt_meknes_nador">Meknes ⇄ Nador</option>
+                <option value="meknes-saidia" data-i18n-opt="opt_meknes_saidia">Meknes ⇄ Saïdia</option>
+                <option value="meknes-agadir" data-i18n-opt="opt_meknes_agadir">Meknes ⇄ Agadir</option>
+                <option value="meknes-essaouira" data-i18n-opt="opt_meknes_essaouira">Meknes ⇄ Essaouira</option>
+                <option value="custom" data-i18n-opt="opt_custom">Other / Custom Route</option>
+              </select>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="tFirstName"><span data-i18n="form_firstname">First Name</span> <span aria-hidden="true">*</span></label>
+                <input type="text" id="tFirstName" name="firstName" required autocomplete="given-name" placeholder="Your first name" data-i18n-ph="form_firstname_ph">
+              </div>
+              <div class="form-group">
+                <label for="tLastName"><span data-i18n="form_lastname">Last Name</span> <span aria-hidden="true">*</span></label>
+                <input type="text" id="tLastName" name="lastName" required autocomplete="family-name" placeholder="Your last name" data-i18n-ph="form_lastname_ph">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="tEmail"><span data-i18n="form_email">Email Address</span> <span aria-hidden="true">*</span></label>
+                <input type="email" id="tEmail" name="email" required autocomplete="email" placeholder="you@example.com" data-i18n-ph="form_email_ph">
+              </div>
+              <div class="form-group">
+                <label for="tPhone" data-i18n="form_phone">Phone / WhatsApp</label>
+                <input type="tel" id="tPhone" name="phone" autocomplete="tel" placeholder="+1 234 567 8900" data-i18n-ph="form_phone_ph">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="tDate" data-i18n="form_transfer_date">Transfer Date</label>
+                <input type="text" id="tDate" name="transferDate" placeholder="e.g. 14 March 2026" data-i18n-ph="form_transfer_date_ph">
+              </div>
+              <div class="form-group">
+                <label for="tPassengers" data-i18n="form_passengers">Number of Passengers</label>
+                <select id="tPassengers" name="passengers">
+                  <option value="" data-i18n-opt="form_travelers_default">— Select —</option>
+                  <option value="1" data-i18n-opt="form_travelers_1">1 (Solo)</option>
+                  <option value="2" data-i18n-opt="form_travelers_2">2 (Couple)</option>
+                  <option value="3-4" data-i18n-opt="form_travelers_3">3–4</option>
+                  <option value="5-8" data-i18n-opt="form_travelers_4">5–8</option>
+                  <option value="9+" data-i18n-opt="form_travelers_5">9+</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="tMessage" data-i18n="form_transfer_message">Flight Number / Extra Details</label>
+              <textarea id="tMessage" name="message" rows="3" placeholder="Flight number, pick-up address, or any special requests..." data-i18n-ph="form_transfer_message_ph"></textarea>
+            </div>
+            <button type="submit" class="btn btn-gold btn-full" id="submitBtn">
+              <span class="btn-text" data-i18n="form_submit">Send My Enquiry</span>
+              <span class="btn-loading" aria-hidden="true" style="display:none" data-i18n="form_sending">Sending...</span>
+            </button>
+            <p class="form-note" data-i18n="form_note">We respond within 24 hours. No commitment required.</p>
+            <div id="formSuccess" class="form-success" role="alert" style="display:none" data-i18n="form_success">
+              Thank you! We'll be in touch within 24 hours to confirm your transfer.
+            </div>
+            <div id="formError" class="form-error" role="alert" style="display:none" data-i18n="form_error">
+              Something went wrong. Please email us directly at info@saharitours.com
+            </div>
+          </form>
+        </section>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" aria-label="Saharitours home">
+            <img src="public/images/logo.png" alt="Saharitours" height="48" onerror="this.style.display='none'">
+            <span class="footer-logo-text">SAHARITOURS</span>
+          </a>
+          <p>Your authentic guide to the wonders of Morocco. Crafting unforgettable journeys since 2009.</p>
+          <p class="footer-license">Licensed by ONMT · Morocco National Tourism Office</p>
+        </div>
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <h4 data-i18n="footer_quicklinks">Quick Links</h4>
+          <ul role="list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#tours">Our Tours</a></li>
+            <li><a href="index.html#about">About Us</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+            <li><a href="leave-a-review.html" data-i18n="footer_leave_review">Leave a Review</a></li>
+          </ul>
+        </nav>
+        <div class="footer-tours">
+          <h4 data-i18n="footer_tours_title">Our Tours</h4>
+          <ul role="list">
+            <li><a href="tour-grand-morocco-10days.html">10-Day Grand Morocco Tour</a></li>
+            <li><a href="tour-fes-marrakech-sahara.html">Fes &middot; Sahara &middot; Marrakech (4 Days)</a></li>
+            <li><a href="tour-marrakech-desert-loop.html">Marrakech Desert Loop</a></li>
+            <li><a href="tour-sahara-merzouga.html">Sahara Desert 3-Day Tour</a></li>
+            <li><a href="tour-desert-2day-fes.html">Sahara Desert 2-Day Express</a></li>
+            <li><a href="tour-fes-chefchaouen.html">Fes &middot; Chefchaouen &middot; Rabat &middot; Casablanca</a></li>
+            <li><a href="tour-fes-city.html">Fes Medina City Tour</a></li>
+            <li><a href="tour-rabat-day.html">Rabat Day Trip</a></li>
+            <li><a href="index.html#tours">View All 19 Tours &rarr;</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4 data-i18n="footer_contact_title">Get in Touch</h4>
+          <ul role="list">
+            <li><a href="tel:+212600000000">+212 600 000 000</a></li>
+            <li><a href="mailto:info@saharitours.com">info@saharitours.com</a></li>
+            <li>Marrakech, Morocco</li>
+          </ul>
+          <a href="https://wa.me/212600000000" class="footer-whatsapp"
+            target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            <span data-i18n="footer_whatsapp">Chat on WhatsApp</span>
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> Saharitours. <span data-i18n="footer_rights">All rights reserved.</span></p>
+        <div class="footer-bottom-links">
+          <a href="privacy.html" data-i18n="footer_privacy">Privacy Policy</a>
+          <a href="terms.html" data-i18n="footer_terms">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/212600000000" class="whatsapp-float"
+    target="_blank" rel="noopener noreferrer" aria-label="Chat with us on WhatsApp">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+  <script>
+    const PAGE_TRANSLATIONS = {
+      en: {
+        form_success: "Thank you! We'll be in touch within 24 hours to confirm your transfer.",
+      },
+      it: {
+        breadcrumb_current: 'Trasferimenti aeroportuali e intercity',
+        section_tag: 'Trasporto Terrestre',
+        hero_h1: 'Trasferimenti Aeroportuali e Intercity',
+        hero_intro: "Atterri in Marocco o ti sposti tra le città? Offriamo trasferimenti privati con autista in tutto il paese — niente navette condivise, niente attese, solo un'auto confortevole e un autista che sa esattamente dove essere e quando.",
+        card1_h2: 'Trasferimenti Intercity',
+        card1_p: "Devi andare direttamente da una città marocchina a un'altra? Organizziamo trasferimenti privati di sola andata tra due città, all'orario più adatto al tuo itinerario — scopri qui sotto i percorsi più richiesti.",
+        card2_h2: 'Trasferimenti Personalizzati',
+        card2_p: "Atterri in una città e ne visiti diverse altre prima di tornare a casa? Creiamo trasferimenti privati multi-tappa in base al tuo percorso esatto, con soste per pasti, foto o visite lungo il tragitto.",
+        card3_h2: 'Accoglienza Personalizzata, Ogni Volta',
+        card3_p: "Ogni trasferimento include un autista che ti aspetta con un cartello con il tuo nome, aiuto con i bagagli, e un veicolo climatizzato pulito e confortevole adatto alle dimensioni del tuo gruppo — indipendentemente dal percorso prenotato.",
+        card4_h2: 'Cancellazione Gratuita',
+        card4_p: "I piani cambiano — voli in ritardo, itinerari modificati. Cancella qualsiasi trasferimento gratuitamente fino a 24 ore prima del ritiro, come per tutti i nostri tour.",
+        airport_h2: 'Trasferimenti Aeroportuali — Per Città',
+        airport_intro: "Ritiro e consegna in auto privata in tutti i principali aeroporti marocchini. Il tuo autista ti aspetta all'interno degli arrivi con un cartello con il tuo nome, e monitoriamo il tuo volo affinché un ritardo non significhi mai un punto di ritiro vuoto.",
+        airport_note: "I prezzi sono per veicolo (fino a 3 passeggeri), sola andata, per il ritiro all'interno della città di quell'aeroporto. Gruppi più numerosi o minivan su richiesta.",
+        lbl_from: 'A partire da',
+        route_h2: 'Percorsi Intercity Più Richiesti',
+        route_intro: "I nostri trasferimenti privati più prenotati partono da Fès, la nostra base — ogni percorso funziona in entrambe le direzioni, e qualsiasi altra coppia di città è disponibile su richiesta.",
+        route1_dur: '~4 ore', route2_dur: '~7-8 ore', route3_dur: '~2,5 ore', route4_dur: '~3 ore',
+        route5_dur: '~4 ore', route6_dur: '~3,5 ore', route7_dur: '~8 ore', route8_dur: '~9 ore',
+        route9_dur: '~4 ore', route10_dur: '~3,5 ore', route11_dur: '~2,5 ore', route12_dur: '~3 ore',
+        route13_dur: '~30 min', route14_dur: '~3,5 ore', route15_dur: '~2 ore', route16_dur: '~3,5 ore',
+        route17_dur: '~7 ore', route18_dur: '~4 ore', route19_dur: '~3,5 ore', route20_dur: '~4 ore',
+        route21_dur: '~4 ore', route22_dur: '~9 ore', route23_dur: '~8 ore',
+        hl1_badge: 'Il Più Prenotato',
+        hl1_p: "Trasferimento privato diretto tra l'Aeroporto Mohammed V di Casablanca (o il centro città) e il tuo hotel o riad a Fès, circa 4 ore di strada.",
+        hl2_badge: 'Lunga Distanza',
+        hl2_p: "Un attraversamento privato del paese in un unico tragitto confortevole, con soste per il pranzo e le foto lungo il percorso — senza necessità di pernottamento.",
+        hl3_badge: 'Rotta del Nord',
+        hl3_p: "Un collegamento diretto tra la città imperiale e il porto dei traghetti/aeroporto, porta d'ingresso verso l'Europa, attraverso le pittoresche colline del Rif.",
+        lbl_per_vehicle: 'per veicolo',
+        pricing_note_p: "I prezzi dipendono dal percorso e dalla dimensione del veicolo — contattaci per un preventivo esatto in base alle tue date, alla dimensione del gruppo e al punto di ritiro.",
+        cta_request_transfer: 'Richiedi un Trasferimento',
+        click_to_choose: "Clicca su un'opzione qui sopra per selezionarla.",
+        choose_this_transfer: 'Scegli Questo Trasferimento →',
+        booking_tag: 'Prenota il Tuo Trasferimento',
+        booking_h2: 'Finalizza la Tua Prenotazione',
+        booking_p: "Scegli un'opzione qui sopra, oppure selezionala qui sotto, poi inserisci i tuoi dati — confermeremo il tuo trasferimento entro 24 ore.",
+        form_transfer: 'Trasferimento Selezionato',
+        form_transfer_default: '— Seleziona un trasferimento —',
+        opt_fes_airport: 'Trasferimento Aeroporto Fès–Saïss',
+        opt_casablanca_airport: 'Trasferimento Aeroporto Mohammed V di Casablanca',
+        opt_marrakech_airport: 'Trasferimento Aeroporto Marrakech Menara',
+        opt_rabat_airport: 'Trasferimento Aeroporto Rabat–Salé',
+        opt_tangier_airport: 'Trasferimento Aeroporto Ibn Battouta di Tangeri',
+        opt_agadir_airport: 'Trasferimento Aeroporto Agadir Al Massira',
+        opt_nador_airport: 'Trasferimento Aeroporto Nador Al Aroui',
+        opt_casablanca_fes: 'Casablanca ⇄ Fès Porta a Porta',
+        opt_fes_marrakech: 'Fès ⇄ Marrakech Porta a Porta',
+        opt_fes_tangier: 'Fès ⇄ Tangeri Porta a Porta',
+        opt_meknes_fes: 'Meknes ⇄ Fès', opt_meknes_chefchaouen: 'Meknes ⇄ Chefchaouen', opt_meknes_rabat: 'Meknes ⇄ Rabat',
+        opt_meknes_casablanca: 'Meknes ⇄ Casablanca', opt_meknes_marrakech: 'Meknes ⇄ Marrakech', opt_meknes_tangier: 'Meknes ⇄ Tangeri',
+        opt_meknes_tetouan: 'Meknes ⇄ Tetouan', opt_meknes_nador: 'Meknes ⇄ Nador', opt_meknes_saidia: 'Meknes ⇄ Saïdia',
+        opt_meknes_agadir: 'Meknes ⇄ Agadir', opt_meknes_essaouira: 'Meknes ⇄ Essaouira',
+        opt_custom: 'Altro / Percorso Personalizzato',
+        form_transfer_date: 'Data del Trasferimento',
+        form_transfer_date_ph: 'es. 14 marzo 2026',
+        form_passengers: 'Numero di Passeggeri',
+        form_transfer_message: 'Numero di Volo / Dettagli Aggiuntivi',
+        form_transfer_message_ph: 'Numero di volo, indirizzo di ritiro, o qualsiasi richiesta speciale...',
+        form_success: 'Grazie! Ti contatteremo entro 24 ore per confermare il tuo trasferimento.',
+      },
+      fr: {
+        breadcrumb_current: 'Transferts aéroport et intervilles',
+        section_tag: 'Transport terrestre',
+        hero_h1: 'Transferts aéroport et intervilles',
+        hero_intro: "Vous atterrissez au Maroc ou vous déplacez entre les villes ? Nous assurons des transferts privés avec chauffeur dans tout le pays — pas de navettes partagées, pas d'attente, juste une voiture confortable et un chauffeur qui sait exactement où être et quand.",
+        card1_h2: 'Transferts intervilles',
+        card1_p: "Besoin d'aller directement d'une ville marocaine à une autre ? Nous organisons des transferts privés aller simple entre deux villes, à l'heure qui convient à votre itinéraire — découvrez ci-dessous nos trajets les plus demandés.",
+        card2_h2: 'Transferts personnalisés',
+        card2_p: "Vous atterrissez dans une ville et visitez plusieurs autres avant de rentrer ? Nous créons des transferts privés à plusieurs étapes selon votre itinéraire exact, avec des arrêts repas, photos ou visites en cours de route.",
+        card3_h2: 'Accueil personnalisé, à chaque fois',
+        card3_p: "Chaque transfert inclut un chauffeur qui vous attend avec une pancarte à votre nom, une aide avec les bagages, et un véhicule climatisé propre et confortable adapté à la taille de votre groupe — quel que soit le trajet réservé.",
+        card4_h2: 'Annulation gratuite',
+        card4_p: "Les plans changent — vols retardés, itinéraires modifiés. Annulez gratuitement tout transfert jusqu'à 24h avant la prise en charge, comme pour tous nos circuits.",
+        airport_h2: 'Transferts aéroport — par ville',
+        airport_intro: "Prise en charge et dépose en voiture privée dans tous les grands aéroports marocains. Votre chauffeur vous attend à l'intérieur des arrivées avec une pancarte à votre nom, et nous suivons votre vol pour qu'un retard ne signifie jamais un point de rendez-vous vide.",
+        airport_note: "Les prix sont par véhicule (jusqu'à 3 passagers), aller simple, pour une prise en charge dans la ville de l'aéroport concerné. Groupes plus importants ou minibus sur demande.",
+        lbl_from: 'À partir de',
+        route_h2: 'Trajets intervilles les plus demandés',
+        route_intro: "Nos transferts privés les plus réservés partent de Fès, notre base — chaque trajet fonctionne dans les deux sens, et toute autre paire de villes est disponible sur demande.",
+        route1_dur: '~4 heures', route2_dur: '~7-8 heures', route3_dur: '~2h30', route4_dur: '~3 heures',
+        route5_dur: '~4 heures', route6_dur: '~3h30', route7_dur: '~8 heures', route8_dur: '~9 heures',
+        route9_dur: '~4 heures', route10_dur: '~3h30', route11_dur: '~2h30', route12_dur: '~3 heures',
+        route13_dur: '~30 min', route14_dur: '~3h30', route15_dur: '~2 heures', route16_dur: '~3h30',
+        route17_dur: '~7 heures', route18_dur: '~4 heures', route19_dur: '~3h30', route20_dur: '~4 heures',
+        route21_dur: '~4 heures', route22_dur: '~9 heures', route23_dur: '~8 heures',
+        hl1_badge: 'Le plus réservé',
+        hl1_p: "Trajet privé direct entre l'aéroport Mohammed V de Casablanca (ou le centre-ville) et votre hôtel ou riad à Fès, environ 4 heures de route.",
+        hl2_badge: 'Longue distance',
+        hl2_p: "Une traversée privée du pays en un trajet confortable, avec des arrêts déjeuner et photos en chemin — sans nuitée requise.",
+        hl3_badge: 'Route du Nord',
+        hl3_p: "Une liaison directe entre la ville impériale et le port du ferry/aéroport, porte d'entrée vers l'Europe, via les contreforts pittoresques du Rif.",
+        lbl_per_vehicle: 'par véhicule',
+        pricing_note_p: "Les prix dépendent du trajet et de la taille du véhicule — contactez-nous pour un devis exact selon vos dates, la taille du groupe et le point de prise en charge.",
+        cta_request_transfer: 'Demander un transfert',
+        click_to_choose: 'Cliquez sur une option ci-dessus pour la sélectionner.',
+        choose_this_transfer: 'Choisir ce transfert →',
+        booking_tag: 'Réservez votre transfert',
+        booking_h2: 'Finalisez votre réservation',
+        booking_p: "Choisissez une option ci-dessus, ou sélectionnez-la ci-dessous, puis renseignez vos coordonnées — nous confirmerons votre transfert sous 24 heures.",
+        form_transfer: 'Transfert sélectionné',
+        form_transfer_default: '— Choisissez un transfert —',
+        opt_fes_airport: 'Transfert aéroport Fès–Saïss',
+        opt_casablanca_airport: 'Transfert aéroport Mohammed V de Casablanca',
+        opt_marrakech_airport: 'Transfert aéroport Marrakech Ménara',
+        opt_rabat_airport: 'Transfert aéroport Rabat–Salé',
+        opt_tangier_airport: 'Transfert aéroport Ibn Battouta de Tanger',
+        opt_agadir_airport: 'Transfert aéroport Agadir Al Massira',
+        opt_nador_airport: 'Transfert aéroport Nador Al Aroui',
+        opt_casablanca_fes: 'Casablanca ⇄ Fès porte-à-porte',
+        opt_fes_marrakech: 'Fès ⇄ Marrakech porte-à-porte',
+        opt_fes_tangier: 'Fès ⇄ Tanger porte-à-porte',
+        opt_meknes_fes: 'Meknès ⇄ Fès', opt_meknes_chefchaouen: 'Meknès ⇄ Chefchaouen', opt_meknes_rabat: 'Meknès ⇄ Rabat',
+        opt_meknes_casablanca: 'Meknès ⇄ Casablanca', opt_meknes_marrakech: 'Meknès ⇄ Marrakech', opt_meknes_tangier: 'Meknès ⇄ Tanger',
+        opt_meknes_tetouan: 'Meknès ⇄ Tétouan', opt_meknes_nador: 'Meknès ⇄ Nador', opt_meknes_saidia: 'Meknès ⇄ Saïdia',
+        opt_meknes_agadir: 'Meknès ⇄ Agadir', opt_meknes_essaouira: 'Meknès ⇄ Essaouira',
+        opt_custom: 'Autre / Trajet personnalisé',
+        form_transfer_date: 'Date du transfert',
+        form_transfer_date_ph: 'ex. 14 mars 2026',
+        form_passengers: 'Nombre de passagers',
+        form_transfer_message: 'Numéro de vol / détails supplémentaires',
+        form_transfer_message_ph: 'Numéro de vol, adresse de prise en charge, ou toute demande particulière...',
+        form_success: 'Merci ! Nous vous contacterons sous 24 heures pour confirmer votre transfert.',
+      },
+      es: {
+        breadcrumb_current: 'Traslados al aeropuerto e intermunicipales',
+        section_tag: 'Transporte terrestre',
+        hero_h1: 'Traslados al aeropuerto e intermunicipales',
+        hero_intro: "¿Aterrizas en Marruecos o te desplazas entre ciudades? Ofrecemos traslados privados con conductor por todo el país — sin lanzaderas compartidas, sin esperas, solo un coche cómodo y un conductor que sabe exactamente dónde estar y cuándo.",
+        card1_h2: 'Traslados entre ciudades',
+        card1_p: "¿Necesitas ir directamente de una ciudad marroquí a otra? Organizamos traslados privados de ida entre dos ciudades, a la hora que mejor se adapte a tu itinerario — consulta abajo las rutas más solicitadas.",
+        card2_h2: 'Traslados personalizados',
+        card2_p: "¿Aterrizas en una ciudad y visitas varias más antes de volver a casa? Creamos traslados privados con varias paradas según tu ruta exacta, con paradas para comer, hacer fotos o hacer turismo en el camino.",
+        card3_h2: 'Recepción personalizada, siempre',
+        card3_p: "Cada traslado incluye un conductor esperándote con un cartel con tu nombre, ayuda con el equipaje y un vehículo climatizado limpio y cómodo del tamaño adecuado para tu grupo, sea cual sea la ruta que reserves.",
+        card4_h2: 'Cancelación gratuita',
+        card4_p: "Los planes cambian — vuelos retrasados, itinerarios que se modifican. Cancela cualquier traslado sin coste hasta 24h antes de la recogida, igual que en todos nuestros tours.",
+        airport_h2: 'Traslados al aeropuerto — por ciudad',
+        airport_intro: "Recogida y entrega en coche privado en todos los principales aeropuertos de Marruecos. Tu conductor te espera dentro de llegadas con un cartel con tu nombre, y seguimos tu vuelo para que un retraso nunca signifique un punto de recogida vacío.",
+        airport_note: "Los precios son por vehículo (hasta 3 pasajeros), solo ida, para recogida dentro de la ciudad de ese aeropuerto. Grupos más grandes o furgonetas, presupuesto bajo petición.",
+        lbl_from: 'Desde',
+        route_h2: 'Rutas intermunicipales más solicitadas',
+        route_intro: "Nuestros traslados privados más reservados salen de Fez, nuestra base — cada ruta funciona en ambos sentidos, y cualquier otro par de ciudades está disponible bajo petición.",
+        route1_dur: '~4 horas', route2_dur: '~7-8 horas', route3_dur: '~2,5 horas', route4_dur: '~3 horas',
+        route5_dur: '~4 horas', route6_dur: '~3,5 horas', route7_dur: '~8 horas', route8_dur: '~9 horas',
+        route9_dur: '~4 horas', route10_dur: '~3,5 horas', route11_dur: '~2,5 horas', route12_dur: '~3 horas',
+        route13_dur: '~30 min', route14_dur: '~3,5 horas', route15_dur: '~2 horas', route16_dur: '~3,5 horas',
+        route17_dur: '~7 horas', route18_dur: '~4 horas', route19_dur: '~3,5 horas', route20_dur: '~4 horas',
+        route21_dur: '~4 horas', route22_dur: '~9 horas', route23_dur: '~8 horas',
+        hl1_badge: 'Más reservado',
+        hl1_p: "Trayecto privado directo entre el aeropuerto Mohammed V de Casablanca (o el centro de la ciudad) y tu hotel o riad en Fez, aproximadamente 4 horas por carretera.",
+        hl2_badge: 'Larga distancia',
+        hl2_p: "Una travesía privada del país en un trayecto cómodo, con paradas para almorzar y hacer fotos en el camino — sin necesidad de pernoctar.",
+        hl3_badge: 'Ruta del Norte',
+        hl3_p: "Una conexión directa entre la ciudad imperial y el puerto del ferry/aeropuerto, puerta de entrada a Europa, a través de las pintorescas estribaciones del Rif.",
+        lbl_per_vehicle: 'por vehículo',
+        pricing_note_p: "Los precios dependen de la ruta y el tamaño del vehículo — contáctanos para un presupuesto exacto según tus fechas, el tamaño del grupo y el punto de recogida.",
+        cta_request_transfer: 'Solicitar un traslado',
+        click_to_choose: 'Haz clic en cualquier opción anterior para seleccionarla.',
+        choose_this_transfer: 'Elegir este traslado →',
+        booking_tag: 'Reserva tu traslado',
+        booking_h2: 'Finaliza tu reserva',
+        booking_p: 'Elige una opción arriba, o selecciónala abajo, y completa tus datos — confirmaremos tu traslado en 24 horas.',
+        form_transfer: 'Traslado seleccionado',
+        form_transfer_default: '— Selecciona un traslado —',
+        opt_fes_airport: 'Traslado aeropuerto de Fez–Saïss',
+        opt_casablanca_airport: 'Traslado aeropuerto Mohammed V de Casablanca',
+        opt_marrakech_airport: 'Traslado aeropuerto Marrakech Menara',
+        opt_rabat_airport: 'Traslado aeropuerto Rabat–Salé',
+        opt_tangier_airport: 'Traslado aeropuerto Ibn Battouta de Tánger',
+        opt_agadir_airport: 'Traslado aeropuerto Agadir Al Massira',
+        opt_nador_airport: 'Traslado aeropuerto Nador Al Aroui',
+        opt_casablanca_fes: 'Casablanca ⇄ Fez puerta a puerta',
+        opt_fes_marrakech: 'Fez ⇄ Marrakech puerta a puerta',
+        opt_fes_tangier: 'Fez ⇄ Tánger puerta a puerta',
+        opt_meknes_fes: 'Mequinez ⇄ Fez', opt_meknes_chefchaouen: 'Mequinez ⇄ Chefchaouen', opt_meknes_rabat: 'Mequinez ⇄ Rabat',
+        opt_meknes_casablanca: 'Mequinez ⇄ Casablanca', opt_meknes_marrakech: 'Mequinez ⇄ Marrakech', opt_meknes_tangier: 'Mequinez ⇄ Tánger',
+        opt_meknes_tetouan: 'Mequinez ⇄ Tetuán', opt_meknes_nador: 'Mequinez ⇄ Nador', opt_meknes_saidia: 'Mequinez ⇄ Saidia',
+        opt_meknes_agadir: 'Mequinez ⇄ Agadir', opt_meknes_essaouira: 'Mequinez ⇄ Essaouira',
+        opt_custom: 'Otro / Ruta personalizada',
+        form_transfer_date: 'Fecha del traslado',
+        form_transfer_date_ph: 'ej. 14 de marzo de 2026',
+        form_passengers: 'Número de pasajeros',
+        form_transfer_message: 'Número de vuelo / detalles adicionales',
+        form_transfer_message_ph: 'Número de vuelo, dirección de recogida o cualquier solicitud especial...',
+        form_success: '¡Gracias! Nos pondremos en contacto en 24 horas para confirmar tu traslado.',
+      },
+      ar: {
+        breadcrumb_current: 'النقل من وإلى المطار وبين المدن',
+        section_tag: 'النقل البري',
+        hero_h1: 'النقل من وإلى المطار وبين المدن',
+        hero_intro: 'هل ستهبط في المغرب أو تنتقل بين المدن؟ نوفر خدمة نقل خاصة بسائق في جميع أنحاء البلاد — بلا حافلات مشتركة ولا انتظار، فقط سيارة مريحة وسائق يعرف بالضبط أين يكون ومتى.',
+        card1_h2: 'النقل بين المدن',
+        card1_p: 'هل تحتاج للانتقال مباشرة من مدينة مغربية إلى أخرى؟ ننظم رحلات نقل خاصة باتجاه واحد بين أي مدينتين، في الوقت الذي يناسب برنامج رحلتك — اطّلع على المسارات الأكثر طلباً أدناه.',
+        card2_h2: 'نقل مخصص حسب الطلب',
+        card2_p: 'هل تصل إلى مدينة وتزور عدة مدن أخرى قبل العودة؟ ننظم رحلات نقل خاصة متعددة المحطات وفق مسارك بالضبط، مع توقفات لتناول الطعام أو التصوير أو الزيارات على طول الطريق.',
+        card3_h2: 'استقبال شخصي في كل مرة',
+        card3_p: 'تشمل كل رحلة نقل سائقاً بانتظاركم يحمل لوحة باسمكم، ومساعدة في حمل الأمتعة، ومركبة مكيفة نظيفة ومريحة بالحجم المناسب لمجموعتكم — أياً كان المسار الذي تحجزونه.',
+        card4_h2: 'إلغاء مجاني',
+        card4_p: 'الخطط تتغير — تأخر الرحلات الجوية أو تعديل برنامج السفر. يمكنكم إلغاء أي رحلة نقل مجاناً حتى 24 ساعة قبل موعد الانطلاق، تماماً كباقي جولاتنا.',
+        airport_h2: 'النقل من المطار — حسب المدينة',
+        airport_intro: 'استقبال وتوصيل بسيارة خاصة في جميع المطارات المغربية الرئيسية. سائقكم بانتظاركم داخل صالة الوصول حاملاً لوحة باسمكم، ونتابع رحلتكم الجوية حتى لا يعني التأخير أبداً نقطة استقبال فارغة.',
+        airport_note: 'الأسعار للمركبة الواحدة (حتى 3 ركاب)، اتجاه واحد، للاستقبال داخل مدينة ذلك المطار. المجموعات الأكبر أو الحافلات الصغيرة يتم تسعيرها عند الطلب.',
+        lbl_from: 'ابتداءً من',
+        route_h2: 'أشهر المسارات بين المدن',
+        route_intro: 'تنطلق رحلات النقل الخاصة الأكثر حجزاً لدينا من فاس، مقرنا الرئيسي — يعمل كل مسار في الاتجاهين، وأي زوج مدن غير مدرج هنا متاح عند الطلب.',
+        route1_dur: '~4 ساعات', route2_dur: '~7-8 ساعات', route3_dur: '~ساعتان ونصف', route4_dur: '~3 ساعات',
+        route5_dur: '~4 ساعات', route6_dur: '~3 ساعات ونصف', route7_dur: '~8 ساعات', route8_dur: '~9 ساعات',
+        route9_dur: '~4 ساعات', route10_dur: '~3 ساعات ونصف', route11_dur: '~ساعتان ونصف', route12_dur: '~3 ساعات',
+        route13_dur: '~30 دقيقة', route14_dur: '~3 ساعات ونصف', route15_dur: '~ساعتان', route16_dur: '~3 ساعات ونصف',
+        route17_dur: '~7 ساعات', route18_dur: '~4 ساعات', route19_dur: '~3 ساعات ونصف', route20_dur: '~4 ساعات',
+        route21_dur: '~4 ساعات', route22_dur: '~9 ساعات', route23_dur: '~8 ساعات',
+        hl1_badge: 'الأكثر حجزاً',
+        hl1_p: 'رحلة خاصة مباشرة بين مطار محمد الخامس بالدار البيضاء (أو وسط المدينة) وفندقكم أو رياضكم في فاس، حوالي 4 ساعات بالطريق البري.',
+        hl2_badge: 'مسافة طويلة',
+        hl2_p: 'عبور خاص للبلاد في رحلة مريحة واحدة، مع توقفات للغداء والتصوير على طول الطريق — دون الحاجة للمبيت.',
+        hl3_badge: 'المسار الشمالي',
+        hl3_p: 'رابط مباشر بين المدينة الإمبراطورية وميناء العبّارات/المطار، بوابة العبور إلى أوروبا، عبر سفوح الريف الخلابة.',
+        lbl_per_vehicle: 'للمركبة الواحدة',
+        pricing_note_p: 'تعتمد الأسعار على المسار وحجم المركبة — تواصلوا معنا للحصول على عرض سعر دقيق بناءً على تواريخكم وحجم المجموعة ونقطة الاستقبال.',
+        cta_request_transfer: 'اطلب رحلة نقل',
+        click_to_choose: 'انقر على أي خيار أعلاه لاختياره.',
+        choose_this_transfer: 'اختر هذا النقل ←',
+        booking_tag: 'احجز رحلة نقلك',
+        booking_h2: 'أكمل حجزك',
+        booking_p: 'اختر خياراً أعلاه، أو حدده أدناه، ثم أدخل بياناتك — سنؤكد رحلة نقلك خلال 24 ساعة.',
+        form_transfer: 'النقل المختار',
+        form_transfer_default: '— اختر نقلاً —',
+        opt_fes_airport: 'نقل مطار فاس – سايس',
+        opt_casablanca_airport: 'نقل مطار محمد الخامس بالدار البيضاء',
+        opt_marrakech_airport: 'نقل مطار مراكش المنارة',
+        opt_rabat_airport: 'نقل مطار الرباط – سلا',
+        opt_tangier_airport: 'نقل مطار ابن بطوطة بطنجة',
+        opt_agadir_airport: 'نقل مطار أكادير المسيرة',
+        opt_nador_airport: 'نقل مطار الناظور العروي',
+        opt_casablanca_fes: 'الدار البيضاء ← فاس من الباب إلى الباب',
+        opt_fes_marrakech: 'فاس ← مراكش من الباب إلى الباب',
+        opt_fes_tangier: 'فاس ← طنجة من الباب إلى الباب',
+        opt_meknes_fes: 'مكناس ← فاس', opt_meknes_chefchaouen: 'مكناس ← شفشاون', opt_meknes_rabat: 'مكناس ← الرباط',
+        opt_meknes_casablanca: 'مكناس ← الدار البيضاء', opt_meknes_marrakech: 'مكناس ← مراكش', opt_meknes_tangier: 'مكناس ← طنجة',
+        opt_meknes_tetouan: 'مكناس ← تطوان', opt_meknes_nador: 'مكناس ← الناظور', opt_meknes_saidia: 'مكناس ← السعيدية',
+        opt_meknes_agadir: 'مكناس ← أكادير', opt_meknes_essaouira: 'مكناس ← الصويرة',
+        opt_custom: 'آخر / مسار مخصص',
+        form_transfer_date: 'تاريخ النقل',
+        form_transfer_date_ph: 'مثال: 14 مارس 2026',
+        form_passengers: 'عدد الركاب',
+        form_transfer_message: 'رقم الرحلة الجوية / تفاصيل إضافية',
+        form_transfer_message_ph: 'رقم الرحلة الجوية، عنوان الاستقبال، أو أي طلب خاص...',
+        form_success: 'شكراً لكم! سنتواصل معكم خلال 24 ساعة لتأكيد رحلة نقلكم.',
+      },
+    };
+  </script>
+  <script>
+    /* Choose a transfer: pre-fill the booking form and scroll to it */
+    function selectTransfer(value) {
+      const select = document.getElementById('transferChoice');
+      if (select) select.value = value;
+
+      document.querySelectorAll('.transfer-pick').forEach(el => el.classList.remove('selected'));
+      const picked = document.querySelector(`.transfer-pick[onclick*="'${value}'"]`);
+      if (picked) picked.classList.add('selected');
+
+      const target = document.getElementById('transferForm');
+      if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+      const firstName = document.getElementById('tFirstName');
+      if (firstName) setTimeout(() => firstName.focus({ preventScroll: true }), 500);
+    }
+  </script>
+  <script src="js/main.js" defer></script>
+  <script src="js/i18n.js" defer></script>
+</body>
+</html>

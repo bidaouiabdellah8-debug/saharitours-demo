@@ -1,0 +1,1858 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saharitours – Morocco Tours & Desert Experiences</title>
+  <meta name="description" content="Discover Morocco with Saharitours. Authentic Sahara desert tours, imperial city adventures, and custom travel packages designed for unforgettable experiences.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Saharitours – Morocco Tours & Desert Experiences">
+  <meta property="og:description" content="Authentic Sahara desert tours and custom Morocco travel packages. Experience the real Morocco with local experts.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="public/images/og-image.jpg">
+  <meta property="og:url" content="https://saharitours.com">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="public/images/og-image.jpg">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="public/images/favicon.png" type="image/png" sizes="64x64">
+  <link rel="apple-touch-icon" href="public/images/favicon.png">
+</head>
+<body>
+
+  <!-- ═══════════════════════════ HEADER ═══════════════════════════ -->
+  <header id="header">
+    <nav class="nav-container" role="navigation" aria-label="Main navigation">
+      <a href="#home" class="nav-logo" aria-label="Saharitours – home">
+        <img src="public/images/logo.png" alt="Sahara Trip Morocco logo" height="58"
+          onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
+        <span class="logo-fallback" style="display:none">SAHARITOURS</span>
+      </a>
+
+      <ul class="nav-links" id="navLinks" role="list">
+        <li><a href="#home"         class="nav-link" data-i18n="nav_home">Home</a></li>
+        <li><a href="#tours"        class="nav-link" data-i18n="nav_tours">Tours</a></li>
+        <li><a href="#about"        class="nav-link" data-i18n="nav_about">About</a></li>
+        <li><a href="#why-us"       class="nav-link" data-i18n="nav_whyus">Why Us</a></li>
+        <li><a href="#testimonials" class="nav-link" data-i18n="nav_reviews">Reviews</a></li>
+        <li><a href="transfers.html" class="nav-link" data-i18n="nav_transfers">Transfers</a></li>
+        <li><a href="#contact"      class="nav-link" data-i18n="nav_contact">Contact</a></li>
+      </ul>
+
+      <div class="lang-switcher" role="group" aria-label="Select language">
+        <button class="lang-btn active" data-lang="en" aria-pressed="true">EN</button>
+        <button class="lang-btn" data-lang="fr" aria-pressed="false">FR</button>
+        <button class="lang-btn" data-lang="es" aria-pressed="false">ES</button>
+        <button class="lang-btn" data-lang="ar" aria-pressed="false">AR</button>
+        <button class="lang-btn" data-lang="it" aria-pressed="false">IT</button>
+      </div>
+
+      <a href="#contact" class="btn btn-gold nav-cta" data-i18n="nav_book">Book Now</a>
+
+      <button class="hamburger" id="hamburger"
+        aria-label="Open navigation menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ═══════════════════════════ HERO ═══════════════════════════ -->
+    <section id="home" class="hero" aria-label="Saharitours – Morocco travel">
+      <!-- Full-screen image slider -->
+      <div class="hero-slides" aria-hidden="true">
+        <div class="hero-slide active" style="background-image:url('public/images/tours/fes-chefchaouen-rabat-casablanca/cover/cover.jpg')"></div>
+        <div class="hero-slide" style="background-image:url('public/images/tours/chefchaouen-day/cover/cover.jpg')"></div>
+        <div class="hero-slide" style="background-image:url('public/images/tours/volubilis-meknes/cover/cover.jpg')"></div>
+        <div class="hero-slide" style="background-image:url('public/images/tours/atlas-mountains/cover/cover.jpg')"></div>
+        <div class="hero-slide" style="background-image:url('public/images/tours/sahara-merzouga/cover/cover.jpg')"></div>
+      </div>
+      <div class="hero-overlay" aria-hidden="true"></div>
+
+      <div class="hero-content">
+        <span class="hero-slide-label" id="heroSlideLabel" aria-live="polite">Imperial Cities · 4 Days</span>
+        <span class="hero-badge" data-i18n="hero_badge">Authentic Morocco Experiences</span>
+        <h1 data-i18n-html="hero_title">Morocco Tours<br>&amp; <em>Desert Experiences</em></h1>
+        <p class="hero-desc" data-i18n="hero_desc">From the golden dunes of the Sahara to the ancient medinas of Marrakech — we craft journeys that stay with you forever.</p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-gold" data-i18n="nav_book">Book Now</a>
+          <a href="#tours" class="btn btn-outline-white" data-i18n="hero_btn_explore">Explore Tours</a>
+        </div>
+      </div>
+
+      <!-- Slider controls -->
+      <button class="hero-arrow hero-arrow--prev" id="heroPrev" aria-label="Previous slide">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+      </button>
+      <button class="hero-arrow hero-arrow--next" id="heroNext" aria-label="Next slide">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 6 15 12 9 18"/></svg>
+      </button>
+      <div class="hero-dots" id="heroDots" role="tablist" aria-label="Slide navigation"></div>
+      <div class="hero-progress" id="heroProgress" aria-hidden="true"></div>
+
+      <!-- Stats bar overlaid on hero (Nattivus-style) -->
+      <div class="hero-stats-bar" aria-label="Company highlights">
+        <div class="hsi">
+          <span class="hsi-num">19</span>
+          <span class="hsi-label" data-i18n="stats_tours">tours</span>
+        </div>
+        <div class="hsi-sep" aria-hidden="true"></div>
+        <div class="hsi">
+          <span class="hsi-num">5,000+</span>
+          <span class="hsi-label" data-i18n="stats_travelers">satisfied travellers</span>
+        </div>
+        <div class="hsi-sep" aria-hidden="true"></div>
+        <div class="hsi">
+          <span class="hsi-num">4.9</span>
+          <span class="hsi-label" data-i18n="stats_reviews">1,200 reviews</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════ FILTER BAR ═══════════════════════════ -->
+    <div class="filter-bar" role="navigation" aria-label="Filter tours by type">
+      <div class="container">
+        <div class="filter-pills" role="group" aria-label="Tour type filters">
+          <button class="filter-pill active" data-pill="all" aria-pressed="true">
+            <span class="fp-icon">🗺️</span>
+            <span class="fp-label" data-i18n="pill_all">All Tours</span>
+          </button>
+          <button class="filter-pill" data-pill="excursion" aria-pressed="false">
+            <span class="fp-icon">☀️</span>
+            <span class="fp-label" data-i18n="pill_excursion">Excursions</span>
+            <span class="fp-sub" data-i18n="pill_excursion_sub">1 Day</span>
+          </button>
+          <button class="filter-pill" data-pill="2-3days" aria-pressed="false">
+            <span class="fp-icon">🏙️</span>
+            <span class="fp-label" data-i18n="pill_23">2–3 Days</span>
+            <span class="fp-sub" data-i18n="pill_23_sub">City Routes</span>
+          </button>
+          <button class="filter-pill" data-pill="7days" aria-pressed="false">
+            <span class="fp-icon">🌍</span>
+            <span class="fp-label" data-i18n="pill_7">7 Days</span>
+            <span class="fp-sub" data-i18n="pill_7_sub">Grand Tour</span>
+          </button>
+          <button class="filter-pill filter-pill--customize" data-pill="customize" aria-pressed="false">
+            <span class="fp-icon">✦</span>
+            <span class="fp-label" data-i18n="pill_customize">Customize</span>
+            <span class="fp-sub" data-i18n="pill_customize_sub">Your Tour</span>
+          </button>
+        </div>
+
+        <div class="filter-pills" role="group" aria-label="Filter by starting city" style="margin-top:.6rem;">
+          <span style="font-size:.72rem; font-weight:700; text-transform:uppercase; letter-spacing:.06em; color:var(--text-light); margin-right:.3rem;" data-i18n="filter_city_label">Starting city:</span>
+          <button class="filter-pill city-pill active" data-city-pill="all" aria-pressed="true" style="padding:.4rem 1.1rem;">
+            <span class="fp-label" data-i18n="city_all">All Cities</span>
+          </button>
+          <button class="filter-pill city-pill" data-city-pill="fes" aria-pressed="false" style="padding:.4rem 1.1rem;">
+            <span class="fp-label" data-i18n="city_fes">Fes</span>
+          </button>
+          <button class="filter-pill city-pill" data-city-pill="marrakech" aria-pressed="false" style="padding:.4rem 1.1rem;">
+            <span class="fp-label" data-i18n="city_marrakech">Marrakech</span>
+          </button>
+          <button class="filter-pill city-pill" data-city-pill="tangier" aria-pressed="false" style="padding:.4rem 1.1rem;">
+            <span class="fp-label" data-i18n="city_tangier">Tangier</span>
+          </button>
+          <button class="filter-pill city-pill" data-city-pill="casablanca" aria-pressed="false" style="padding:.4rem 1.1rem;">
+            <span class="fp-label" data-i18n="city_casablanca">Casablanca</span>
+          </button>
+          <button class="filter-pill city-pill" data-city-pill="meknes" aria-pressed="false" style="padding:.4rem 1.1rem;">
+            <span class="fp-label" data-i18n="city_meknes">Meknes</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- ═══════════════════════════ TOURS LIST ═══════════════════════════ -->
+    <section id="tours" class="section tours-section">
+      <div class="container">
+
+        <div class="tours-heading">
+          <h2><strong id="toursCount">19</strong> <span data-i18n="tours_suffix">Morocco Tours &amp; Experiences</span></h2>
+          <p data-i18n="tours_sub">All our tours include a professional driver and air-conditioned vehicle. Free cancellation up to 24h before departure.</p>
+        </div>
+
+        <div class="tours-list" id="toursList">
+
+          <!-- TOUR 1 — Fes · Chefchaouen · Rabat · Casablanca -->
+          <article class="tour-list-item reveal"
+            data-category="cities" data-duration="3-4" data-price="150-400" data-city="fes">
+
+            <!-- Left image — replace .tour-img--northern with a real photo once available -->
+            <a href="tour-fes-chefchaouen.html" class="tli-img tour-img--northern"
+              style="background-image:url('public/images/tours/fes-chefchaouen-rabat-casablanca/cover/cover.jpg'),linear-gradient(145deg,#060c1a 0%,#0e2044 30%,#1a4a8a 60%,#2a7ac0 85%,#5aace0 100%);background-size:cover,cover;background-position:center,center;"
+              aria-label="Fes – Chefchaouen – Rabat – Casablanca tour"
+              data-slides='["public/images/tours/fes-chefchaouen-rabat-casablanca/cover/cover.jpg","public/images/tours/fes-chefchaouen-rabat-casablanca/day1-chefchaouen/chefchaouen-01.jpg","public/images/tours/fes-chefchaouen-rabat-casablanca/day2-rabat/rabat-01.jpg","public/images/tours/fes-chefchaouen-rabat-casablanca/day3-casablanca/casablanca-01.jpg"]'>
+              <span class="tli-duration" data-i18n="t1_duration">3 Days</span>
+              <span class="tli-badge-popular" data-i18n="badge_new">New Tour</span>
+            </a>
+
+            <div class="tli-body">
+              <h3><a href="tour-fes-chefchaouen.html" data-i18n="t1_title">Fes · Chefchaouen · Rabat · Casablanca</a></h3>
+              <div class="tli-location">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                <span data-i18n="t1_location">Fes → Chefchaouen → Rabat → Casablanca → Mohammed V Airport</span>
+              </div>
+              <p data-i18n="t1_desc">A 3-day journey through Northern Morocco's most iconic cities: the spiritual heart of Fes, the famous "Blue Pearl" of Chefchaouen, the royal capital Rabat, and the vibrant metropolis of Casablanca — ending at Mohammed V International Airport.</p>
+              <div class="tli-meta">
+                <span class="tli-stars" aria-label="Rated 5 out of 5">★★★★★ <span data-i18n="tour_new_label">New</span></span>
+                <span class="tli-time">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/><path d="M12 6v6l4 2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                  <span data-i18n="t1_time">3 Days</span>
+                </span>
+                <span class="tli-cancel" data-i18n="tour_cancel">Free cancellation!</span>
+              </div>
+            </div>
+
+            <div class="tli-price">
+              <span class="tli-from" data-i18n="tour_from">From</span>
+              <span class="tli-amount" data-price-usd="299">$299</span>
+              <div class="tli-agency" data-i18n="tour_group">Contact us for group rates</div>
+              <a href="tour-fes-chefchaouen.html" class="btn btn-gold btn-sm" data-i18n="tour_see">See Details</a>
+              <ul class="tli-trust">
+                <li data-i18n="trust_price">Low prices guaranteed</li>
+                <li data-i18n="trust_payment">Secure payment</li>
+                <li data-i18n="trust_cancel">Free cancellation 24h</li>
+              </ul>
+            </div>
+
+          </article>
+
+          <!-- TOUR 2 — Fes · Volubilis · Moulay Idriss · Meknes (1 day) -->
+          <article class="tour-list-item reveal"
+            data-category="cities" data-duration="1-2" data-price="0-150" data-city="fes meknes">
+
+            <a href="tour-volubilis-meknes.html" class="tli-img tour-img--volubilis"
+              aria-label="Fes – Volubilis – Moulay Idriss – Meknes day trip"
+              data-slides='["public/images/tours/volubilis-meknes/cover/cover.jpg","public/images/tours/volubilis-meknes/volubilis/volubilis-01.jpg","public/images/tours/volubilis-meknes/moulay-idriss/moulay-01.jpg","public/images/tours/volubilis-meknes/meknes/meknes-01.jpg"]'>
+              <span class="tli-duration" data-i18n="t2_duration">1 Day</span>
+            </a>
+
+            <div class="tli-body">
+              <h3><a href="tour-volubilis-meknes.html" data-i18n="t2_title">Fes · Volubilis · Moulay Idriss · Meknes</a></h3>
+              <div class="tli-location">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                <span data-i18n="t2_location">Fes → Volubilis (UNESCO) → Moulay Idriss Zerhoun → Meknes (UNESCO) → Fes</span>
+              </div>
+              <p data-i18n="t2_desc">A full-day journey through two UNESCO World Heritage Sites — the Roman ruins of Volubilis and the imperial city of Meknes — plus a visit to the sacred hilltop town of Moulay Idriss Zerhoun. Depart 09:00, return 19:00.</p>
+              <div class="tli-meta">
+                <span class="tli-stars" aria-label="Rated 5 out of 5">★★★★★ <span data-i18n="tour_new_label">New</span></span>
+                <span class="tli-time">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/><path d="M12 6v6l4 2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                  <span data-i18n="t2_time">Full Day (09:00 – 19:00)</span>
+                </span>
+                <span class="tli-cancel" data-i18n="tour_cancel">Free cancellation!</span>
+              </div>
+            </div>
+
+            <div class="tli-price">
+              <span class="tli-from" data-i18n="tour_from">From</span>
+              <span class="tli-amount" data-price-usd="89">$89</span>
+              <div class="tli-agency" data-i18n="tour_group">Contact us for group rates</div>
+              <a href="tour-volubilis-meknes.html" class="btn btn-gold btn-sm" data-i18n="tour_see">See Details</a>
+              <ul class="tli-trust">
+                <li data-i18n="trust_price">Low prices guaranteed</li>
+                <li data-i18n="trust_payment">Secure payment</li>
+                <li data-i18n="trust_cancel">Free cancellation 24h</li>
+              </ul>
+            </div>
+
+          </article>
+
+          <!-- TOUR 3 — Chefchaouen Day Trip (1 day) -->
+          <article class="tour-list-item reveal"
+            data-category="cities" data-duration="1-2" data-price="0-150" data-city="fes">
+
+            <a href="tour-chefchaouen-day.html" class="tli-img tour-img--chefchaouen"
+              style="background-image:url('public/images/tours/chefchaouen-day/cover/cover.jpg'),linear-gradient(145deg,#04101e 0%,#082240 28%,#0c4a80 55%,#2080c0 78%,#60b8e8 100%);background-size:cover,cover;background-position:center,center;"
+              aria-label="Fes to Chefchaouen Blue City day trip"
+              data-slides='["public/images/tours/chefchaouen-day/cover/cover.jpg","public/images/tours/chefchaouen-day/blue-alleys/blue-01.webp","public/images/tours/chefchaouen-day/spanish-mosque/mosque-01.webp","public/images/tours/chefchaouen-day/rif-mountains/rif-01.jpg","public/images/tours/chefchaouen-day/uta-el-hammam/uta-01.jpg"]'>
+              <span class="tli-duration" data-i18n="t3_duration">1 Day</span>
+              <span class="tli-badge-popular" data-i18n="badge_bestseller">Best Seller</span>
+            </a>
+
+            <div class="tli-body">
+              <h3><a href="tour-chefchaouen-day.html" data-i18n="t3_title">Fes · Chefchaouen (Blue City) · Rif Mountains · Fes</a></h3>
+              <div class="tli-location">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                <span data-i18n="t3_location">Fes → Rif Mountains → Chefchaouen (Blue Pearl) → Spanish Mosque Viewpoint → Fes</span>
+              </div>
+              <p data-i18n="t3_desc">A full-day journey to the world-famous "Blue Pearl of Morocco" — Chefchaouen. Drive through the scenic Rif Mountains, explore the extraordinary indigo-painted alleys, visit Uta el-Hammam Square, the historic Kasbah, and end the day at the iconic Spanish Mosque viewpoint for a breathtaking panorama over the Blue City.</p>
+              <div class="tli-meta">
+                <span class="tli-stars" aria-label="Rated 5 out of 5">★★★★★ <span data-i18n="tour_new_label">New</span></span>
+                <span class="tli-time">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/><path d="M12 6v6l4 2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                  <span data-i18n="t3_time">Full Day (08:00 – 21:00)</span>
+                </span>
+                <span class="tli-cancel" data-i18n="tour_cancel">Free cancellation!</span>
+              </div>
+            </div>
+
+            <div class="tli-price">
+              <span class="tli-from" data-i18n="tour_from">From</span>
+              <span class="tli-amount" data-price-usd="85">$85</span>
+              <div class="tli-agency" data-i18n="tour_group">Contact us for group rates</div>
+              <a href="tour-chefchaouen-day.html" class="btn btn-gold btn-sm" data-i18n="tour_see">See Details</a>
+              <ul class="tli-trust">
+                <li data-i18n="trust_price">Low prices guaranteed</li>
+                <li data-i18n="trust_payment">Secure payment</li>
+                <li data-i18n="trust_cancel">Free cancellation 24h</li>
+              </ul>
+            </div>
+
+          </article>
+
+          <!-- TOUR 4 — Middle Atlas Mountains (1 day) -->
+          <article class="tour-list-item reveal"
+            data-category="mountains" data-duration="1-2" data-price="0-150" data-city="fes">
+
+            <a href="tour-atlas-mountains.html" class="tli-img tour-img--atlas-mid"
+              style="background-image:url('public/images/tours/atlas-mountains/cover/cover.jpg'),linear-gradient(145deg,#0a140a 0%,#163016 30%,#2a6a30 55%,#5aaa4a 80%,#a0c870 100%);background-size:cover,cover;background-position:center,center;"
+              aria-label="Middle Atlas Mountains day trip from Fes"
+              data-slides='["public/images/tours/atlas-mountains/cover/cover.jpg","public/images/tours/atlas-mountains/ifrane/ifrane-01.jpg","public/images/tours/atlas-mountains/cedar-forests/cedres-01.jpg","public/images/tours/atlas-mountains/azrou/azrou-01.jpg","public/images/tours/atlas-mountains/imouzzer/imouzzer-01.jpg"]'>
+              <span class="tli-duration" data-i18n="t4_duration">1 Day</span>
+              <span class="tli-badge-popular" data-i18n="badge_nature">Nature</span>
+            </a>
+
+            <div class="tli-body">
+              <h3><a href="tour-atlas-mountains.html" data-i18n="t4_title">Fes · Imouzzer · Ifrane · Cedar Forests · Azrou</a></h3>
+              <div class="tli-location">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                <span data-i18n="t4_location">Fes → Imouzzer Cave → Ifrane ("Switzerland of Morocco") → Cedar Forests → Azrou → Fes</span>
+              </div>
+              <p data-i18n="t4_desc">A full-day nature escape into the Middle Atlas Mountains: visit a natural cave at Imouzzer, stroll the Alpine-style streets of Ifrane, spot wild Barbary macaques in ancient cedar forests, and enjoy a panoramic viewpoint over Azrou. Depart 08:00, return by 19:00.</p>
+              <div class="tli-meta">
+                <span class="tli-stars" aria-label="Rated 5 out of 5">★★★★★ <span data-i18n="tour_new_label">New</span></span>
+                <span class="tli-time">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/><path d="M12 6v6l4 2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                  <span data-i18n="t4_time">Full Day (08:00 – 19:00)</span>
+                </span>
+                <span class="tli-cancel" data-i18n="tour_cancel">Free cancellation!</span>
+              </div>
+            </div>
+
+            <div class="tli-price">
+              <span class="tli-from" data-i18n="tour_from">From</span>
+              <span class="tli-amount" data-price-usd="79">$79</span>
+              <div class="tli-agency" data-i18n="tour_group">Contact us for group rates</div>
+              <a href="tour-atlas-mountains.html" class="btn btn-gold btn-sm" data-i18n="tour_see">See Details</a>
+              <ul class="tli-trust">
+                <li data-i18n="trust_price">Low prices guaranteed</li>
+                <li data-i18n="trust_payment">Secure payment</li>
+                <li data-i18n="trust_cancel">Free cancellation 24h</li>
+              </ul>
+            </div>
+
+          </article>
+
+          <!-- TOUR 6 — Fes to Marrakech via Sahara 4-Day -->
+          <article class="tour-list-item reveal"
+            data-category="desert" data-duration="3-4" data-price="150-400" data-city="fes">
+
+            <a href="tour-fes-marrakech-sahara.html" class="tli-img"
+              style="background-image:url('public/images/tours/fes-marrakech-sahara/cover/cover.jpg'),linear-gradient(145deg,#1a0a00 0%,#4a1e00 30%,#9a5a00 60%,#c99a3c 85%,#f0d080 100%);background-size:cover,cover;background-position:center,center;"
+              aria-label="4-Day Fes to Marrakech via Sahara Desert Tour"
+              data-slides='["public/images/tours/fes-marrakech-sahara/cover/cover.jpg","public/images/tours/sahara-merzouga/cover/cover.jpg","public/images/tours/fes-marrakech-sahara/todra/todra-01.jpg","public/images/tours/fes-marrakech-sahara/ait-ben-haddou/ait-01.jpg"]'>
+              <span class="tli-duration">4 Days</span>
+              <span class="tli-badge-popular" data-i18n="t5_badge">Most Popular</span>
+            </a>
+
+            <div class="tli-body">
+              <h3><a href="tour-fes-marrakech-sahara.html" data-i18n="t5_title">Fes · Sahara · Todra · Ait Ben Haddou · Marrakech</a></h3>
+              <div class="tli-location">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                <span data-i18n="t5_location">Fes → Ifrane → Merzouga (Erg Chebbi) → Todra Gorge → Dades Valley → Ait Ben Haddou → Tizi n'Tichka → Marrakech</span>
+              </div>
+              <p data-i18n="t5_desc">Morocco's most popular 4-day journey: cross the Middle Atlas, ride camels into the Sahara at sunset, sleep under the stars, discover Todra Gorge's 300m cliffs, explore the UNESCO kasbah of Ait Ben Haddou, and cross the High Atlas via Tizi n'Tichka — arriving in Marrakech.</p>
+              <div class="tli-meta">
+                <span class="tli-stars" aria-label="Rated 5 out of 5">★★★★★ <span data-i18n="t5_badge">Most Popular</span></span>
+                <span class="tli-time">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/><path d="M12 6v6l4 2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                  <span data-i18n="t5_time">4 Days / 3 Nights</span>
+                </span>
+                <span class="tli-cancel">Free cancellation!</span>
+              </div>
+            </div>
+
+            <div class="tli-price">
+              <span class="tli-from">From</span>
+              <span class="tli-amount" data-price-usd="399">$399</span>
+              <div class="tli-agency">Contact us for group rates</div>
+              <a href="tour-fes-marrakech-sahara.html" class="btn btn-gold btn-sm">See Details</a>
+              <ul class="tli-trust">
+                <li>Low prices guaranteed</li>
+                <li>Secure payment</li>
+                <li>Free cancellation 24h</li>
+              </ul>
+            </div>
+
+          </article>
+
+          <!-- TOUR 5 — Sahara Desert 3-Day Tour -->
+          <article class="tour-list-item reveal"
+            data-category="desert" data-duration="3-4" data-price="150-400" data-city="fes">
+
+            <a href="tour-sahara-merzouga.html" class="tli-img"
+              style="background-image:url('public/images/tours/sahara-merzouga/cover/cover.jpg'),linear-gradient(145deg,#1a0a00 0%,#4a1e00 30%,#9a5a00 60%,#c99a3c 85%,#f0d080 100%);background-size:cover,cover;background-position:center,center;"
+              aria-label="Sahara Desert 3-Day Tour — Fes to Merzouga"
+              data-slides='["public/images/tours/sahara-merzouga/cover/cover.jpg","public/images/tours/sahara-merzouga/dunes/dunes-01.jpg","public/images/tours/sahara-merzouga/camel/camel-01.jpg","public/images/tours/sahara-merzouga/camp/camp-01.jpg"]'>
+              <span class="tli-duration">3 Days</span>
+              <span class="tli-badge-popular" data-i18n="t6_badge">Bestseller</span>
+            </a>
+
+            <div class="tli-body">
+              <h3><a href="tour-sahara-merzouga.html" data-i18n="t6_title">Fes · Ifrane · Ziz Valley · Merzouga · Rissani</a></h3>
+              <div class="tli-location">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                <span data-i18n="t6_location">Fes → Ifrane → Cedar Forest → Midelt → Ziz Valley → Merzouga (Erg Chebbi) → Rissani → Fes</span>
+              </div>
+              <p data-i18n="t6_desc">A 3-day journey into the heart of the Moroccan Sahara: cross the Middle Atlas, ride camels into the golden dunes of Erg Chebbi at sunset, sleep under a sky blazing with stars, experience Berber desert culture, and explore the ancient caravan town of Rissani before returning to Fes.</p>
+              <div class="tli-meta">
+                <span class="tli-stars" aria-label="Rated 5 out of 5">★★★★★ <span data-i18n="t6_badge">Bestseller</span></span>
+                <span class="tli-time">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/><path d="M12 6v6l4 2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                  <span data-i18n="t6_time">3 Days / 2 Nights</span>
+                </span>
+                <span class="tli-cancel">Free cancellation!</span>
+              </div>
+            </div>
+
+            <div class="tli-price">
+              <span class="tli-from">From</span>
+              <span class="tli-amount" data-price-usd="299">$299</span>
+              <div class="tli-agency">Contact us for group rates</div>
+              <a href="tour-sahara-merzouga.html" class="btn btn-gold btn-sm">See Details</a>
+              <ul class="tli-trust">
+                <li>Low prices guaranteed</li>
+                <li>Secure payment</li>
+                <li>Free cancellation 24h</li>
+              </ul>
+            </div>
+
+          </article>
+
+          <!-- TOUR 7 — 10-Day Grand Morocco Tour -->
+          <article class="tour-list-item reveal"
+            data-category="grand" data-duration="8+" data-price="400+" data-city="casablanca fes marrakech">
+
+            <a href="tour-grand-morocco-10days.html" class="tli-img"
+              style="background-image:url('public/images/tours/grand-morocco-10days/cover/cover.jpg'),linear-gradient(145deg,#1a0a00 0%,#4a1e00 30%,#9a5a00 60%,#c99a3c 85%,#f0d080 100%);background-size:cover,cover;background-position:center,center;"
+              aria-label="10-Day Grand Morocco Tour"
+              data-slides='["public/images/tours/grand-morocco-10days/cover/cover.jpg","public/images/tours/grand-morocco-10days/casablanca/casablanca-01.jpg","public/images/tours/chefchaouen-day/cover/cover.jpg","public/images/tours/sahara-merzouga/cover/cover.jpg","public/images/tours/grand-morocco-10days/marrakech/marrakech-01.jpg"]'>
+              <span class="tli-duration">10 Days</span>
+              <span class="tli-badge-popular" data-i18n="t7_badge">Grand Tour</span>
+            </a>
+
+            <div class="tli-body">
+              <h3><a href="tour-grand-morocco-10days.html" data-i18n="t7_title">Casablanca · Rabat · Chefchaouen · Fes · Sahara · Marrakech</a></h3>
+              <div class="tli-location">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                <span data-i18n="t7_location">Casablanca → Rabat → Chefchaouen → Fes → Sahara Desert → Todra Gorge → Ait Ben Haddou → Marrakech</span>
+              </div>
+              <p data-i18n="t7_desc">The best of Morocco in one seamless journey: imperial cities, the Blue Pearl of Chefchaouen, camel trekking and a night under Saharan stars, dramatic Atlas gorges, and the UNESCO kasbah of Ait Ben Haddou — ending in Marrakech. 9 nights accommodation and daily breakfast included.</p>
+              <div class="tli-meta">
+                <span class="tli-stars" aria-label="Rated 5 out of 5">★★★★★ <span data-i18n="t7_badge">Grand Tour</span></span>
+                <span class="tli-time">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/><path d="M12 6v6l4 2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                  <span data-i18n="t7_time">10 Days / 9 Nights</span>
+                </span>
+                <span class="tli-cancel">Free cancellation!</span>
+              </div>
+            </div>
+
+            <div class="tli-price">
+              <span class="tli-from">From</span>
+              <span class="tli-amount" data-price-usd="1299">$1,299</span>
+              <div class="tli-agency">Contact us for group rates</div>
+              <a href="tour-grand-morocco-10days.html" class="btn btn-gold btn-sm">See Details</a>
+              <ul class="tli-trust">
+                <li>Low prices guaranteed</li>
+                <li>Secure payment</li>
+                <li>Free cancellation 24h</li>
+              </ul>
+            </div>
+
+          </article>
+
+          <!-- TOUR 8 — Bhalil & Sefrou Day Trip -->
+          <article class="tour-list-item reveal" data-category="mountains" data-duration="1-2" data-price="0-150" data-city="fes">
+            <a href="tour-bhalil-sefrou-day.html" class="tli-img tour-img--atlas-mid"
+              style="background-image:url('public/images/tours/bhalil-sefrou-day/cover/cover.jpg'),linear-gradient(145deg,#0a140a 0%,#163016 30%,#2a6a30 55%,#5aaa4a 80%,#a0c870 100%);background-size:cover,cover;background-position:center,center;"
+              aria-label="Bhalil and Sefrou day trip from Fes"
+              data-slides='["public/images/tours/bhalil-sefrou-day/cover/cover.jpg","public/images/tours/bhalil-sefrou-day/bhalil/bhalil-01.jpg","public/images/tours/bhalil-sefrou-day/bhalil/bhalil-02.jpg","public/images/tours/bhalil-sefrou-day/sefrou/sefrou-01.jpg"]'>
+              <span class="tli-duration">1 Day</span>
+            </a>
+            <div class="tli-body">
+              <h3><a href="tour-bhalil-sefrou-day.html" data-i18n="t8_title">Fes · Bhalil · Sefrou</a></h3>
+              <div class="tli-location">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                <span data-i18n="t8_location">Fes → Bhalil (troglodyte cave village) → Sefrou (cherry capital) → Fes</span>
+              </div>
+              <p data-i18n="t8_desc">A quieter side of Morocco: the centuries-old cave houses of Bhalil, still lived in today, and Sefrou — Morocco's cherry-growing capital — with its historic mellah and waterfalls.</p>
+              <div class="tli-meta">
+                <span class="tli-stars" aria-label="Rated 5 out of 5">★★★★★</span>
+                <span class="tli-time">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/><path d="M12 6v6l4 2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                  <span data-i18n="t8_time">Full Day (09:00 – 18:00)</span>
+                </span>
+                <span class="tli-cancel">Free cancellation!</span>
+              </div>
+            </div>
+            <div class="tli-price">
+              <span class="tli-from">From</span>
+              <span class="tli-amount" data-price-usd="75">$75</span>
+              <div class="tli-agency">Contact us for group rates</div>
+              <a href="tour-bhalil-sefrou-day.html" class="btn btn-gold btn-sm">See Details</a>
+              <ul class="tli-trust"><li>Low prices guaranteed</li><li>Secure payment</li><li>Free cancellation 24h</li></ul>
+            </div>
+          </article>
+
+          <!-- TOUR 9 — Rabat Day Trip -->
+          <article class="tour-list-item reveal" data-category="cities" data-duration="1-2" data-price="0-150" data-city="fes">
+            <a href="tour-rabat-day.html" class="tli-img tour-img--cities"
+              style="background-image:url('public/images/tours/rabat-day/cover/cover.jpg'),linear-gradient(145deg,#0d1a2e 0%,#1a3a5c 35%,#8b4513 65%,#c99a3c 100%);background-size:cover,cover;background-position:center,center;"
+              aria-label="Rabat day trip from Fes"
+              data-slides='["public/images/tours/rabat-day/cover/cover.jpg","public/images/tours/rabat-day/hassan-tower/hassan-01.jpg","public/images/tours/rabat-day/udayas/udayas-01.jpg","public/images/tours/rabat-day/chellah/chellah-01.jpg"]'>
+              <span class="tli-duration">1 Day</span>
+            </a>
+            <div class="tli-body">
+              <h3><a href="tour-rabat-day.html" data-i18n="t9_title">Rabat — Morocco's Royal Capital</a></h3>
+              <div class="tli-location">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                <span data-i18n="t9_location">Fes → Hassan Tower → Mausoleum of Mohammed V → Kasbah of the Udayas → Chellah → Fes</span>
+              </div>
+              <p data-i18n="t9_desc">Morocco's elegant seat of government: the unfinished 12th-century Hassan Tower, the blue-and-white Kasbah of the Udayas overlooking the Atlantic, and the storks nesting in the Roman-and-Merinid ruins of Chellah. Pickup also available from Meknes, Tangier, or Casablanca.</p>
+              <div class="tli-meta">
+                <span class="tli-stars" aria-label="Rated 5 out of 5">★★★★★</span>
+                <span class="tli-time">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/><path d="M12 6v6l4 2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                  <span data-i18n="t9_time">Full Day (07:30 – 20:00)</span>
+                </span>
+                <span class="tli-cancel">Free cancellation!</span>
+              </div>
+            </div>
+            <div class="tli-price">
+              <span class="tli-from">From</span>
+              <span class="tli-amount" data-price-usd="95">$95</span>
+              <div class="tli-agency">Contact us for group rates</div>
+              <a href="tour-rabat-day.html" class="btn btn-gold btn-sm">See Details</a>
+              <ul class="tli-trust"><li>Low prices guaranteed</li><li>Secure payment</li><li>Free cancellation 24h</li></ul>
+            </div>
+          </article>
+
+          <!-- TOUR 10 — Tetouan, Martil & M'diq (from Tangier) -->
+          <article class="tour-list-item reveal" data-category="cities" data-duration="1-2" data-price="0-150" data-city="tangier">
+            <a href="tour-tetouan-martil-day.html" class="tli-img tour-img--coastal"
+              style="background-image:url('public/images/tours/tetouan-martil-day/cover/cover.jpg'),linear-gradient(145deg,#001a2e 0%,#003a5c 40%,#0066a0 70%,#40a0d0 100%);background-size:cover,cover;background-position:center,center;"
+              aria-label="Tetouan, Martil and M'diq day trip from Tangier"
+              data-slides='["public/images/tours/tetouan-martil-day/cover/cover.jpg","public/images/tours/tetouan-martil-day/tetouan-medina/tetouan-01.jpg","public/images/tours/tetouan-martil-day/martil-beach/martil-01.jpg","public/images/tours/tetouan-martil-day/mdiq/mdiq-01.jpg"]'>
+              <span class="tli-duration">1 Day</span>
+            </a>
+            <div class="tli-body">
+              <h3><a href="tour-tetouan-martil-day.html" data-i18n="t10_title">Tetouan · Martil · M'diq — from Tangier</a></h3>
+              <div class="tli-location">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                <span data-i18n="t10_location">Tangier → Tetouan (UNESCO medina) → Martil beach → M'diq fishing port → Tangier</span>
+              </div>
+              <p data-i18n="t10_desc">Departs from Tangier: the whitewashed, Andalusian-influenced medina of Tetouan, the long sandy beach at Martil, and the fishing boats and marina of M'diq.</p>
+              <div class="tli-meta">
+                <span class="tli-stars" aria-label="Rated 5 out of 5">★★★★★</span>
+                <span class="tli-time">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/><path d="M12 6v6l4 2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                  <span data-i18n="t10_time">Full Day (09:00 – 19:00)</span>
+                </span>
+                <span class="tli-cancel">Free cancellation!</span>
+              </div>
+            </div>
+            <div class="tli-price">
+              <span class="tli-from">From</span>
+              <span class="tli-amount" data-price-usd="79">$79</span>
+              <div class="tli-agency">Contact us for group rates</div>
+              <a href="tour-tetouan-martil-day.html" class="btn btn-gold btn-sm">See Details</a>
+              <ul class="tli-trust"><li>Low prices guaranteed</li><li>Secure payment</li><li>Free cancellation 24h</li></ul>
+            </div>
+          </article>
+
+          <!-- TOUR 11 — Essaouira (from Marrakech) -->
+          <article class="tour-list-item reveal" data-category="cities" data-duration="1-2" data-price="0-150" data-city="marrakech">
+            <a href="tour-essaouira-day.html" class="tli-img tour-img--coastal"
+              style="background-image:url('public/images/tours/essaouira-day/cover/cover.jpg'),linear-gradient(145deg,#001a2e 0%,#003a5c 40%,#0066a0 70%,#40a0d0 100%);background-size:cover,cover;background-position:center,center;"
+              aria-label="Essaouira day trip from Marrakech"
+              data-slides='["public/images/tours/essaouira-day/cover/cover.jpg","public/images/tours/essaouira-day/skala-ramparts/skala-01.jpg","public/images/tours/essaouira-day/fishing-port/port-01.jpg"]'>
+              <span class="tli-duration">1 Day</span>
+            </a>
+            <div class="tli-body">
+              <h3><a href="tour-essaouira-day.html" data-i18n="t11_title">Essaouira — Atlantic Coast Escape</a></h3>
+              <div class="tli-location">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                <span data-i18n="t11_location">Marrakech → Essaouira (UNESCO medina) → Skala ramparts → fishing port → Marrakech</span>
+              </div>
+              <p data-i18n="t11_desc">A wind-swept UNESCO-listed medina on the Atlantic, 18th-century sea ramparts with old cannons, a lively fishing port, and free time in the souks and art galleries.</p>
+              <div class="tli-meta">
+                <span class="tli-stars" aria-label="Rated 5 out of 5">★★★★★</span>
+                <span class="tli-time">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/><path d="M12 6v6l4 2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                  <span data-i18n="t11_time">Full Day (08:00 – 20:00)</span>
+                </span>
+                <span class="tli-cancel">Free cancellation!</span>
+              </div>
+            </div>
+            <div class="tli-price">
+              <span class="tli-from">From</span>
+              <span class="tli-amount" data-price-usd="85">$85</span>
+              <div class="tli-agency">Contact us for group rates</div>
+              <a href="tour-essaouira-day.html" class="btn btn-gold btn-sm">See Details</a>
+              <ul class="tli-trust"><li>Low prices guaranteed</li><li>Secure payment</li><li>Free cancellation 24h</li></ul>
+            </div>
+          </article>
+
+          <!-- TOUR 12 — Ait Benhaddou & Ouarzazate (from Marrakech) -->
+          <article class="tour-list-item reveal" data-category="mountains" data-duration="1-2" data-price="0-150" data-city="marrakech">
+            <a href="tour-ait-benhaddou-day.html" class="tli-img tour-img--kasbahs"
+              style="background-image:url('public/images/tours/ait-benhaddou-day/cover/cover.jpg'),linear-gradient(145deg,#2a0a00 0%,#8b3513 40%,#c06030 70%,#e8c060 100%);background-size:cover,cover;background-position:center,center;"
+              aria-label="Ait Benhaddou and Ouarzazate day trip from Marrakech"
+              data-slides='["public/images/tours/ait-benhaddou-day/cover/cover.jpg","public/images/tours/ait-benhaddou-day/tizi-ntichka/tizi-01.jpg","public/images/tours/ait-benhaddou-day/ait-benhaddou/ait-01.jpg","public/images/tours/ait-benhaddou-day/ouarzazate/ouarzazate-01.jpg"]'>
+              <span class="tli-duration">1 Day</span>
+              <span class="tli-badge-popular" data-i18n="t12_badge">Film Locations</span>
+            </a>
+            <div class="tli-body">
+              <h3><a href="tour-ait-benhaddou-day.html" data-i18n="t12_title">Ait Benhaddou · Ouarzazate</a></h3>
+              <div class="tli-location">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                <span data-i18n="t12_location">Marrakech → Tizi n'Tichka pass (2,260m) → Ait Benhaddou (UNESCO ksar) → Ouarzazate → Marrakech</span>
+              </div>
+              <p data-i18n="t12_desc">Cross the dramatic High Atlas via the Tizi n'Tichka pass to the UNESCO-listed fortified ksar of Ait Benhaddou — filming location for Gladiator and Game of Thrones — then Ouarzazate, "door of the desert."</p>
+              <div class="tli-meta">
+                <span class="tli-stars" aria-label="Rated 5 out of 5">★★★★★</span>
+                <span class="tli-time">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/><path d="M12 6v6l4 2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                  <span data-i18n="t12_time">Full Day (07:00 – 21:00)</span>
+                </span>
+                <span class="tli-cancel">Free cancellation!</span>
+              </div>
+            </div>
+            <div class="tli-price">
+              <span class="tli-from">From</span>
+              <span class="tli-amount" data-price-usd="89">$89</span>
+              <div class="tli-agency">Contact us for group rates</div>
+              <a href="tour-ait-benhaddou-day.html" class="btn btn-gold btn-sm">See Details</a>
+              <ul class="tli-trust"><li>Low prices guaranteed</li><li>Secure payment</li><li>Free cancellation 24h</li></ul>
+            </div>
+          </article>
+
+          <!-- TOUR 13 — Ouzoud Falls (from Marrakech) -->
+          <article class="tour-list-item reveal" data-category="mountains" data-duration="1-2" data-price="0-150" data-city="marrakech">
+            <a href="tour-ouzoud-falls-day.html" class="tli-img tour-img--atlas"
+              style="background-image:url('public/images/tours/ouzoud-falls-day/cover/cover.jpg'),linear-gradient(145deg,#0a1a0a 0%,#1a4a1a 40%,#4a8a1a 70%,#8aaa4a 100%);background-size:cover,cover;background-position:center,center;"
+              aria-label="Ouzoud Falls day trip from Marrakech"
+              data-slides='["public/images/tours/ouzoud-falls-day/cover/cover.jpg","public/images/tours/ouzoud-falls-day/waterfall/waterfall-01.jpg","public/images/tours/ouzoud-falls-day/gorge/gorge-01.jpg"]'>
+              <span class="tli-duration">1 Day</span>
+            </a>
+            <div class="tli-body">
+              <h3><a href="tour-ouzoud-falls-day.html" data-i18n="t13_title">Ouzoud Falls — North Africa's Tallest Waterfalls</a></h3>
+              <div class="tli-location">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                <span data-i18n="t13_location">Marrakech → Ouzoud Falls (110m) → gorge boat ride → Marrakech</span>
+              </div>
+              <p data-i18n="t13_desc">Cascading 110m over red rock cliffs into the Al-Abid gorge, surrounded by olive groves and wild Barbary macaques — with an optional boat ride to the base of the falls.</p>
+              <div class="tli-meta">
+                <span class="tli-stars" aria-label="Rated 5 out of 5">★★★★★</span>
+                <span class="tli-time">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/><path d="M12 6v6l4 2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                  <span data-i18n="t13_time">Full Day (08:00 – 19:00)</span>
+                </span>
+                <span class="tli-cancel">Free cancellation!</span>
+              </div>
+            </div>
+            <div class="tli-price">
+              <span class="tli-from">From</span>
+              <span class="tli-amount" data-price-usd="75">$75</span>
+              <div class="tli-agency">Contact us for group rates</div>
+              <a href="tour-ouzoud-falls-day.html" class="btn btn-gold btn-sm">See Details</a>
+              <ul class="tli-trust"><li>Low prices guaranteed</li><li>Secure payment</li><li>Free cancellation 24h</li></ul>
+            </div>
+          </article>
+
+          <!-- TOUR 14 — Ourika Valley (from Marrakech) -->
+          <article class="tour-list-item reveal" data-category="mountains" data-duration="1-2" data-price="0-150" data-city="marrakech">
+            <a href="tour-ourika-valley-day.html" class="tli-img tour-img--atlas"
+              style="background-image:url('public/images/tours/ourika-valley-day/cover/cover.jpg'),linear-gradient(145deg,#0a1a0a 0%,#1a4a1a 40%,#4a8a1a 70%,#8aaa4a 100%);background-size:cover,cover;background-position:center,center;"
+              aria-label="Ourika Valley day trip from Marrakech"
+              data-slides='["public/images/tours/ourika-valley-day/cover/cover.jpg","public/images/tours/ourika-valley-day/setti-fatma/waterfall-01.jpg","public/images/tours/ourika-valley-day/argan-cooperative/argan-01.jpg"]'>
+              <span class="tli-duration">Half Day</span>
+            </a>
+            <div class="tli-body">
+              <h3><a href="tour-ourika-valley-day.html" data-i18n="t14_title">Ourika Valley — Atlas Foothills</a></h3>
+              <div class="tli-location">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                <span data-i18n="t14_location">Marrakech → Ourika Valley → Berber villages → argan cooperative → Setti Fatma → Marrakech</span>
+              </div>
+              <p data-i18n="t14_desc">The closest mountain escape to Marrakech: terraced Berber villages, an argan oil women's cooperative, and an optional hike toward the Setti Fatma waterfalls.</p>
+              <div class="tli-meta">
+                <span class="tli-stars" aria-label="Rated 5 out of 5">★★★★★</span>
+                <span class="tli-time">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/><path d="M12 6v6l4 2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                  <span data-i18n="t14_time">09:00 – 17:00</span>
+                </span>
+                <span class="tli-cancel">Free cancellation!</span>
+              </div>
+            </div>
+            <div class="tli-price">
+              <span class="tli-from">From</span>
+              <span class="tli-amount" data-price-usd="69">$69</span>
+              <div class="tli-agency">Contact us for group rates</div>
+              <a href="tour-ourika-valley-day.html" class="btn btn-gold btn-sm">See Details</a>
+              <ul class="tli-trust"><li>Low prices guaranteed</li><li>Secure payment</li><li>Free cancellation 24h</li></ul>
+            </div>
+          </article>
+
+          <!-- TOUR 15 — Agadir (from Marrakech) -->
+          <article class="tour-list-item reveal" data-category="cities" data-duration="1-2" data-price="0-150" data-city="marrakech">
+            <a href="tour-agadir-day.html" class="tli-img tour-img--coastal"
+              style="background-image:url('public/images/tours/agadir-day/cover/cover.jpg'),linear-gradient(145deg,#001a2e 0%,#003a5c 40%,#0066a0 70%,#40a0d0 100%);background-size:cover,cover;background-position:center,center;"
+              aria-label="Agadir day trip from Marrakech"
+              data-slides='["public/images/tours/agadir-day/cover/cover.jpg","public/images/tours/agadir-day/kasbah-oufella/kasbah-01.jpg"]'>
+              <span class="tli-duration">1 Day</span>
+            </a>
+            <div class="tli-body">
+              <h3><a href="tour-agadir-day.html" data-i18n="t15_title">Agadir — Atlantic Beach City</a></h3>
+              <div class="tli-location">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                <span data-i18n="t15_location">Marrakech → Agadir → Kasbah Oufella viewpoint → marina → Souk El Had → Marrakech</span>
+              </div>
+              <p data-i18n="t15_desc">Morocco's modern beach resort city: panoramic views from the hilltop Kasbah Oufella ruins, the marina, the traditional Souk El Had, and a long Atlantic beach promenade.</p>
+              <div class="tli-meta">
+                <span class="tli-stars" aria-label="Rated 5 out of 5">★★★★★</span>
+                <span class="tli-time">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/><path d="M12 6v6l4 2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                  <span data-i18n="t15_time">Full Day (07:30 – 20:00)</span>
+                </span>
+                <span class="tli-cancel">Free cancellation!</span>
+              </div>
+            </div>
+            <div class="tli-price">
+              <span class="tli-from">From</span>
+              <span class="tli-amount" data-price-usd="99">$99</span>
+              <div class="tli-agency">Contact us for group rates</div>
+              <a href="tour-agadir-day.html" class="btn btn-gold btn-sm">See Details</a>
+              <ul class="tli-trust"><li>Low prices guaranteed</li><li>Secure payment</li><li>Free cancellation 24h</li></ul>
+            </div>
+          </article>
+
+          <!-- TOUR 16 — Marrakech day trip (from Casablanca) -->
+          <article class="tour-list-item reveal" data-category="cities" data-duration="1-2" data-price="0-150" data-city="casablanca">
+            <a href="tour-casablanca-marrakech-day.html" class="tli-img tour-img--cities"
+              style="background-image:url('public/images/tours/casablanca-marrakech-day/cover/cover.jpg'),linear-gradient(145deg,#0d1a2e 0%,#1a3a5c 35%,#8b4513 65%,#c99a3c 100%);background-size:cover,cover;background-position:center,center;"
+              aria-label="Marrakech day trip from Casablanca"
+              data-slides='["public/images/tours/casablanca-marrakech-day/cover/cover.jpg","public/images/tours/casablanca-marrakech-day/jemaa-el-fnaa/jemaa-01.jpg","public/images/tours/casablanca-marrakech-day/jemaa-el-fnaa/jemaa-02.jpg"]'>
+              <span class="tli-duration">1 Day</span>
+            </a>
+            <div class="tli-body">
+              <h3><a href="tour-casablanca-marrakech-day.html" data-i18n="t16_title">Marrakech — from Casablanca</a></h3>
+              <div class="tli-location">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                <span data-i18n="t16_location">Casablanca → Jemaa el-Fnaa → Koutoubia Mosque → souks → Bahia Palace (optional) → Casablanca</span>
+              </div>
+              <p data-i18n="t16_desc">A full day in the Red City: the legendary Jemaa el-Fnaa square, the Koutoubia minaret, the bustling souks, and optional visits to Majorelle Garden and Bahia Palace.</p>
+              <div class="tli-meta">
+                <span class="tli-stars" aria-label="Rated 5 out of 5">★★★★★</span>
+                <span class="tli-time">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/><path d="M12 6v6l4 2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                  <span data-i18n="t16_time">Full Day (07:00 – 21:00)</span>
+                </span>
+                <span class="tli-cancel">Free cancellation!</span>
+              </div>
+            </div>
+            <div class="tli-price">
+              <span class="tli-from">From</span>
+              <span class="tli-amount" data-price-usd="109">$109</span>
+              <div class="tli-agency">Contact us for group rates</div>
+              <a href="tour-casablanca-marrakech-day.html" class="btn btn-gold btn-sm">See Details</a>
+              <ul class="tli-trust"><li>Low prices guaranteed</li><li>Secure payment</li><li>Free cancellation 24h</li></ul>
+            </div>
+          </article>
+
+          <!-- TOUR 17 — Fes City Tour -->
+          <article class="tour-list-item reveal" data-category="cities" data-duration="1-2" data-price="0-150" data-city="fes">
+            <a href="tour-fes-city.html" class="tli-img tour-img--cities"
+              style="background-image:url('public/images/tours/fes-city/cover/cover.jpg'),linear-gradient(145deg,#0d1a2e 0%,#1a3a5c 35%,#8b4513 65%,#c99a3c 100%);background-size:cover,cover;background-position:center,center;"
+              aria-label="Fes medina guided city tour"
+              data-slides='["public/images/tours/fes-city/cover/cover.jpg","public/images/tours/fes-city/bab-boujloud/bab-01.jpg","public/images/tours/fes-city/tannery/tannery-01.jpg","public/images/tours/fes-city/nejjarine/nejjarine-01.jpg","public/images/tours/fes-city/merinid-tombs/merinid-01.jpg"]'>
+              <span class="tli-duration">Half Day</span>
+              <span class="tli-badge-popular" data-i18n="t17_badge">Local Favourite</span>
+            </a>
+            <div class="tli-body">
+              <h3><a href="tour-fes-city.html" data-i18n="t17_title">Fes Medina Guided City Tour</a></h3>
+              <div class="tli-location">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                <span data-i18n="t17_location">Bab Boujloud → Al Quaraouiyine → Chouara Tannery → Nejjarine Museum → Royal Palace → Merinid Tombs</span>
+              </div>
+              <p data-i18n="t17_desc">A walking tour with your private driver-guide through the world's largest car-free medina: the tanneries, the world's oldest university, ornate fondouks, and a sunset panorama from the Merinid Tombs. Full-day option available.</p>
+              <div class="tli-meta">
+                <span class="tli-stars" aria-label="Rated 5 out of 5">★★★★★</span>
+                <span class="tli-time">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/><path d="M12 6v6l4 2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                  <span data-i18n="t17_time">Half or Full Day</span>
+                </span>
+                <span class="tli-cancel">Free cancellation!</span>
+              </div>
+            </div>
+            <div class="tli-price">
+              <span class="tli-from">From</span>
+              <span class="tli-amount" data-price-usd="49">$49</span>
+              <div class="tli-agency">Contact us for group rates</div>
+              <a href="tour-fes-city.html" class="btn btn-gold btn-sm">See Details</a>
+              <ul class="tli-trust"><li>Low prices guaranteed</li><li>Secure payment</li><li>Free cancellation 24h</li></ul>
+            </div>
+          </article>
+
+          <!-- TOUR 18 — Sahara Desert 2-Day Express -->
+          <article class="tour-list-item reveal" data-category="desert" data-duration="1-2" data-price="150-400" data-city="fes">
+            <a href="tour-desert-2day-fes.html" class="tli-img tour-img--sahara"
+              style="background-image:url('public/images/tours/sahara-merzouga/cover/cover.jpg'),linear-gradient(145deg,#1a0800 0%,#5c2200 40%,#c97820 70%,#e8a830 100%);background-size:cover,cover;background-position:center,center;"
+              aria-label="Sahara Desert 2-Day Express Tour from Fes"
+              data-slides='["public/images/tours/sahara-merzouga/cover/cover.jpg","public/images/tours/sahara-merzouga/dunes/dunes-01.jpg","public/images/tours/sahara-merzouga/camel/camel-01.jpg"]'>
+              <span class="tli-duration">2 Days</span>
+              <span class="tli-badge-popular" data-i18n="t18_badge">Budget Option</span>
+            </a>
+            <div class="tli-body">
+              <h3><a href="tour-desert-2day-fes.html" data-i18n="t18_title">Sahara Desert 2-Day Express</a></h3>
+              <div class="tli-location">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                <span data-i18n="t18_location">Fes → Ifrane → Ziz Valley → Merzouga (Erg Chebbi) → Fes</span>
+              </div>
+              <p data-i18n="t18_desc">All the Sahara highlights — camel caravan at sunset, one night under the stars in a desert camp, sunrise over the dunes — condensed into a quicker, more affordable round trip from Fes.</p>
+              <div class="tli-meta">
+                <span class="tli-stars" aria-label="Rated 5 out of 5">★★★★★</span>
+                <span class="tli-time">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/><path d="M12 6v6l4 2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                  <span data-i18n="t18_time">2 Days / 1 Night</span>
+                </span>
+                <span class="tli-cancel">Free cancellation!</span>
+              </div>
+            </div>
+            <div class="tli-price">
+              <span class="tli-from">From</span>
+              <span class="tli-amount" data-price-usd="199">$199</span>
+              <div class="tli-agency">Contact us for group rates</div>
+              <a href="tour-desert-2day-fes.html" class="btn btn-gold btn-sm">See Details</a>
+              <ul class="tli-trust"><li>Low prices guaranteed</li><li>Secure payment</li><li>Free cancellation 24h</li></ul>
+            </div>
+          </article>
+
+          <!-- TOUR 19 — Marrakech Desert Loop -->
+          <article class="tour-list-item reveal" data-category="desert" data-duration="3-4" data-price="150-400" data-city="marrakech">
+            <a href="tour-marrakech-desert-loop.html" class="tli-img tour-img--sahara"
+              style="background-image:url('public/images/tours/marrakech-desert-loop/cover/cover.jpg'),linear-gradient(145deg,#1a0800 0%,#5c2200 40%,#c97820 70%,#e8a830 100%);background-size:cover,cover;background-position:center,center;"
+              aria-label="Marrakech Desert Loop 3 to 4 day Sahara round trip"
+              data-slides='["public/images/tours/marrakech-desert-loop/cover/cover.jpg","public/images/tours/fes-marrakech-sahara/ait-ben-haddou/ait-01.jpg","public/images/tours/fes-marrakech-sahara/dades/dades-01.jpg","public/images/tours/sahara-merzouga/camel/camel-01.jpg"]'>
+              <span class="tli-duration">3-4 Days</span>
+              <span class="tli-badge-popular" data-i18n="t19_badge">Round-Trip</span>
+            </a>
+            <div class="tli-body">
+              <h3><a href="tour-marrakech-desert-loop.html" data-i18n="t19_title">Marrakech Desert Loop</a></h3>
+              <div class="tli-location">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                <span data-i18n="t19_location">Marrakech → Ait Ben Haddou → Dades Valley → (Todra Gorge, 4-day) → Merzouga → Marrakech</span>
+              </div>
+              <p data-i18n="t19_desc">Prefer to start and end in the same city? This loop hits the same Sahara highlights as our Fes-to-Marrakech route — camel ride, desert camp, Ait Ben Haddou — as a round trip from Marrakech, in 3 or 4 days.</p>
+              <div class="tli-meta">
+                <span class="tli-stars" aria-label="Rated 5 out of 5">★★★★★</span>
+                <span class="tli-time">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/><path d="M12 6v6l4 2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                  <span data-i18n="t19_time">3 Days / 2 Nights or 4 Days / 3 Nights</span>
+                </span>
+                <span class="tli-cancel">Free cancellation!</span>
+              </div>
+            </div>
+            <div class="tli-price">
+              <span class="tli-from">From</span>
+              <span class="tli-amount" data-price-usd="349">$349</span>
+              <div class="tli-agency">Contact us for group rates</div>
+              <a href="tour-marrakech-desert-loop.html" class="btn btn-gold btn-sm">See Details</a>
+              <ul class="tli-trust"><li>Low prices guaranteed</li><li>Secure payment</li><li>Free cancellation 24h</li></ul>
+            </div>
+          </article>
+
+          <article class="tour-list-item reveal" data-category="desert" data-duration="3-4" data-price="400+" data-city="fes marrakech">
+            <a href="tour-fes-marrakech-sahara-city.html" class="tli-img tour-img--sahara"
+              style="background-image:url('public/images/tours/fes-marrakech-sahara/cover/cover.jpg'),linear-gradient(145deg,#1a0800 0%,#5c2200 40%,#c97820 70%,#e8a830 100%);background-size:cover,cover;background-position:center,center;"
+              aria-label="4-Day Fes to Marrakech via Sahara plus full Marrakech city day"
+              data-slides='["public/images/tours/fes-marrakech-sahara/cover/cover.jpg","public/images/tours/sahara-merzouga/dunes/dunes-01.jpg","public/images/tours/fes-marrakech-sahara/ait-ben-haddou/ait-01.jpg","public/images/tours/casablanca-marrakech-day/jemaa-el-fnaa/jemaa-01.jpg"]'>
+              <span class="tli-duration">4 Days</span>
+              <span class="tli-badge-popular" data-i18n="t20_badge">New</span>
+            </a>
+            <div class="tli-body">
+              <h3><a href="tour-fes-marrakech-sahara-city.html" data-i18n="t20_title">Fes to Marrakech via Sahara + Marrakech City Day</a></h3>
+              <div class="tli-location">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                <span data-i18n="t20_location">Fes → Merzouga → Todra Gorge → Ouarzazate → Ait Ben Haddou → Marrakech (full day)</span>
+              </div>
+              <p data-i18n="t20_desc">The same Sahara route as our classic 4-day tour — Middle Atlas, camel ride, desert camp, Todra Gorge, Ait Ben Haddou — plus a full extra day exploring Marrakech's Medina, palaces and gardens before your trip ends.</p>
+              <div class="tli-meta">
+                <span class="tli-stars" aria-label="Rated 5 out of 5">★★★★★</span>
+                <span class="tli-time">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/><path d="M12 6v6l4 2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                  <span data-i18n="t20_time">4 Days / 3 Nights</span>
+                </span>
+                <span class="tli-cancel">Free cancellation!</span>
+              </div>
+            </div>
+            <div class="tli-price">
+              <span class="tli-from">From</span>
+              <span class="tli-amount" data-price-usd="449">$449</span>
+              <div class="tli-agency">Contact us for group rates</div>
+              <a href="tour-fes-marrakech-sahara-city.html" class="btn btn-gold btn-sm">See Details</a>
+              <ul class="tli-trust"><li>Low prices guaranteed</li><li>Secure payment</li><li>Free cancellation 24h</li></ul>
+            </div>
+          </article>
+
+          <!-- TOUR 21 — Fes to Marrakech via Merzouga, 2 Nights in the Sahara -->
+          <article class="tour-list-item reveal" data-category="desert" data-duration="3-4" data-price="400+" data-city="fes marrakech">
+            <a href="tour-fes-merzouga-ouarzazate-marrakech.html" class="tli-img tour-img--sahara"
+              style="background-image:url('public/images/tours/sahara-merzouga/dunes/dunes-01.jpg'),linear-gradient(145deg,#1a0800 0%,#5c2200 40%,#c97820 70%,#e8a830 100%);background-size:cover,cover;background-position:center,center;"
+              aria-label="4-Day Fes to Marrakech via Merzouga with 2 nights in the Sahara Desert"
+              data-slides='["public/images/tours/sahara-merzouga/dunes/dunes-01.jpg","public/images/tours/sahara-merzouga/sunrise/sunrise-01.jpg","public/images/tours/sahara-merzouga/camp/camp-01.jpg","public/images/tours/ait-benhaddou-day/ait-benhaddou/ait-01.jpg"]'>
+              <span class="tli-duration">4 Days</span>
+              <span class="tli-badge-popular" data-i18n="t21_badge">2 Nights in the Desert</span>
+            </a>
+            <div class="tli-body">
+              <h3><a href="tour-fes-merzouga-ouarzazate-marrakech.html" data-i18n="t21_title">Fes to Marrakech via Merzouga — 2 Nights in the Sahara</a></h3>
+              <div class="tli-location">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                <span data-i18n="t21_location">Fes → Merzouga (2 nights) → Khamlia → Todra Gorge → Ouarzazate → Ait Ben Haddou → Marrakech</span>
+              </div>
+              <p data-i18n="t21_desc">Want more time in the dunes, not the cities? This is our most desert-immersive route: two full days and nights in Merzouga, with a 4x4 excursion and a visit to the Gnawa village of Khamlia, then on to Ouarzazate, Ait Ben Haddou and Marrakech — no extra city day, just extra Sahara.</p>
+              <div class="tli-meta">
+                <span class="tli-stars" aria-label="Rated 5 out of 5">★★★★★</span>
+                <span class="tli-time">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/><path d="M12 6v6l4 2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                  <span data-i18n="t21_time">4 Days / 3 Nights</span>
+                </span>
+                <span class="tli-cancel">Free cancellation!</span>
+              </div>
+            </div>
+            <div class="tli-price">
+              <span class="tli-from">From</span>
+              <span class="tli-amount" data-price-usd="429">$429</span>
+              <div class="tli-agency">Contact us for group rates</div>
+              <a href="tour-fes-merzouga-ouarzazate-marrakech.html" class="btn btn-gold btn-sm">See Details</a>
+              <ul class="tli-trust"><li>Low prices guaranteed</li><li>Secure payment</li><li>Free cancellation 24h</li></ul>
+            </div>
+          </article>
+
+          <!-- TOUR 22 — Marrakech to Fes via Sahara (reverse route) -->
+          <article class="tour-list-item reveal" data-category="desert" data-duration="3-4" data-price="150-400" data-city="fes marrakech">
+            <a href="tour-marrakech-fes-sahara.html" class="tli-img tour-img--sahara"
+              style="background-image:url('public/images/tours/ait-benhaddou-day/tizi-ntichka/tizi-01.jpg'),linear-gradient(145deg,#1a0800 0%,#5c2200 40%,#c97820 70%,#e8a830 100%);background-size:cover,cover;background-position:center,center;"
+              aria-label="4-Day Marrakech to Fes via Sahara Desert, the reverse of our classic route"
+              data-slides='["public/images/tours/ait-benhaddou-day/tizi-ntichka/tizi-01.jpg","public/images/tours/fes-marrakech-sahara/ait-ben-haddou/ait-01.jpg","public/images/tours/ait-benhaddou-day/ouarzazate/ouarzazate-01.jpg","public/images/tours/sahara-merzouga/camel/camel-01.jpg","public/images/tours/atlas-mountains/ifrane/ifrane-01.jpg"]'>
+              <span class="tli-duration">4 Days</span>
+              <span class="tli-badge-popular" data-i18n="t22_badge">Reverse Route</span>
+            </a>
+            <div class="tli-body">
+              <h3><a href="tour-marrakech-fes-sahara.html" data-i18n="t22_title">Marrakech to Fes via Sahara — The Reverse Route</a></h3>
+              <div class="tli-location">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                <span data-i18n="t22_location">Marrakech → Ait Ben Haddou → Ouarzazate → Dades Valley → Todra Gorge → Merzouga → Fes</span>
+              </div>
+              <p data-i18n="t22_desc">Flying into Marrakech and out of Fes (or the other way round)? This is the exact same Sahara crossing as our best-selling route — Tizi n'Tichka Pass, Ait Ben Haddou, Dades Valley, camel ride and desert camp in Merzouga — simply run in the opposite direction, starting in Marrakech and ending in the imperial city of Fes.</p>
+              <div class="tli-meta">
+                <span class="tli-stars" aria-label="Rated 5 out of 5">★★★★★</span>
+                <span class="tli-time">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/><path d="M12 6v6l4 2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                  <span data-i18n="t22_time">4 Days / 3 Nights</span>
+                </span>
+                <span class="tli-cancel">Free cancellation!</span>
+              </div>
+            </div>
+            <div class="tli-price">
+              <span class="tli-from">From</span>
+              <span class="tli-amount" data-price-usd="399">$399</span>
+              <div class="tli-agency">Contact us for group rates</div>
+              <a href="tour-marrakech-fes-sahara.html" class="btn btn-gold btn-sm">See Details</a>
+              <ul class="tli-trust"><li>Low prices guaranteed</li><li>Secure payment</li><li>Free cancellation 24h</li></ul>
+            </div>
+          </article>
+
+          <!-- TOUR 23 — Fes to Marrakech via Sahara, 3-Day Express -->
+          <article class="tour-list-item reveal" data-category="desert" data-duration="3-4" data-price="150-400" data-city="fes marrakech">
+            <a href="tour-fes-marrakech-sahara-3days.html" class="tli-img tour-img--sahara"
+              style="background-image:url('public/images/tours/fes-marrakech-sahara/cover/cover.jpg'),linear-gradient(145deg,#1a0800 0%,#5c2200 40%,#c97820 70%,#e8a830 100%);background-size:cover,cover;background-position:center,center;"
+              aria-label="3-Day Fes to Marrakech via Sahara Desert, Express Route"
+              data-slides='["public/images/tours/fes-marrakech-sahara/cover/cover.jpg","public/images/tours/sahara-merzouga/dunes/dunes-01.jpg","public/images/tours/fes-marrakech-sahara/todra/todra-01.jpg","public/images/tours/fes-marrakech-sahara/ait-ben-haddou/ait-01.jpg","public/images/tours/ait-benhaddou-day/ouarzazate/ouarzazate-01.jpg"]'>
+              <span class="tli-duration">3 Days</span>
+              <span class="tli-badge-popular" data-i18n="t23_badge">Express</span>
+            </a>
+            <div class="tli-body">
+              <h3><a href="tour-fes-marrakech-sahara-3days.html" data-i18n="t23_title">Fes to Marrakech via Sahara — 3-Day Express</a></h3>
+              <div class="tli-location">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                <span data-i18n="t23_location">Fes → Ifrane → Merzouga (1 Night) → Todra Gorge → Dades Valley → Ouarzazate → Ait Ben Haddou → Marrakech</span>
+              </div>
+              <p data-i18n="t23_desc">Same unforgettable Sahara crossing as our best-selling 4-day route — camel ride into Erg Chebbi, a night in a desert camp, Todra Gorge, Dades Valley, Ait Ben Haddou and the Tizi n'Tichka Pass — condensed into a faster, more affordable 3-day version for travelers with less time or a tighter budget.</p>
+              <div class="tli-meta">
+                <span class="tli-stars" aria-label="Rated 5 out of 5">★★★★★</span>
+                <span class="tli-time">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/><path d="M12 6v6l4 2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                  <span data-i18n="t23_time">3 Days / 2 Nights</span>
+                </span>
+                <span class="tli-cancel">Free cancellation!</span>
+              </div>
+            </div>
+            <div class="tli-price">
+              <span class="tli-from">From</span>
+              <span class="tli-amount" data-price-usd="349">$349</span>
+              <div class="tli-agency">Contact us for group rates</div>
+              <a href="tour-fes-marrakech-sahara-3days.html" class="btn btn-gold btn-sm">See Details</a>
+              <ul class="tli-trust"><li>Low prices guaranteed</li><li>Secure payment</li><li>Free cancellation 24h</li></ul>
+            </div>
+          </article>
+
+          <!-- TOUR 24 — Fes to Marrakech via Sahara, 5-Day Relaxed Pace -->
+          <article class="tour-list-item reveal" data-category="desert" data-duration="5-7" data-price="400+" data-city="fes marrakech">
+            <a href="tour-fes-marrakech-sahara-5days.html" class="tli-img tour-img--sahara"
+              style="background-image:url('public/images/tours/fes-marrakech-sahara/dades/dades-01.jpg'),linear-gradient(145deg,#1a0800 0%,#5c2200 40%,#c97820 70%,#e8a830 100%);background-size:cover,cover;background-position:center,center;"
+              aria-label="5-Day Fes to Marrakech via Sahara Desert, Relaxed Pace"
+              data-slides='["public/images/tours/fes-marrakech-sahara/cover/cover.jpg","public/images/tours/sahara-merzouga/dunes/dunes-01.jpg","public/images/tours/fes-marrakech-sahara/todra/todra-01.jpg","public/images/tours/fes-marrakech-sahara/dades/dades-01.jpg","public/images/tours/fes-marrakech-sahara/ait-ben-haddou/ait-01.jpg"]'>
+              <span class="tli-duration">5 Days</span>
+              <span class="tli-badge-popular" data-i18n="t24_badge">Relaxed Pace</span>
+            </a>
+            <div class="tli-body">
+              <h3><a href="tour-fes-marrakech-sahara-5days.html" data-i18n="t24_title">Fes to Marrakech via Sahara — 5-Day Relaxed Pace</a></h3>
+              <div class="tli-location">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                <span data-i18n="t24_location">Fes → Ifrane → Merzouga (2 Nights) → Todra Gorge → Dades Valley → Rose Valley → Skoura → Ouarzazate → Ait Ben Haddou → Marrakech</span>
+              </div>
+              <p data-i18n="t24_desc">Our most relaxed way to cross the Sahara — the same unforgettable Fes-to-Marrakech route, spread across 5 unhurried days and 4 nights with an extra overnight and two exclusive stops the shorter versions skip entirely: the fragrant Rose Valley of Kalaa M'Gouna and the palm-filled Skoura Oasis. More time to breathe, for travelers who don't want to rush.</p>
+              <div class="tli-meta">
+                <span class="tli-stars" aria-label="Rated 5 out of 5">★★★★★</span>
+                <span class="tli-time">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/><path d="M12 6v6l4 2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                  <span data-i18n="t24_time">5 Days / 4 Nights</span>
+                </span>
+                <span class="tli-cancel">Free cancellation!</span>
+              </div>
+            </div>
+            <div class="tli-price">
+              <span class="tli-from">From</span>
+              <span class="tli-amount" data-price-usd="479">$479</span>
+              <div class="tli-agency">Contact us for group rates</div>
+              <a href="tour-fes-marrakech-sahara-5days.html" class="btn btn-gold btn-sm">See Details</a>
+              <ul class="tli-trust"><li>Low prices guaranteed</li><li>Secure payment</li><li>Free cancellation 24h</li></ul>
+            </div>
+          </article>
+
+          <!-- TOUR 25 — Marrakech to Fes via Sahara, 3-Day Express -->
+          <article class="tour-list-item reveal" data-category="desert" data-duration="3-4" data-price="150-400" data-city="fes marrakech">
+            <a href="tour-marrakech-fes-sahara-3days.html" class="tli-img tour-img--sahara"
+              style="background-image:url('public/images/tours/ait-benhaddou-day/tizi-ntichka/tizi-01.jpg'),linear-gradient(145deg,#1a0800 0%,#5c2200 40%,#c97820 70%,#e8a830 100%);background-size:cover,cover;background-position:center,center;"
+              aria-label="3-Day Marrakech to Fes via Sahara Desert, Express Route"
+              data-slides='["public/images/tours/ait-benhaddou-day/tizi-ntichka/tizi-01.jpg","public/images/tours/fes-marrakech-sahara/ait-ben-haddou/ait-01.jpg","public/images/tours/ait-benhaddou-day/ouarzazate/ouarzazate-01.jpg","public/images/tours/fes-marrakech-sahara/todra/todra-01.jpg","public/images/tours/sahara-merzouga/dunes/dunes-01.jpg"]'>
+              <span class="tli-duration">3 Days</span>
+              <span class="tli-badge-popular" data-i18n="t25_badge">Express</span>
+            </a>
+            <div class="tli-body">
+              <h3><a href="tour-marrakech-fes-sahara-3days.html" data-i18n="t25_title">Marrakech to Fes via Sahara — 3-Day Express</a></h3>
+              <div class="tli-location">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                <span data-i18n="t25_location">Marrakech → Ait Ben Haddou → Ouarzazate → Dades Valley → Todra Gorge → Merzouga (1 Night) → Fes</span>
+              </div>
+              <p data-i18n="t25_desc">Flying into Marrakech and out of Fes but tight on time or budget? Same unforgettable Sahara crossing as our best-selling 4-day reverse route — Tizi n'Tichka Pass, Ait Ben Haddou, Dades Valley, Todra Gorge, a camel ride into Erg Chebbi and a night in a desert camp — condensed into a faster, more affordable 3-day version, one day less than the classic.</p>
+              <div class="tli-meta">
+                <span class="tli-stars" aria-label="Rated 5 out of 5">★★★★★</span>
+                <span class="tli-time">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/><path d="M12 6v6l4 2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                  <span data-i18n="t25_time">3 Days / 2 Nights</span>
+                </span>
+                <span class="tli-cancel">Free cancellation!</span>
+              </div>
+            </div>
+            <div class="tli-price">
+              <span class="tli-from">From</span>
+              <span class="tli-amount" data-price-usd="349">$349</span>
+              <div class="tli-agency">Contact us for group rates</div>
+              <a href="tour-marrakech-fes-sahara-3days.html" class="btn btn-gold btn-sm">See Details</a>
+              <ul class="tli-trust"><li>Low prices guaranteed</li><li>Secure payment</li><li>Free cancellation 24h</li></ul>
+            </div>
+          </article>
+
+          <!-- TOUR 26 — Marrakech to Fes via Sahara, 5-Day Relaxed Pace -->
+          <article class="tour-list-item reveal" data-category="desert" data-duration="5-7" data-price="400+" data-city="fes marrakech">
+            <a href="tour-marrakech-fes-sahara-5days.html" class="tli-img tour-img--sahara"
+              style="background-image:url('public/images/tours/fes-marrakech-sahara/dades/dades-01.jpg'),linear-gradient(145deg,#1a0800 0%,#5c2200 40%,#c97820 70%,#e8a830 100%);background-size:cover,cover;background-position:center,center;"
+              aria-label="5-Day Marrakech to Fes via Sahara Desert, Relaxed Pace"
+              data-slides='["public/images/tours/ait-benhaddou-day/tizi-ntichka/tizi-01.jpg","public/images/tours/fes-marrakech-sahara/ait-ben-haddou/ait-01.jpg","public/images/tours/ait-benhaddou-day/ouarzazate/ouarzazate-01.jpg","public/images/tours/fes-marrakech-sahara/dades/dades-01.jpg","public/images/tours/fes-marrakech-sahara/todra/todra-01.jpg","public/images/tours/sahara-merzouga/dunes/dunes-01.jpg"]'>
+              <span class="tli-duration">5 Days</span>
+              <span class="tli-badge-popular" data-i18n="t26_badge">Relaxed Pace</span>
+            </a>
+            <div class="tli-body">
+              <h3><a href="tour-marrakech-fes-sahara-5days.html" data-i18n="t26_title">Marrakech to Fes via Sahara — 5-Day Relaxed Pace</a></h3>
+              <div class="tli-location">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                <span data-i18n="t26_location">Marrakech → Ait Ben Haddou → Ouarzazate → Skoura → Rose Valley → Dades Valley → Todra Gorge → Merzouga (2 Nights) → Fes</span>
+              </div>
+              <p data-i18n="t26_desc">Our most relaxed way to cross the Sahara in reverse — the same unforgettable Marrakech-to-Fes route, spread across 5 unhurried days and 4 nights with an extra overnight and two exclusive stops the shorter versions skip entirely: the palm-filled Skoura Oasis and the fragrant Rose Valley of Kalaa M'Gouna. More time to breathe, for travelers who don't want to rush.</p>
+              <div class="tli-meta">
+                <span class="tli-stars" aria-label="Rated 5 out of 5">★★★★★</span>
+                <span class="tli-time">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/><path d="M12 6v6l4 2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                  <span data-i18n="t26_time">5 Days / 4 Nights</span>
+                </span>
+                <span class="tli-cancel">Free cancellation!</span>
+              </div>
+            </div>
+            <div class="tli-price">
+              <span class="tli-from">From</span>
+              <span class="tli-amount" data-price-usd="479">$479</span>
+              <div class="tli-agency">Contact us for group rates</div>
+              <a href="tour-marrakech-fes-sahara-5days.html" class="btn btn-gold btn-sm">See Details</a>
+              <ul class="tli-trust"><li>Low prices guaranteed</li><li>Secure payment</li><li>Free cancellation 24h</li></ul>
+            </div>
+          </article>
+
+        </div><!-- /tours-list -->
+
+        <div id="noResults" class="no-results" style="display:none">
+          <p><span data-i18n="no_results">No tours match this filter.</span> <button id="clearFilters" class="link-btn" data-i18n="clear_filters">Show all tours</button></p>
+        </div>
+
+        <div class="tours-cta">
+          <p data-i18n="tours_cta_p">Looking for something unique? We build fully custom itineraries tailored to you.</p>
+          <a href="#contact" class="btn btn-outline-brown" data-i18n="tours_cta_btn">Request a Custom Tour</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════ ABOUT ═══════════════════════════ -->
+    <section id="about" class="section about-section">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-visual reveal" aria-hidden="true">
+            <div class="about-img-frame">
+              <div class="about-img-inner"></div>
+            </div>
+            <div class="about-accent-box">
+              <span class="accent-number">15+</span>
+              <span class="accent-text" data-i18n-html="about_years">Years guiding<br>through Morocco</span>
+            </div>
+          </div>
+
+          <div class="about-content reveal">
+            <span class="section-tag" data-i18n="about_tag">About Saharitours</span>
+            <h2 data-i18n-html="about_h2">We Are Morocco,<br>We Know Morocco</h2>
+            <p class="about-lead" data-i18n="about_lead">Founded by a passionate Moroccan guide, Saharitours was born from a love of sharing the country's hidden beauty with travelers from around the world.</p>
+            <p data-i18n="about_body">Every tour we design reflects the real Morocco — the warm hospitality of Berber families, the labyrinthine magic of ancient medinas, the timeless silence of the Sahara at dawn. We are not a factory-tour company. We are your local friends who happen to know every desert track, every rooftop terrace, and every secret spice market.</p>
+            <div class="about-values">
+              <div class="value-item">
+                <span class="value-icon" aria-hidden="true">
+                  <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/></svg>
+                </span>
+                <div>
+                  <strong data-i18n="about_val1_title">Locally Owned</strong>
+                  <p data-i18n="about_val1_desc">Family-run since 2009, rooted in Moroccan culture</p>
+                </div>
+              </div>
+              <div class="value-item">
+                <span class="value-icon" aria-hidden="true">
+                  <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                </span>
+                <div>
+                  <strong data-i18n="about_val2_title">Fully Licensed</strong>
+                  <p data-i18n="about_val2_desc">ONMT certified guides, fully insured operations</p>
+                </div>
+              </div>
+              <div class="value-item">
+                <span class="value-icon" aria-hidden="true">
+                  <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+                </span>
+                <div>
+                  <strong data-i18n="about_val3_title">Award-Winning</strong>
+                  <p data-i18n="about_val3_desc">TripAdvisor Certificate of Excellence 5 years running</p>
+                </div>
+              </div>
+            </div>
+            <a href="#contact" class="btn btn-gold" data-i18n="about_cta">Start Planning Your Trip</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════ WHY US ═══════════════════════════ -->
+    <section id="why-us" class="section why-section">
+      <div class="why-pattern" aria-hidden="true"></div>
+      <div class="container">
+        <div class="section-header section-header--light">
+          <span class="section-tag section-tag--light" data-i18n="why_tag">Why Saharitours</span>
+          <h2 data-i18n="why_h2">The Saharitours Difference</h2>
+          <p data-i18n="why_sub">What sets us apart from every other Morocco tour company</p>
+        </div>
+        <div class="why-grid">
+          <div class="why-card reveal" role="article">
+            <div class="why-icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+            </div>
+            <h3 data-i18n="why1_title">Local Expertise</h3>
+            <p data-i18n="why1_desc">Born and raised in Morocco, our guides know every hidden trail, local secret, and authentic experience that no guidebook can teach.</p>
+          </div>
+          <div class="why-card reveal" role="article">
+            <div class="why-icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 14l-5-5 1.41-1.41L12 14.17l7.59-7.59L21 8l-9 9z"/></svg>
+            </div>
+            <h3 data-i18n="why2_title">Tailor-Made Tours</h3>
+            <p data-i18n="why2_desc">No cookie-cutter trips here. Every itinerary is built around you — your interests, pace, budget, and travel style.</p>
+          </div>
+          <div class="why-card reveal" role="article">
+            <div class="why-icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/></svg>
+            </div>
+            <h3 data-i18n="why3_title">Safety First</h3>
+            <p data-i18n="why3_desc">Fully licensed vehicles, certified drivers, travel insurance coordination, and 24/7 emergency support throughout your journey.</p>
+          </div>
+          <div class="why-card reveal" role="article">
+            <div class="why-icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
+            </div>
+            <h3 data-i18n="why4_title">Small Groups</h3>
+            <p data-i18n="why4_desc">Max 12 people so you get personal attention, better access to sites, and a genuinely authentic experience.</p>
+          </div>
+          <div class="why-card reveal" role="article">
+            <div class="why-icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"/></svg>
+            </div>
+            <h3 data-i18n="why5_title">24/7 Support</h3>
+            <p data-i18n="why5_desc">WhatsApp, phone, email — we're always reachable. Before, during, and after your trip, you're never alone.</p>
+          </div>
+          <div class="why-card reveal" role="article">
+            <div class="why-icon" aria-hidden="true">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z"/></svg>
+            </div>
+            <h3 data-i18n="why6_title">Best Price Guarantee</h3>
+            <p data-i18n="why6_desc">Find the same tour cheaper elsewhere and we'll match it. No hidden fees — the price you see is the price you pay.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════ TESTIMONIALS ═══════════════════════════ -->
+    <section id="testimonials" class="section testimonials-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag" data-i18n="testi_tag">Testimonials</span>
+          <h2 data-i18n="testi_h2">What Our Travelers Say</h2>
+          <p data-i18n="testi_sub">Over 1,200 five-star reviews — here's what makes us proud</p>
+        </div>
+        <div class="testimonials-grid">
+          <blockquote class="testimonial-card reveal">
+            <div class="testimonial-stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <p>"Chefchaouen was absolutely magical — every alley, every doorway, a painting in blue. Our guide knew every hidden corner of the medina and took us to the Spanish Mosque at sunset. The most beautiful place I have ever been. Saharitours made every detail perfect."</p>
+            <footer class="testimonial-author">
+              <div class="author-avatar" aria-hidden="true">SC</div>
+              <div>
+                <strong>Sarah Chen</strong>
+                <span>San Francisco, USA · Chefchaouen Day Trip</span>
+              </div>
+            </footer>
+          </blockquote>
+          <blockquote class="testimonial-card reveal">
+            <div class="testimonial-stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <p>"Our guide knew every corner of the Fes medina — places no tourist ever finds. We ate at local family restaurants, saw artisans work in ancient tanneries. This was real Morocco, not the tourist version."</p>
+            <footer class="testimonial-author">
+              <div class="author-avatar" aria-hidden="true">ML</div>
+              <div>
+                <strong>Marc Laurent</strong>
+                <span>Paris, France · Imperial Cities Tour</span>
+              </div>
+            </footer>
+          </blockquote>
+          <blockquote class="testimonial-card reveal">
+            <div class="testimonial-stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <p>"We did the Grand Morocco 10-day tour with our family of four. The kids loved the camel ride, we all loved the food. We agreed it was the best holiday we've ever had. Already planning our return!"</p>
+            <footer class="testimonial-author">
+              <div class="author-avatar" aria-hidden="true">JT</div>
+              <div>
+                <strong>James &amp; Tina Walker</strong>
+                <span>London, UK · Grand Morocco Tour</span>
+              </div>
+            </footer>
+          </blockquote>
+          <blockquote class="testimonial-card reveal">
+            <div class="testimonial-stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <p>"I was traveling solo and nervous, but the team made me feel completely safe. The small group size meant I made real friends. Already planning my return trip to see the kasbahs!"</p>
+            <footer class="testimonial-author">
+              <div class="author-avatar" aria-hidden="true">AK</div>
+              <div>
+                <strong>Anna Kowalski</strong>
+                <span>Warsaw, Poland · Kasbahs Route</span>
+              </div>
+            </footer>
+          </blockquote>
+        </div>
+        <div class="testimonials-platforms">
+          <span>Also reviewed on:</span>
+          <span class="platform-badge">TripAdvisor ⭐ 4.9</span>
+          <span class="platform-badge">Google ⭐ 4.8</span>
+          <span class="platform-badge">Viator ⭐ 5.0</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════ CONTACT ═══════════════════════════ -->
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-info">
+            <span class="section-tag" data-i18n="contact_tag">Contact Us</span>
+            <h2 data-i18n-html="contact_h2">Let's Plan Your<br>Morocco Adventure</h2>
+            <p data-i18n="contact_p">Tell us your dream trip and we'll build a custom itinerary within 24 hours. No commitment required.</p>
+            <div class="contact-details">
+              <a href="tel:+212600000000" class="contact-item">
+                <span class="contact-icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/></svg>
+                </span>
+                <div>
+                  <strong data-i18n="contact_phone_label">Phone / WhatsApp</strong>
+                  <span>+212 600 000 000</span>
+                </div>
+              </a>
+              <a href="mailto:info@saharitours.com" class="contact-item">
+                <span class="contact-icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+                </span>
+                <div>
+                  <strong data-i18n="contact_email_label">Email</strong>
+                  <span>info@saharitours.com</span>
+                </div>
+              </a>
+              <div class="contact-item">
+                <span class="contact-icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                </span>
+                <div>
+                  <strong data-i18n="contact_office_label">Office</strong>
+                  <span data-i18n="contact_office">Marrakech, Morocco</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <form class="contact-form" id="contactForm" name="contact" novalidate>
+            <input type="hidden" name="form-name" value="contact">
+            <p style="position:absolute; left:-9999px;" aria-hidden="true">
+              <label>Don't fill this out if you're human: <input name="bot-field" tabindex="-1" autocomplete="off"></label>
+            </p>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="firstName"><span data-i18n="form_firstname">First Name</span> <span aria-hidden="true">*</span></label>
+                <input type="text" id="firstName" name="firstName" required autocomplete="given-name" placeholder="Your first name" data-i18n-ph="form_firstname_ph">
+              </div>
+              <div class="form-group">
+                <label for="lastName"><span data-i18n="form_lastname">Last Name</span> <span aria-hidden="true">*</span></label>
+                <input type="text" id="lastName" name="lastName" required autocomplete="family-name" placeholder="Your last name" data-i18n-ph="form_lastname_ph">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email"><span data-i18n="form_email">Email Address</span> <span aria-hidden="true">*</span></label>
+              <input type="email" id="email" name="email" required autocomplete="email" placeholder="you@example.com" data-i18n-ph="form_email_ph">
+            </div>
+            <div class="form-group">
+              <label for="phone" data-i18n="form_phone">Phone / WhatsApp</label>
+              <input type="tel" id="phone" name="phone" autocomplete="tel" placeholder="+1 234 567 8900" data-i18n-ph="form_phone_ph">
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="tourInterest" data-i18n="form_tour">Tour of Interest</label>
+                <select id="tourInterest" name="tourInterest">
+                  <option value="" data-i18n-opt="form_tour_default">— Select a tour —</option>
+                  <option value="fes-chefchaouen-3d" data-i18n-opt="form_tour_1">Fes · Chefchaouen · Rabat · Casablanca (3 Days)</option>
+                  <option value="chefchaouen-day-1d" data-i18n-opt="form_tour_2">Fes · Chefchaouen Blue City (1 Day)</option>
+                  <option value="volubilis-meknes-1d" data-i18n-opt="form_tour_3">Fes · Volubilis · Moulay Idriss · Meknes (1 Day)</option>
+                  <option value="atlas-mountains-1d" data-i18n-opt="form_tour_4">Fes · Middle Atlas Mountains (1 Day)</option>
+                  <option value="custom" data-i18n-opt="form_tour_5">Custom Itinerary</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="travelers" data-i18n="form_travelers">Number of Travelers</label>
+                <select id="travelers" name="travelers">
+                  <option value="" data-i18n-opt="form_travelers_default">— Select —</option>
+                  <option value="1" data-i18n-opt="form_travelers_1">1 (Solo)</option>
+                  <option value="2" data-i18n-opt="form_travelers_2">2 (Couple)</option>
+                  <option value="3-4" data-i18n-opt="form_travelers_3">3–4</option>
+                  <option value="5-8" data-i18n-opt="form_travelers_4">5–8</option>
+                  <option value="9+" data-i18n-opt="form_travelers_5">9+</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="travelDate" data-i18n="form_date">Approximate Travel Dates</label>
+              <input type="text" id="travelDate" name="travelDate" placeholder="e.g. March 2025, flexible" data-i18n-ph="form_date_ph">
+            </div>
+            <div class="form-group">
+              <label for="message"><span data-i18n="form_message">Tell Us About Your Dream Trip</span> <span aria-hidden="true">*</span></label>
+              <textarea id="message" name="message" rows="4" required placeholder="Any special requests, interests, or questions..." data-i18n-ph="form_message_ph"></textarea>
+            </div>
+            <button type="submit" class="btn btn-gold btn-full" id="submitBtn">
+              <span class="btn-text" data-i18n="form_submit">Send My Enquiry</span>
+              <span class="btn-loading" aria-hidden="true" style="display:none" data-i18n="form_sending">Sending...</span>
+            </button>
+            <p class="form-note" data-i18n="form_note">We respond within 24 hours. No commitment required.</p>
+            <div id="formSuccess" class="form-success" role="alert" style="display:none" data-i18n="form_success">
+              Thank you! We'll be in touch within 24 hours to discuss your Morocco adventure.
+            </div>
+            <div id="formError" class="form-error" role="alert" style="display:none" data-i18n="form_error">
+              Something went wrong. Please email us directly at info@saharitours.com
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════════════════ FOOTER ═══════════════════════════ -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#home" aria-label="Saharitours home">
+            <img src="public/images/logo.png" alt="Saharitours" height="48"
+              onerror="this.style.display='none'">
+            <span class="footer-logo-text">SAHARITOURS</span>
+          </a>
+          <p data-i18n="footer_desc">Your authentic guide to the wonders of Morocco. Crafting unforgettable journeys since 2009.</p>
+          <p class="footer-license" data-i18n="footer_license">Licensed by ONMT · Morocco National Tourism Office</p>
+        </div>
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <h4 data-i18n="footer_quicklinks">Quick Links</h4>
+          <ul role="list">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#tours">Our Tours</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#why-us">Why Choose Us</a></li>
+            <li><a href="#testimonials">Reviews</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="transfers.html">Transfers</a></li>
+            <li><a href="leave-a-review.html" data-i18n="footer_leave_review">Leave a Review</a></li>
+          </ul>
+        </nav>
+        <div class="footer-tours">
+          <h4 data-i18n="footer_tours_title">Our Tours</h4>
+          <ul role="list">
+            <li><a href="tour-grand-morocco-10days.html">10-Day Grand Morocco Tour</a></li>
+            <li><a href="tour-fes-marrakech-sahara.html">Fes · Sahara · Marrakech (4 Days)</a></li>
+            <li><a href="tour-marrakech-desert-loop.html">Marrakech Desert Loop</a></li>
+            <li><a href="tour-sahara-merzouga.html">Sahara Desert 3-Day Tour</a></li>
+            <li><a href="tour-desert-2day-fes.html">Sahara Desert 2-Day Express</a></li>
+            <li><a href="tour-fes-chefchaouen.html">Fes · Chefchaouen · Rabat · Casablanca</a></li>
+            <li><a href="tour-fes-city.html">Fes Medina City Tour</a></li>
+            <li><a href="tour-rabat-day.html">Rabat Day Trip</a></li>
+            <li><a href="#tours">View All 19 Tours →</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact">
+          <h4 data-i18n="footer_contact_title">Get in Touch</h4>
+          <ul role="list">
+            <li><a href="tel:+212600000000">+212 600 000 000</a></li>
+            <li><a href="mailto:info@saharitours.com">info@saharitours.com</a></li>
+            <li>Marrakech, Morocco</li>
+          </ul>
+          <a href="https://wa.me/212600000000" class="footer-whatsapp"
+            target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            <span data-i18n="footer_whatsapp">Chat on WhatsApp</span>
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; <span id="year"></span> Saharitours. <span data-i18n="footer_rights">All rights reserved.</span></p>
+        <div class="footer-bottom-links">
+          <a href="privacy.html" data-i18n="footer_privacy">Privacy Policy</a>
+          <a href="terms.html" data-i18n="footer_terms">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp float -->
+  <a href="https://wa.me/212600000000" class="whatsapp-float"
+    target="_blank" rel="noopener noreferrer" aria-label="Chat with us on WhatsApp">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+  <script>
+    const PAGE_TRANSLATIONS = {
+      it: {
+        t5_title: 'Fès · Sahara · Todra · Ait Ben Haddou · Marrakech',
+        t5_location: "Fès → Ifrane → Merzouga (Erg Chebbi) → Gole di Todra → Valle del Dades → Ait Ben Haddou → Tizi n'Tichka → Marrakech",
+        t5_desc: "Il viaggio di 4 giorni più popolare del Marocco: attraversa il Medio Atlante, monta in groppa a un cammello nel Sahara al tramonto, dormi sotto le stelle, scopri le pareti di 300 m delle Gole di Todra, esplora la kasbah di Ait Ben Haddou patrimonio UNESCO, e attraversa l'Alto Atlante tramite il passo di Tizi n'Tichka — arrivo a Marrakech.",
+        t5_time: '4 Giorni / 3 Notti', t5_badge: 'Il Più Popolare',
+        t6_title: 'Fès · Ifrane · Valle dello Ziz · Merzouga · Rissani',
+        t6_location: 'Fès → Ifrane → Foresta di Cedri → Midelt → Valle dello Ziz → Merzouga (Erg Chebbi) → Rissani → Fès',
+        t6_desc: "Un viaggio di 3 giorni nel cuore del Sahara marocchino: attraversa il Medio Atlante, monta in groppa a un cammello sulle dune dorate di Erg Chebbi al tramonto, dormi sotto un cielo pieno di stelle, vivi la cultura berbera del deserto, ed esplora l'antica città carovaniera di Rissani prima di tornare a Fès.",
+        t6_time: '3 Giorni / 2 Notti', t6_badge: 'Il Più Venduto',
+        t7_title: 'Casablanca · Rabat · Chefchaouen · Fès · Sahara · Marrakech',
+        t7_location: 'Casablanca → Rabat → Chefchaouen → Fès → Deserto del Sahara → Gole di Todra → Ait Ben Haddou → Marrakech',
+        t7_desc: "Il meglio del Marocco in un unico viaggio: città imperiali, la Perla Blu di Chefchaouen, escursione in cammello e notte sotto le stelle del Sahara, spettacolari gole dell'Atlante, e la kasbah di Ait Ben Haddou patrimonio UNESCO — con conclusione a Marrakech. 9 notti di alloggio e colazione giornaliera incluse.",
+        t7_time: '10 Giorni / 9 Notti', t7_badge: 'Grande Tour',
+        t8_title: 'Fès · Bhalil · Sefrou',
+        t8_location: 'Fès → Bhalil (villaggio trogloditico) → Sefrou (capitale della ciliegia) → Fès',
+        t8_desc: "Un volto più tranquillo del Marocco: le case trogloditiche centenarie di Bhalil, ancora abitate oggi, e Sefrou — capitale marocchina della ciliegia — con il suo storico mellah e le sue cascate.",
+        t8_time: 'Giornata Intera (09:00 – 18:00)',
+        t9_title: 'Rabat — La Capitale Reale del Marocco',
+        t9_location: 'Fès → Torre Hassan → Mausoleo di Mohammed V → Kasbah degli Oudaya → Chellah → Fès',
+        t9_desc: "L'elegante sede del governo marocchino: la Torre Hassan incompiuta del XII secolo, la Kasbah degli Oudaya blu e bianca affacciata sull'Atlantico, e le cicogne che nidificano tra le rovine romane e merinidi di Chellah. Partenza disponibile anche da Meknes, Tangeri o Casablanca.",
+        t9_time: 'Giornata Intera (07:30 – 20:00)',
+        t10_title: "Tétouan · Martil · M'diq — da Tangeri",
+        t10_location: "Tangeri → Tétouan (medina UNESCO) → spiaggia di Martil → porto di pesca di M'diq → Tangeri",
+        t10_desc: "Partenza da Tangeri: la medina imbiancata a calce di influenza andalusa di Tétouan, la lunga spiaggia sabbiosa di Martil, e le barche da pesca e la marina di M'diq.",
+        t10_time: 'Giornata Intera (09:00 – 19:00)',
+        t11_title: 'Essaouira — Fuga sulla Costa Atlantica',
+        t11_location: 'Marrakech → Essaouira (medina UNESCO) → bastioni della Skala → porto di pesca → Marrakech',
+        t11_desc: "Una medina patrimonio UNESCO spazzata dal vento dell'Atlantico, bastioni marittimi del XVIII secolo con antichi cannoni, un vivace porto di pesca, e tempo libero tra i souk e le gallerie d'arte.",
+        t11_time: 'Giornata Intera (08:00 – 20:00)',
+        t12_title: 'Ait Benhaddou · Ouarzazate',
+        t12_location: "Marrakech → passo di Tizi n'Tichka (2.260 m) → Ait Benhaddou (ksar UNESCO) → Ouarzazate → Marrakech",
+        t12_desc: "Attraversa lo spettacolare Alto Atlante tramite il passo di Tizi n'Tichka fino allo ksar fortificato di Ait Benhaddou patrimonio UNESCO — location del film Gladiator e della serie Game of Thrones — poi Ouarzazate, la «porta del deserto».",
+        t12_time: 'Giornata Intera (07:00 – 21:00)', t12_badge: 'Location Cinematografiche',
+        t13_title: "Cascate di Ouzoud — Le Più Alte del Nord Africa",
+        t13_location: 'Marrakech → cascate di Ouzoud (110 m) → giro in barca nella gola → Marrakech',
+        t13_desc: "Una cascata di 110 m su pareti di roccia rossa che precipita nella gola di El-Abid, circondata da uliveti e scimmie magot selvatiche — con un giro in barca opzionale fino alla base delle cascate.",
+        t13_time: 'Giornata Intera (08:00 – 19:00)',
+        t14_title: "Valle dell'Ourika — Pendici dell'Atlante",
+        t14_location: "Marrakech → valle dell'Ourika → villaggi berberi → cooperativa dell'argan → Setti Fatma → Marrakech",
+        t14_desc: "La fuga in montagna più vicina a Marrakech: villaggi berberi terrazzati, una cooperativa femminile di olio di argan, ed un'escursione opzionale verso le cascate di Setti Fatma.",
+        t14_time: '09:00 – 17:00',
+        t15_title: 'Agadir — Città Balneare Atlantica',
+        t15_location: 'Marrakech → Agadir → punto panoramico della Kasbah Oufella → marina → Souk El Had → Marrakech',
+        t15_desc: "La moderna città balneare del Marocco: viste panoramiche dalle rovine della Kasbah Oufella, la marina, il tradizionale Souk El Had, e una lunga passeggiata sulla spiaggia atlantica.",
+        t15_time: 'Giornata Intera (07:30 – 20:00)',
+        t16_title: 'Marrakech — da Casablanca',
+        t16_location: 'Casablanca → Jemaa el-Fna → Moschea Koutoubia → souk → Palazzo della Bahia (opzionale) → Casablanca',
+        t16_desc: "Una giornata intera nella Città Rossa: la leggendaria piazza Jemaa el-Fna, il minareto della Koutoubia, i vivaci souk, e visite opzionali al Giardino Majorelle e al Palazzo della Bahia.",
+        t16_time: 'Giornata Intera (07:00 – 21:00)',
+        t17_title: 'Tour Guidato della Medina di Fès',
+        t17_location: 'Bab Boujloud → Al Quaraouiyine → Concerie Chouara → Museo Nejjarine → Palazzo Reale → Tombe Merinidi',
+        t17_desc: "Un tour a piedi con il tuo autista-guida privato attraverso la più grande medina pedonale del mondo: le concerie, l'università più antica del mondo, sontuosi fondouk, e un panorama al tramonto dalle Tombe Merinidi. Opzione giornata intera disponibile.",
+        t17_time: 'Mezza Giornata o Giornata Intera', t17_badge: 'Preferito Locale',
+        t18_title: 'Sahara Express in 2 Giorni',
+        t18_location: 'Fès → Ifrane → valle dello Ziz → Merzouga (Erg Chebbi) → Fès',
+        t18_desc: "Tutti i punti salienti del Sahara — carovana di cammelli al tramonto, una notte sotto le stelle in un campo nel deserto, alba sulle dune — condensati in un viaggio andata e ritorno più veloce ed economico da Fès.",
+        t18_time: '2 Giorni / 1 Notte', t18_badge: 'Opzione Economica',
+        t19_title: 'Circuito nel Deserto da Marrakech',
+        t19_location: 'Marrakech → Ait Ben Haddou → valle del Dades → (Gole di Todra, 4 giorni) → Merzouga → Marrakech',
+        t19_desc: "Preferisci partire e tornare nella stessa città? Questo circuito tocca gli stessi punti salienti del Sahara del nostro itinerario Fès-Marrakech — giro in cammello, campo nel deserto, Ait Ben Haddou — come circuito andata e ritorno da Marrakech, in 3 o 4 giorni.",
+        t19_time: '3 Giorni / 2 Notti o 4 Giorni / 3 Notti', t19_badge: 'Andata e Ritorno',
+        t20_title: 'Da Fès a Marrakech via il Sahara + Giornata a Marrakech',
+        t20_location: 'Fès → Merzouga → Gole del Todra → Ouarzazate → Ait Ben Haddou → Marrakech (giornata intera)',
+        t20_desc: "Lo stesso percorso sahariano del nostro tour classico di 4 giorni — Medio Atlas, giro in cammello, campo nel deserto, Gole del Todra, Ait Ben Haddou — più un'intera giornata extra alla scoperta della Medina, dei palazzi e dei giardini di Marrakech prima della fine del viaggio.",
+        t20_time: '4 Giorni / 3 Notti', t20_badge: 'Nuovo',
+        t21_title: 'Da Fès a Marrakech via Merzouga — 2 Notti nel Sahara',
+        t21_location: 'Fès → Merzouga (2 notti) → Khamlia → Gole del Todra → Ouarzazate → Ait Ben Haddou → Marrakech',
+        t21_desc: "Vuoi più tempo tra le dune e meno nelle città? Questo è il nostro itinerario più immerso nel deserto: due giornate e notti intere a Merzouga, con un'escursione in 4x4 e una visita al villaggio Gnawa di Khamlia, per poi proseguire verso Ouarzazate, Ait Ben Haddou e Marrakech — senza giornata extra in città, solo più Sahara.",
+        t21_time: '4 Giorni / 3 Notti', t21_badge: '2 Notti nel Deserto',
+        t22_title: 'Da Marrakech a Fès attraverso il Sahara — Il Percorso Inverso',
+        t22_location: 'Marrakech → Ait Ben Haddou → Ouarzazate → Valle del Dadès → Gole del Todra → Merzouga → Fès',
+        t22_desc: "Voli in arrivo a Marrakech e in partenza da Fès (o viceversa)? Questo è esattamente lo stesso attraversamento del Sahara del nostro percorso più venduto — passo di Tizi n'Tichka, Ait Ben Haddou, valle del Dadès, giro in cammello e campo nel deserto a Merzouga — semplicemente percorso in direzione opposta, con partenza da Marrakech e arrivo nella città imperiale di Fès.",
+        t22_time: '4 Giorni / 3 Notti', t22_badge: 'Percorso Inverso',
+        t23_title: 'Da Fès a Marrakech via il Sahara — Express 3 Giorni',
+        t23_location: 'Fès → Ifrane → Merzouga (1 notte) → Gole del Todra → Valle del Dadès → Ouarzazate → Ait Ben Haddou → Marrakech',
+        t23_desc: "Lo stesso attraversamento indimenticabile del Sahara del nostro percorso più venduto di 4 giorni — giro in cammello nell'Erg Chebbi, una notte in campo nel deserto, Gole del Todra, Valle del Dadès, Ait Ben Haddou e il Passo di Tizi n'Tichka — condensato in una versione più rapida ed economica di 3 giorni per chi ha meno tempo o un budget più contenuto.",
+        t23_time: '3 Giorni / 2 Notti', t23_badge: 'Express',
+        t24_title: 'Da Fès a Marrakech via il Sahara — Ritmo Rilassato di 5 Giorni',
+        t24_location: 'Fès → Ifrane → Merzouga (2 notti) → Gole del Todra → Valle del Dadès → Valle delle Rose → Skoura → Ouarzazate → Ait Ben Haddou → Marrakech',
+        t24_desc: "Il nostro modo più rilassato di attraversare il Sahara — lo stesso indimenticabile percorso da Fès a Marrakech, distribuito su 5 giorni e 4 notti senza fretta, con una notte in più e due tappe esclusive che le versioni più brevi saltano completamente: la profumata Valle delle Rose di Kalaa M'Gouna e la rigogliosa Oasi di Skoura. Più tempo per respirare, per chi non vuole avere fretta.",
+        t24_time: '5 Giorni / 4 Notti', t24_badge: 'Ritmo Rilassato',
+        t25_title: 'Da Marrakech a Fès via il Sahara — Express 3 Giorni',
+        t25_location: 'Marrakech → Ait Ben Haddou → Ouarzazate → Valle del Dadès → Gole del Todra → Merzouga (1 notte) → Fès',
+        t25_desc: "Voli in arrivo a Marrakech e in partenza da Fès ma con poco tempo o budget? Lo stesso attraversamento indimenticabile del Sahara del nostro percorso inverso più venduto di 4 giorni — passo di Tizi n'Tichka, Ait Ben Haddou, valle del Dadès, Gole del Todra, un giro in cammello nell'Erg Chebbi e una notte in campo nel deserto — condensato in una versione più rapida ed economica di 3 giorni, un giorno in meno rispetto alla versione classica.",
+        t25_time: '3 Giorni / 2 Notti', t25_badge: 'Express',
+        t26_title: 'Da Marrakech a Fès via il Sahara — Ritmo Rilassato di 5 Giorni',
+        t26_location: 'Marrakech → Ait Ben Haddou → Ouarzazate → Skoura → Valle delle Rose → Valle del Dadès → Gole del Todra → Merzouga (2 notti) → Fès',
+        t26_desc: "Il nostro modo più rilassato di attraversare il Sahara in senso inverso — lo stesso indimenticabile percorso da Marrakech a Fès, distribuito su 5 giorni e 4 notti senza fretta, con una notte in più e due tappe esclusive che le versioni più brevi saltano completamente: la rigogliosa Oasi di Skoura e la profumata Valle delle Rose di Kalaa M'Gouna. Più tempo per respirare, per chi non vuole avere fretta.",
+        t26_time: '5 Giorni / 4 Notti', t26_badge: 'Ritmo Rilassato',
+      },
+      fr: {
+        t5_title: 'Fès · Sahara · Todra · Ait Ben Haddou · Marrakech',
+        t5_location: "Fès → Ifrane → Merzouga (Erg Chebbi) → Gorges du Todra → Vallée du Dadès → Aït Ben Haddou → Tizi n'Tichka → Marrakech",
+        t5_desc: "Le voyage de 4 jours le plus populaire du Maroc : traversez le Moyen Atlas, montez à dos de chameau dans le Sahara au coucher du soleil, dormez sous les étoiles, découvrez les falaises de 300 m des gorges du Todra, explorez la kasbah classée UNESCO d'Aït Ben Haddou, et franchissez le Haut Atlas par le col du Tizi n'Tichka — arrivée à Marrakech.",
+        t5_time: '4 Jours / 3 Nuits', t5_badge: 'Le Plus Populaire',
+        t6_title: 'Fès · Ifrane · Vallée du Ziz · Merzouga · Rissani',
+        t6_location: 'Fès → Ifrane → Forêt de cèdres → Midelt → Vallée du Ziz → Merzouga (Erg Chebbi) → Rissani → Fès',
+        t6_desc: "Un voyage de 3 jours au cœur du Sahara marocain : traversez le Moyen Atlas, montez à dos de chameau dans les dunes dorées de l'Erg Chebbi au coucher du soleil, dormez sous un ciel embrasé d'étoiles, découvrez la culture berbère du désert, et explorez l'antique ville caravanière de Rissani avant de retourner à Fès.",
+        t6_time: '3 Jours / 2 Nuits', t6_badge: 'Meilleure Vente',
+        t7_title: 'Casablanca · Rabat · Chefchaouen · Fès · Sahara · Marrakech',
+        t7_location: 'Casablanca → Rabat → Chefchaouen → Fès → Désert du Sahara → Gorges du Todra → Aït Ben Haddou → Marrakech',
+        t7_desc: "Le meilleur du Maroc en un seul voyage : villes impériales, la Perle Bleue de Chefchaouen, randonnée à dos de chameau et nuit sous les étoiles sahariennes, gorges spectaculaires de l'Atlas, et la kasbah classée UNESCO d'Aït Ben Haddou — pour finir à Marrakech. 9 nuits d'hébergement et petit-déjeuner quotidien inclus.",
+        t7_time: '10 Jours / 9 Nuits', t7_badge: 'Grand Tour',
+        t8_title: 'Fès · Bhalil · Sefrou',
+        t8_location: 'Fès → Bhalil (village troglodyte) → Sefrou (capitale de la cerise) → Fès',
+        t8_desc: "Un visage plus tranquille du Maroc : les maisons troglodytes centenaires de Bhalil, toujours habitées aujourd'hui, et Sefrou — capitale marocaine de la cerise — avec son mellah historique et ses cascades.",
+        t8_time: 'Journée complète (09:00 – 18:00)',
+        t9_title: 'Rabat — La Capitale Royale du Maroc',
+        t9_location: 'Fès → Tour Hassan → Mausolée de Mohammed V → Kasbah des Oudayas → Chellah → Fès',
+        t9_desc: "L'élégant siège du gouvernement marocain : la tour Hassan inachevée du XIIe siècle, la Kasbah des Oudayas bleue et blanche surplombant l'Atlantique, et les cigognes nichant dans les ruines romaines et mérinides de Chellah. Départ également possible depuis Meknès, Tanger ou Casablanca.",
+        t9_time: 'Journée complète (07:30 – 20:00)',
+        t10_title: "Tétouan · Martil · M'diq — au départ de Tanger",
+        t10_location: "Tanger → Tétouan (médina UNESCO) → plage de Martil → port de pêche de M'diq → Tanger",
+        t10_desc: "Départ de Tanger : la médina blanchie à la chaux d'influence andalouse de Tétouan, la longue plage de sable de Martil, et les bateaux de pêche et la marina de M'diq.",
+        t10_time: 'Journée complète (09:00 – 19:00)',
+        t11_title: 'Essaouira — Escapade sur la Côte Atlantique',
+        t11_location: 'Marrakech → Essaouira (médina UNESCO) → remparts de la Skala → port de pêche → Marrakech',
+        t11_desc: "Une médina classée UNESCO balayée par les vents sur l'Atlantique, des remparts maritimes du XVIIIe siècle avec de vieux canons, un port de pêche animé, et du temps libre dans les souks et galeries d'art.",
+        t11_time: 'Journée complète (08:00 – 20:00)',
+        t12_title: 'Aït Benhaddou · Ouarzazate',
+        t12_location: "Marrakech → col du Tizi n'Tichka (2 260 m) → Aït Benhaddou (ksar UNESCO) → Ouarzazate → Marrakech",
+        t12_desc: "Traversez le spectaculaire Haut Atlas par le col du Tizi n'Tichka jusqu'au ksar fortifié classé UNESCO d'Aït Benhaddou — lieu de tournage de Gladiator et Game of Thrones — puis Ouarzazate, « la porte du désert ».",
+        t12_time: 'Journée complète (07:00 – 21:00)', t12_badge: 'Lieux de Tournage',
+        t13_title: "Cascades d'Ouzoud — Les Plus Hautes Chutes d'Afrique du Nord",
+        t13_location: 'Marrakech → cascades d\'Ouzoud (110 m) → balade en barque dans les gorges → Marrakech',
+        t13_desc: "Une chute de 110 m sur des falaises de roche rouge dans les gorges d'El-Abid, entourée d'oliveraies et de macaques de Barbarie sauvages — avec une balade en barque optionnelle jusqu'au pied des chutes.",
+        t13_time: 'Journée complète (08:00 – 19:00)',
+        t14_title: "Vallée de l'Ourika — Contreforts de l'Atlas",
+        t14_location: "Marrakech → vallée de l'Ourika → villages berbères → coopérative d'argan → Setti Fatma → Marrakech",
+        t14_desc: "L'escapade montagnarde la plus proche de Marrakech : villages berbères en terrasses, coopérative féminine d'huile d'argan, et randonnée optionnelle vers les cascades de Setti Fatma.",
+        t14_time: '09:00 – 17:00',
+        t15_title: 'Agadir — Ville Balnéaire Atlantique',
+        t15_location: 'Marrakech → Agadir → point de vue de la Kasbah Oufella → marina → Souk El Had → Marrakech',
+        t15_desc: "La station balnéaire moderne du Maroc : vues panoramiques depuis les ruines de la Kasbah Oufella, la marina, le souk traditionnel El Had, et une longue promenade sur la plage atlantique.",
+        t15_time: 'Journée complète (07:30 – 20:00)',
+        t16_title: 'Marrakech — au départ de Casablanca',
+        t16_location: 'Casablanca → Jemaa el-Fna → mosquée Koutoubia → souks → palais de la Bahia (optionnel) → Casablanca',
+        t16_desc: "Une journée complète dans la Ville Rouge : la légendaire place Jemaa el-Fna, le minaret de la Koutoubia, les souks animés, et des visites optionnelles au Jardin Majorelle et au palais de la Bahia.",
+        t16_time: 'Journée complète (07:00 – 21:00)',
+        t17_title: 'Visite Guidée de la Médina de Fès',
+        t17_location: 'Bab Boujloud → Al Quaraouiyine → Tannerie Chouara → Musée Nejjarine → Palais Royal → Tombeaux Mérinides',
+        t17_desc: "Une visite à pied avec votre chauffeur-guide privé à travers la plus grande médina piétonne du monde : les tanneries, la plus ancienne université du monde, de somptueux fondouks, et un panorama au coucher du soleil depuis les tombeaux mérinides. Option journée complète disponible.",
+        t17_time: 'Demi-journée ou journée complète', t17_badge: 'Coup de Cœur Local',
+        t18_title: 'Sahara Express en 2 Jours',
+        t18_location: 'Fès → Ifrane → vallée du Ziz → Merzouga (Erg Chebbi) → Fès',
+        t18_desc: "Tous les incontournables du Sahara — caravane de chameaux au coucher du soleil, une nuit sous les étoiles dans un camp du désert, lever de soleil sur les dunes — condensés en un aller-retour plus rapide et plus abordable depuis Fès.",
+        t18_time: '2 Jours / 1 Nuit', t18_badge: 'Option Économique',
+        t19_title: 'Boucle Désertique depuis Marrakech',
+        t19_location: 'Marrakech → Aït Ben Haddou → vallée du Dadès → (gorges du Todra, 4 jours) → Merzouga → Marrakech',
+        t19_desc: "Vous préférez partir et revenir dans la même ville ? Cette boucle offre les mêmes incontournables sahariens que notre itinéraire Fès-Marrakech — balade à dos de chameau, camp du désert, Aït Ben Haddou — en aller-retour depuis Marrakech, en 3 ou 4 jours.",
+        t19_time: '3 Jours / 2 Nuits ou 4 Jours / 3 Nuits', t19_badge: 'Aller-Retour',
+        t20_title: 'Fès à Marrakech via le Sahara + Journée à Marrakech',
+        t20_location: 'Fès → Merzouga → Gorges du Todra → Ouarzazate → Ait Ben Haddou → Marrakech (journée complète)',
+        t20_desc: "Le même itinéraire saharien que notre circuit classique de 4 jours — Moyen Atlas, balade à dos de chameau, camp désertique, gorges du Todra, Ait Ben Haddou — avec en plus une journée entière consacrée à la découverte de la Médina, des palais et des jardins de Marrakech avant la fin du voyage.",
+        t20_time: '4 Jours / 3 Nuits', t20_badge: 'Nouveau',
+        t21_title: 'Fès à Marrakech via Merzouga — 2 Nuits dans le Sahara',
+        t21_location: 'Fès → Merzouga (2 nuits) → Khamlia → Gorges du Todra → Ouarzazate → Ait Ben Haddou → Marrakech',
+        t21_desc: "Envie de plus de temps dans les dunes, pas dans les villes ? Voici notre itinéraire le plus immersif dans le désert : deux journées et nuits entières à Merzouga, avec une excursion en 4x4 et une visite au village Gnawa de Khamlia, avant de poursuivre vers Ouarzazate, Ait Ben Haddou et Marrakech — sans journée supplémentaire en ville, juste plus de Sahara.",
+        t21_time: '4 Jours / 3 Nuits', t21_badge: '2 Nuits dans le Désert',
+        t22_title: 'Marrakech à Fès via le Sahara — L\'Itinéraire Inverse',
+        t22_location: 'Marrakech → Ait Ben Haddou → Ouarzazate → Vallée du Dadès → Gorges du Todra → Merzouga → Fès',
+        t22_desc: "Vous arrivez à Marrakech et repartez de Fès (ou l'inverse) ? Voici exactement la même traversée du Sahara que notre circuit le plus vendu — col du Tizi n'Tichka, Ait Ben Haddou, vallée du Dadès, balade à dos de chameau et camp désertique à Merzouga — simplement parcourue dans l'autre sens, au départ de Marrakech et à l'arrivée dans la ville impériale de Fès.",
+        t22_time: '4 Jours / 3 Nuits', t22_badge: 'Itinéraire Inverse',
+        t23_title: 'Fès à Marrakech via le Sahara — Express 3 Jours',
+        t23_location: "Fès → Ifrane → Merzouga (1 nuit) → Gorges du Todra → Vallée du Dadès → Ouarzazate → Ait Ben Haddou → Marrakech",
+        t23_desc: "La même traversée inoubliable du Sahara que notre circuit le plus vendu de 4 jours — balade à dos de chameau dans l'Erg Chebbi, une nuit en camp désertique, Gorges du Todra, Vallée du Dadès, Ait Ben Haddou et le col du Tizi n'Tichka — condensée en une version plus rapide et plus abordable de 3 jours pour les voyageurs disposant de moins de temps ou d'un budget plus serré.",
+        t23_time: '3 Jours / 2 Nuits', t23_badge: 'Express',
+        t24_title: 'Fès à Marrakech via le Sahara — Rythme Détendu de 5 Jours',
+        t24_location: "Fès → Ifrane → Merzouga (2 nuits) → Gorges du Todra → Vallée du Dadès → Vallée des Roses → Skoura → Ouarzazate → Ait Ben Haddou → Marrakech",
+        t24_desc: "Notre façon la plus détendue de traverser le Sahara — le même itinéraire inoubliable de Fès à Marrakech, réparti sur 5 jours et 4 nuits sans précipitation, avec une nuit supplémentaire et deux étapes exclusives que les versions plus courtes n'ont pas : la parfumée Vallée des Roses de Kalaa M'Gouna et l'oasis luxuriante de Skoura. Plus de temps pour respirer, pour les voyageurs qui ne veulent pas se presser.",
+        t24_time: '5 Jours / 4 Nuits', t24_badge: 'Rythme Détendu',
+        t25_title: 'Marrakech à Fès via le Sahara — Express 3 Jours',
+        t25_location: 'Marrakech → Ait Ben Haddou → Ouarzazate → Vallée du Dadès → Gorges du Todra → Merzouga (1 nuit) → Fès',
+        t25_desc: "Vous arrivez à Marrakech et repartez de Fès mais manquez de temps ou de budget ? La même traversée inoubliable du Sahara que notre itinéraire inverse le plus vendu de 4 jours — col du Tizi n'Tichka, Ait Ben Haddou, vallée du Dadès, gorges du Todra, une balade à dos de chameau dans l'Erg Chebbi et une nuit en camp désertique — condensée en une version plus rapide et plus abordable de 3 jours, un jour de moins que la version classique.",
+        t25_time: '3 Jours / 2 Nuits', t25_badge: 'Express',
+        t26_title: 'Marrakech à Fès via le Sahara — Rythme Détendu de 5 Jours',
+        t26_location: "Marrakech → Ait Ben Haddou → Ouarzazate → Skoura → Vallée des Roses → Vallée du Dadès → Gorges du Todra → Merzouga (2 nuits) → Fès",
+        t26_desc: "Notre façon la plus détendue de traverser le Sahara en sens inverse — le même itinéraire inoubliable de Marrakech à Fès, réparti sur 5 jours et 4 nuits sans précipitation, avec une nuit supplémentaire et deux étapes exclusives que les versions plus courtes n'ont pas : l'oasis luxuriante de Skoura et la parfumée Vallée des Roses de Kalaa M'Gouna. Plus de temps pour respirer, pour les voyageurs qui ne veulent pas se presser.",
+        t26_time: '5 Jours / 4 Nuits', t26_badge: 'Rythme Détendu',
+      },
+      es: {
+        t5_title: 'Fez · Sahara · Todra · Ait Ben Haddou · Marrakech',
+        t5_location: "Fez → Ifrane → Merzouga (Erg Chebbi) → Gargantas del Todra → Valle del Dades → Ait Ben Haddou → Tizi n'Tichka → Marrakech",
+        t5_desc: "El viaje de 4 días más popular de Marruecos: cruza el Atlas Medio, monta en camello hacia el Sahara al atardecer, duerme bajo las estrellas, descubre los acantilados de 300 m de las gargantas del Todra, explora la kasbah de Ait Ben Haddou declarada Patrimonio de la Humanidad, y cruza el Alto Atlas por el puerto de Tizi n'Tichka — llegando a Marrakech.",
+        t5_time: '4 Días / 3 Noches', t5_badge: 'Más Popular',
+        t6_title: 'Fez · Ifrane · Valle del Ziz · Merzouga · Rissani',
+        t6_location: 'Fez → Ifrane → Bosque de cedros → Midelt → Valle del Ziz → Merzouga (Erg Chebbi) → Rissani → Fez',
+        t6_desc: "Un viaje de 3 días al corazón del Sahara marroquí: cruza el Atlas Medio, monta en camello hacia las doradas dunas de Erg Chebbi al atardecer, duerme bajo un cielo repleto de estrellas, vive la cultura bereber del desierto, y explora la antigua ciudad caravanera de Rissani antes de volver a Fez.",
+        t6_time: '3 Días / 2 Noches', t6_badge: 'Más Vendido',
+        t7_title: 'Casablanca · Rabat · Chaouen · Fez · Sahara · Marrakech',
+        t7_location: 'Casablanca → Rabat → Chaouen → Fez → Desierto del Sahara → Gargantas del Todra → Ait Ben Haddou → Marrakech',
+        t7_desc: "Lo mejor de Marruecos en un solo viaje: ciudades imperiales, la Perla Azul de Chaouen, paseo en camello y noche bajo las estrellas del Sahara, espectaculares gargantas del Atlas, y la kasbah de Ait Ben Haddou declarada Patrimonio de la Humanidad — terminando en Marrakech. Incluye 9 noches de alojamiento y desayuno diario.",
+        t7_time: '10 Días / 9 Noches', t7_badge: 'Gran Tour',
+        t8_title: 'Fez · Bhalil · Sefrou',
+        t8_location: 'Fez → Bhalil (pueblo troglodita) → Sefrou (capital de la cereza) → Fez',
+        t8_desc: "Un lado más tranquilo de Marruecos: las centenarias casas trogloditas de Bhalil, habitadas aún hoy, y Sefrou — la capital marroquí de la cereza — con su histórica mellah y sus cascadas.",
+        t8_time: 'Día completo (09:00 – 18:00)',
+        t9_title: 'Rabat — La Capital Real de Marruecos',
+        t9_location: 'Fez → Torre Hassan → Mausoleo de Mohammed V → Kasbah de los Udayas → Chellah → Fez',
+        t9_desc: "La elegante sede del gobierno marroquí: la inacabada torre Hassan del siglo XII, la kasbah azul y blanca de los Udayas con vistas al Atlántico, y las cigüeñas anidando en las ruinas romanas y meriníes de Chellah. También disponible salida desde Mequinez, Tánger o Casablanca.",
+        t9_time: 'Día completo (07:30 – 20:00)',
+        t10_title: "Tetuán · Martil · M'diq — desde Tánger",
+        t10_location: "Tánger → Tetuán (medina Patrimonio de la Humanidad) → playa de Martil → puerto pesquero de M'diq → Tánger",
+        t10_desc: "Sale desde Tánger: la medina encalada de influencia andalusí de Tetuán, la larga playa de arena de Martil, y los barcos de pesca y el puerto deportivo de M'diq.",
+        t10_time: 'Día completo (09:00 – 19:00)',
+        t11_title: 'Essaouira — Escapada a la Costa Atlántica',
+        t11_location: 'Marrakech → Essaouira (medina Patrimonio de la Humanidad) → murallas de la Skala → puerto pesquero → Marrakech',
+        t11_desc: "Una medina declarada Patrimonio de la Humanidad, azotada por el viento del Atlántico, murallas marítimas del siglo XVIII con antiguos cañones, un animado puerto pesquero, y tiempo libre en los zocos y galerías de arte.",
+        t11_time: 'Día completo (08:00 – 20:00)',
+        t12_title: 'Ait Benhaddou · Ouarzazate',
+        t12_location: "Marrakech → puerto de Tizi n'Tichka (2.260 m) → Ait Benhaddou (ksar Patrimonio de la Humanidad) → Ouarzazate → Marrakech",
+        t12_desc: "Cruza el espectacular Alto Atlas por el puerto de Tizi n'Tichka hasta el ksar fortificado de Ait Benhaddou, declarado Patrimonio de la Humanidad — escenario de rodaje de Gladiator y Juego de Tronos — y después Ouarzazate, la «puerta del desierto».",
+        t12_time: 'Día completo (07:00 – 21:00)', t12_badge: 'Escenarios de Cine',
+        t13_title: 'Cascadas de Ouzoud — Las Más Altas del Norte de África',
+        t13_location: 'Marrakech → cascadas de Ouzoud (110 m) → paseo en barca por el cañón → Marrakech',
+        t13_desc: "Una caída de 110 m sobre acantilados de roca roja hacia el cañón de Al-Abid, rodeada de olivares y macacos de Berbería salvajes — con un paseo en barca opcional hasta la base de las cascadas.",
+        t13_time: 'Día completo (08:00 – 19:00)',
+        t14_title: 'Valle de Ourika — Estribaciones del Atlas',
+        t14_location: 'Marrakech → valle de Ourika → pueblos bereberes → cooperativa de argán → Setti Fatma → Marrakech',
+        t14_desc: "La escapada de montaña más cercana a Marrakech: pueblos bereberes en terrazas, una cooperativa femenina de aceite de argán, y una caminata opcional hacia las cascadas de Setti Fatma.",
+        t14_time: '09:00 – 17:00',
+        t15_title: 'Agadir — Ciudad Balneario Atlántica',
+        t15_location: 'Marrakech → Agadir → mirador de la Kasbah Oufella → puerto deportivo → Souk El Had → Marrakech',
+        t15_desc: "La moderna ciudad balneario de Marruecos: vistas panorámicas desde las ruinas de la Kasbah Oufella, el puerto deportivo, el tradicional Souk El Had, y un largo paseo por la playa atlántica.",
+        t15_time: 'Día completo (07:30 – 20:00)',
+        t16_title: 'Marrakech — desde Casablanca',
+        t16_location: 'Casablanca → Jemaa el-Fna → mezquita Koutoubia → zocos → palacio de la Bahía (opcional) → Casablanca',
+        t16_desc: "Un día completo en la Ciudad Roja: la legendaria plaza Jemaa el-Fna, el minarete de la Koutoubia, los bulliciosos zocos, y visitas opcionales al Jardín Majorelle y al palacio de la Bahía.",
+        t16_time: 'Día completo (07:00 – 21:00)',
+        t17_title: 'Tour Guiado por la Medina de Fez',
+        t17_location: 'Bab Boujloud → Al Qarawiyyin → curtiduría Chouara → museo Nejjarine → Palacio Real → tumbas Merínidas',
+        t17_desc: "Un recorrido a pie con tu chófer-guía privado por la medina peatonal más grande del mundo: las curtidurías, la universidad más antigua del mundo, fondouks ornamentados, y una panorámica al atardecer desde las tumbas merínidas. Opción de día completo disponible.",
+        t17_time: 'Medio día o día completo', t17_badge: 'Favorito Local',
+        t18_title: 'Sahara Exprés en 2 Días',
+        t18_location: 'Fez → Ifrane → valle del Ziz → Merzouga (Erg Chebbi) → Fez',
+        t18_desc: "Todo lo mejor del Sahara — caravana de camellos al atardecer, una noche bajo las estrellas en un campamento del desierto, amanecer sobre las dunas — condensado en una ida y vuelta más rápida y económica desde Fez.",
+        t18_time: '2 Días / 1 Noche', t18_badge: 'Opción Económica',
+        t19_title: 'Circuito al Desierto desde Marrakech',
+        t19_location: 'Marrakech → Ait Ben Haddou → valle del Dades → (gargantas del Todra, 4 días) → Merzouga → Marrakech',
+        t19_desc: "¿Prefieres salir y volver a la misma ciudad? Este circuito recorre los mismos imprescindibles del Sahara que nuestra ruta Fez-Marrakech — paseo en camello, campamento en el desierto, Ait Ben Haddou — como circuito de ida y vuelta desde Marrakech, en 3 o 4 días.",
+        t19_time: '3 Días / 2 Noches o 4 Días / 3 Noches', t19_badge: 'Ida y Vuelta',
+        t20_title: 'De Fez a Marrakech vía el Sahara + Día en Marrakech',
+        t20_location: 'Fez → Merzouga → Garganta del Todra → Ouarzazate → Ait Ben Haddou → Marrakech (día completo)',
+        t20_desc: "La misma ruta sahariana de nuestro tour clásico de 4 días — Medio Atlas, paseo en camello, campamento del desierto, garganta del Todra, Ait Ben Haddou — más un día entero adicional para descubrir la Medina, los palacios y los jardines de Marrakech antes de que termine el viaje.",
+        t20_time: '4 Días / 3 Noches', t20_badge: 'Nuevo',
+        t21_title: 'De Fez a Marrakech vía Merzouga — 2 Noches en el Sahara',
+        t21_location: 'Fez → Merzouga (2 noches) → Khamlia → Garganta del Todra → Ouarzazate → Ait Ben Haddou → Marrakech',
+        t21_desc: "¿Buscas más tiempo entre las dunas y menos en las ciudades? Esta es nuestra ruta más inmersiva en el desierto: dos días y noches enteras en Merzouga, con una excursión en 4x4 y una visita al pueblo Gnawa de Khamlia, antes de continuar hacia Ouarzazate, Ait Ben Haddou y Marrakech — sin día extra en la ciudad, solo más Sahara.",
+        t21_time: '4 Días / 3 Noches', t21_badge: '2 Noches en el Desierto',
+        t22_title: 'De Marrakech a Fez vía el Sahara — La Ruta Inversa',
+        t22_location: 'Marrakech → Ait Ben Haddou → Ouarzazate → Valle del Dades → Garganta del Todra → Merzouga → Fez',
+        t22_desc: "¿Llegas en avión a Marrakech y sales desde Fez (o al revés)? Esta es exactamente la misma travesía del Sahara que nuestra ruta más vendida — puerto de Tizi n'Tichka, Ait Ben Haddou, valle del Dades, paseo en camello y campamento del desierto en Merzouga — simplemente recorrida en sentido contrario, comenzando en Marrakech y terminando en la ciudad imperial de Fez.",
+        t22_time: '4 Días / 3 Noches', t22_badge: 'Ruta Inversa',
+        t23_title: 'De Fez a Marrakech vía el Sahara — Exprés 3 Días',
+        t23_location: 'Fez → Ifrane → Merzouga (1 noche) → Garganta del Todra → Valle del Dades → Ouarzazate → Ait Ben Haddou → Marrakech',
+        t23_desc: "La misma travesía inolvidable del Sahara que nuestra ruta más vendida de 4 días — paseo en camello por Erg Chebbi, una noche en campamento del desierto, Garganta del Todra, Valle del Dades, Ait Ben Haddou y el Puerto de Tizi n'Tichka — condensada en una versión más rápida y económica de 3 días para viajeros con menos tiempo o un presupuesto más ajustado.",
+        t23_time: '3 Días / 2 Noches', t23_badge: 'Exprés',
+        t24_title: 'De Fez a Marrakech vía el Sahara — Ritmo Relajado de 5 Días',
+        t24_location: 'Fez → Ifrane → Merzouga (2 noches) → Garganta del Todra → Valle del Dades → Valle de las Rosas → Skoura → Ouarzazate → Ait Ben Haddou → Marrakech',
+        t24_desc: "Nuestra forma más relajada de cruzar el Sahara — la misma ruta inolvidable de Fez a Marrakech, repartida en 5 días y 4 noches sin prisas, con una noche extra y dos paradas exclusivas que las versiones más cortas se saltan por completo: el fragante Valle de las Rosas de Kalaa M'Gouna y el frondoso Oasis de Skoura. Más tiempo para respirar, para quienes no quieren tener prisa.",
+        t24_time: '5 Días / 4 Noches', t24_badge: 'Ritmo Relajado',
+        t25_title: 'De Marrakech a Fez vía el Sahara — Exprés 3 Días',
+        t25_location: 'Marrakech → Ait Ben Haddou → Ouarzazate → Valle del Dades → Garganta del Todra → Merzouga (1 noche) → Fez',
+        t25_desc: "¿Llegas en avión a Marrakech y sales desde Fez pero tienes poco tiempo o presupuesto? La misma travesía inolvidable del Sahara que nuestra ruta inversa más vendida de 4 días — puerto de Tizi n'Tichka, Ait Ben Haddou, valle del Dades, Garganta del Todra, un paseo en camello por Erg Chebbi y una noche en campamento del desierto — condensada en una versión más rápida y económica de 3 días, un día menos que la versión clásica.",
+        t25_time: '3 Días / 2 Noches', t25_badge: 'Exprés',
+        t26_title: 'De Marrakech a Fez vía el Sahara — Ritmo Relajado de 5 Días',
+        t26_location: 'Marrakech → Ait Ben Haddou → Ouarzazate → Skoura → Valle de las Rosas → Valle del Dades → Garganta del Todra → Merzouga (2 noches) → Fez',
+        t26_desc: "Nuestra forma más relajada de cruzar el Sahara en sentido inverso — la misma ruta inolvidable de Marrakech a Fez, repartida en 5 días y 4 noches sin prisas, con una noche extra y dos paradas exclusivas que las versiones más cortas se saltan por completo: el frondoso Oasis de Skoura y el fragante Valle de las Rosas de Kalaa M'Gouna. Más tiempo para respirar, para quienes no quieren tener prisa.",
+        t26_time: '5 Días / 4 Noches', t26_badge: 'Ritmo Relajado',
+      },
+      ar: {
+        t5_title: 'فاس · الصحراء · تودرا · آيت بن حدو · مراكش',
+        t5_location: 'فاس ← إفران ← مرزوكة (عرق الشبي) ← مضيق تودرا ← وادي دادس ← آيت بن حدو ← تيزي نتيشكا ← مراكش',
+        t5_desc: 'رحلة 4 أيام الأكثر شعبية في المغرب: اعبر الأطلس المتوسط، اركب الجمال نحو الصحراء عند الغروب، نم تحت النجوم، اكتشف منحدرات مضيق تودرا التي يبلغ ارتفاعها 300 متر، استكشف قصبة آيت بن حدو المصنّفة ضمن التراث العالمي لليونسكو، واعبر الأطلس الكبير عبر ممر تيزي نتيشكا — وصولاً إلى مراكش.',
+        t5_time: '4 أيام / 3 ليالٍ', t5_badge: 'الأكثر شعبية',
+        t6_title: 'فاس · إفران · وادي زيز · مرزوكة · الريصاني',
+        t6_location: 'فاس ← إفران ← غابة الأرز ← ميدلت ← وادي زيز ← مرزوكة (عرق الشبي) ← الريصاني ← فاس',
+        t6_desc: 'رحلة 3 أيام إلى قلب الصحراء المغربية: اعبر الأطلس المتوسط، اركب الجمال نحو كثبان عرق الشبي الذهبية عند الغروب، نم تحت سماء مليئة بالنجوم، اختبر ثقافة البربر الصحراوية، واستكشف مدينة الريصاني القافلية القديمة قبل العودة إلى فاس.',
+        t6_time: '3 أيام / ليلتان', t6_badge: 'الأكثر مبيعاً',
+        t7_title: 'الدار البيضاء · الرباط · شفشاون · فاس · الصحراء · مراكش',
+        t7_location: 'الدار البيضاء ← الرباط ← شفشاون ← فاس ← الصحراء الكبرى ← مضيق تودرا ← آيت بن حدو ← مراكش',
+        t7_desc: 'أفضل ما في المغرب في رحلة واحدة متكاملة: المدن الإمبراطورية، اللؤلؤة الزرقاء شفشاون، ركوب الجمال وليلة تحت نجوم الصحراء، أخاديد الأطلس المذهلة، وقصبة آيت بن حدو المصنّفة ضمن التراث العالمي لليونسكو — لتنتهي الرحلة في مراكش. تشمل 9 ليالٍ إقامة وإفطاراً يومياً.',
+        t7_time: '10 أيام / 9 ليالٍ', t7_badge: 'الجولة الكبرى',
+        t8_title: 'فاس · بهاليل · صفرو',
+        t8_location: 'فاس ← بهاليل (قرية الكهوف) ← صفرو (عاصمة الكرز) ← فاس',
+        t8_desc: 'وجه أكثر هدوءاً من المغرب: منازل بهاليل الكهفية العريقة، المأهولة حتى اليوم، وصفرو — عاصمة الكرز في المغرب — بملاحها التاريخي وشلالاتها.',
+        t8_time: 'يوم كامل (09:00 – 18:00)',
+        t9_title: 'الرباط — العاصمة الملكية للمغرب',
+        t9_location: 'فاس ← صومعة حسان ← ضريح محمد الخامس ← قصبة الأوداية ← شالة ← فاس',
+        t9_desc: 'المقر الأنيق للحكومة المغربية: صومعة حسان غير المكتملة من القرن الثاني عشر، قصبة الأوداية الزرقاء والبيضاء المطلة على الأطلسي، وطيور اللقلق العشّشة في أطلال شالة الرومانية والمرينية. الانطلاق متاح أيضاً من مكناس أو طنجة أو الدار البيضاء.',
+        t9_time: 'يوم كامل (07:30 – 20:00)',
+        t10_title: 'تطوان · مارتيل · المضيق — انطلاقاً من طنجة',
+        t10_location: 'طنجة ← تطوان (مدينة عتيقة مصنّفة يونسكو) ← شاطئ مارتيل ← ميناء الصيد بالمضيق ← طنجة',
+        t10_desc: 'تنطلق من طنجة: مدينة تطوان العتيقة ذات الطابع الأندلسي المطلية بالأبيض، شاطئ مارتيل الرملي الطويل، وقوارب الصيد ومرسى المضيق.',
+        t10_time: 'يوم كامل (09:00 – 19:00)',
+        t11_title: 'الصويرة — استراحة على الساحل الأطلسي',
+        t11_location: 'مراكش ← الصويرة (مدينة عتيقة مصنّفة يونسكو) ← أسوار الصقالة ← ميناء الصيد ← مراكش',
+        t11_desc: 'مدينة عتيقة مصنّفة ضمن التراث العالمي لليونسكو تهب عليها رياح الأطلسي، أسوار بحرية من القرن الثامن عشر بمدافعها القديمة، ميناء صيد نابض بالحياة، ووقت حر في الأسواق والمعارض الفنية.',
+        t11_time: 'يوم كامل (08:00 – 20:00)',
+        t12_title: 'آيت بن حدو · ورزازات',
+        t12_location: 'مراكش ← ممر تيزي نتيشكا (2260 م) ← آيت بن حدو (قصر مصنّف يونسكو) ← ورزازات ← مراكش',
+        t12_desc: 'اعبر الأطلس الكبير المذهل عبر ممر تيزي نتيشكا إلى قصر آيت بن حدو المحصّن المصنّف ضمن التراث العالمي لليونسكو — موقع تصوير فيلم Gladiator ومسلسل Game of Thrones — ثم ورزازات، «بوابة الصحراء».',
+        t12_time: 'يوم كامل (07:00 – 21:00)', t12_badge: 'مواقع تصوير سينمائية',
+        t13_title: 'شلالات وزود — أعلى شلالات شمال أفريقيا',
+        t13_location: 'مراكش ← شلالات وزود (110 م) ← جولة بالقارب في الوادي ← مراكش',
+        t13_desc: 'شلال يتدفق من ارتفاع 110 أمتار فوق منحدرات صخرية حمراء إلى وادي العبيد، محاطاً ببساتين الزيتون وقرود المكاك البربري البرية — مع جولة اختيارية بالقارب حتى سفح الشلالات.',
+        t13_time: 'يوم كامل (08:00 – 19:00)',
+        t14_title: 'وادي أوريكة — سفوح الأطلس',
+        t14_location: 'مراكش ← وادي أوريكة ← قرى بربرية ← تعاونية أركان ← سيتي فاطمة ← مراكش',
+        t14_desc: 'أقرب استراحة جبلية إلى مراكش: قرى بربرية متدرجة، تعاونية نسائية لزيت الأركان، ونزهة اختيارية نحو شلالات سيتي فاطمة.',
+        t14_time: '09:00 – 17:00',
+        t15_title: 'أكادير — مدينة الشاطئ الأطلسي',
+        t15_location: 'مراكش ← أكادير ← منظر قصبة أوفلا ← المرسى ← سوق الحد ← مراكش',
+        t15_desc: 'مدينة المغرب الساحلية العصرية: إطلالات بانورامية من أطلال قصبة أوفلا، المرسى، سوق الحد التقليدي، وممشى طويل على الشاطئ الأطلسي.',
+        t15_time: 'يوم كامل (07:30 – 20:00)',
+        t16_title: 'مراكش — انطلاقاً من الدار البيضاء',
+        t16_location: 'الدار البيضاء ← ساحة جامع الفنا ← مسجد الكتبية ← الأسواق ← قصر الباهية (اختياري) ← الدار البيضاء',
+        t16_desc: 'يوم كامل في المدينة الحمراء: ساحة جامع الفنا الأسطورية، صومعة الكتبية، الأسواق النابضة بالحياة، وزيارات اختيارية لحديقة ماجوريل وقصر الباهية.',
+        t16_time: 'يوم كامل (07:00 – 21:00)',
+        t17_title: 'جولة مرشدة في مدينة فاس العتيقة',
+        t17_location: 'باب بوجلود ← جامعة القرويين ← دباغة الشوارة ← متحف النجارين ← القصر الملكي ← أضرحة المرينيين',
+        t17_desc: 'جولة سيراً على الأقدام مع سائقك المرشد الخاص عبر أكبر مدينة عتيقة خالية من السيارات في العالم: الدباغات، أقدم جامعة في العالم، الفنادق التقليدية المزخرفة، وإطلالة على غروب الشمس من أضرحة المرينيين. يتوفر خيار اليوم الكامل.',
+        t17_time: 'نصف يوم أو يوم كامل', t17_badge: 'المفضلة محلياً',
+        t18_title: 'صحراء إكسبرس في يومين',
+        t18_location: 'فاس ← إفران ← وادي زيز ← مرزوكة (عرق الشبي) ← فاس',
+        t18_desc: 'كل أبرز معالم الصحراء — قافلة جمال عند الغروب، ليلة تحت النجوم في مخيم صحراوي، شروق الشمس فوق الكثبان — في رحلة ذهاب وإياب أسرع وأكثر اقتصاداً من فاس.',
+        t18_time: 'يومان / ليلة واحدة', t18_badge: 'خيار اقتصادي',
+        t19_title: 'الجولة الصحراوية الدائرية من مراكش',
+        t19_location: 'مراكش ← آيت بن حدو ← وادي دادس ← (مضيق تودرا، 4 أيام) ← مرزوكة ← مراكش',
+        t19_desc: 'هل تفضل الانطلاق والعودة إلى نفس المدينة؟ تضم هذه الجولة الدائرية نفس أبرز معالم الصحراء التي يقدمها مسار فاس-مراكش — ركوب الجمال، مخيم صحراوي، آيت بن حدو — كرحلة ذهاب وإياب من مراكش، في 3 أو 4 أيام.',
+        t19_time: '3 أيام / ليلتان أو 4 أيام / 3 ليالٍ', t19_badge: 'ذهاب وإياب',
+        t20_title: 'من فاس إلى مراكش عبر الصحراء + يوم في مراكش',
+        t20_location: 'فاس ← مرزوكة ← أخدود تودرا ← ورزازات ← آيت بن حدو ← مراكش (يوم كامل)',
+        t20_desc: 'نفس مسار الصحراء في جولتنا الكلاسيكية لمدة 4 أيام — الأطلس المتوسط، ركوب الجمال، مخيم صحراوي، أخدود تودرا، آيت بن حدو — بالإضافة إلى يوم كامل إضافي لاكتشاف المدينة القديمة والقصور والحدائق في مراكش قبل نهاية الرحلة.',
+        t20_time: '4 أيام / 3 ليالٍ', t20_badge: 'جديد',
+        t21_title: 'من فاس إلى مراكش عبر مرزوكة — ليلتان في الصحراء',
+        t21_location: 'فاس ← مرزوكة (ليلتان) ← خملية ← أخدود تودرا ← ورزازات ← آيت بن حدو ← مراكش',
+        t21_desc: 'هل تريد وقتاً أطول بين الكثبان ووقتاً أقل في المدن؟ هذا هو مسارنا الأكثر انغماساً في الصحراء: يومان وليلتان كاملتان في مرزوكة، مع جولة بسيارات الدفع الرباعي وزيارة لقرية خملية الگناوية، قبل مواصلة الرحلة نحو ورزازات وآيت بن حدو ومراكش — دون يوم إضافي في المدينة، فقط المزيد من الصحراء.',
+        t21_time: '4 أيام / 3 ليالٍ', t21_badge: 'ليلتان في الصحراء',
+        t22_title: 'من مراكش إلى فاس عبر الصحراء — المسار المعاكس',
+        t22_location: 'مراكش ← آيت بن حدو ← ورزازات ← وادي دادس ← أخدود تودرا ← مرزوكة ← فاس',
+        t22_desc: 'هل تصل جواً إلى مراكش وتغادر من فاس (أو العكس)؟ هذا هو نفس عبور الصحراء الكبرى الموجود في مسارنا الأكثر مبيعاً — ممر تيزي نتيشكا، آيت بن حدو، وادي دادس، ركوب الجمال ومخيم صحراوي في مرزوكة — لكن بالاتجاه المعاكس، بدءاً من مراكش ووصولاً إلى مدينة فاس الإمبراطورية.',
+        t22_time: '4 أيام / 3 ليالٍ', t22_badge: 'المسار المعاكس',
+        t23_title: 'من فاس إلى مراكش عبر الصحراء — إكسبريس 3 أيام',
+        t23_location: 'فاس ← إفران ← مرزوكة (ليلة واحدة) ← أخدود تودرا ← وادي دادس ← ورزازات ← آيت بن حدو ← مراكش',
+        t23_desc: 'نفس عبور الصحراء الكبرى الذي لا يُنسى في مسارنا الأكثر مبيعاً لمدة 4 أيام — ركوب الجمال في أرق الشبي، ليلة في مخيم صحراوي، أخدود تودرا، وادي دادس، آيت بن حدو وممر تيزي نتيشكا — مُختصر في نسخة أسرع وأكثر اقتصاداً من 3 أيام للمسافرين ذوي الوقت المحدود أو الميزانية الأضيق.',
+        t23_time: '3 أيام / ليلتان', t23_badge: 'إكسبريس',
+        t24_title: 'من فاس إلى مراكش عبر الصحراء — وتيرة مريحة لمدة 5 أيام',
+        t24_location: 'فاس ← إفران ← مرزوكة (ليلتان) ← أخدود تودرا ← وادي دادس ← وادي الورود ← سكورة ← ورزازات ← آيت بن حدو ← مراكش',
+        t24_desc: 'طريقتنا الأكثر راحة لعبور الصحراء — نفس المسار الذي لا يُنسى من فاس إلى مراكش، موزعاً على 5 أيام و4 ليالٍ دون استعجال، مع ليلة إضافية وتوقفين حصريين لا تتضمنهما النسخ الأقصر إطلاقاً: وادي الورود العطري في قلعة مكونة وواحة سكورة الخصبة. مزيد من الوقت للاستراحة، لمن لا يريد الاستعجال.',
+        t24_time: '5 أيام / 4 ليالٍ', t24_badge: 'وتيرة مريحة',
+        t25_title: 'من مراكش إلى فاس عبر الصحراء — إكسبريس 3 أيام',
+        t25_location: 'مراكش ← آيت بن حدو ← ورزازات ← وادي دادس ← أخدود تودرا ← مرزوكة (ليلة واحدة) ← فاس',
+        t25_desc: 'هل تصل جواً إلى مراكش وتغادر من فاس لكن وقتك أو ميزانيتك محدودان؟ نفس عبور الصحراء الكبرى الذي لا يُنسى في مسارنا المعاكس الأكثر مبيعاً لمدة 4 أيام — ممر تيزي نتيشكا، آيت بن حدو، وادي دادس، أخدود تودرا، ركوب الجمال في أرق الشبي وليلة في مخيم صحراوي — مُختصر في نسخة أسرع وأكثر اقتصاداً من 3 أيام، أي أقل بيوم واحد من النسخة الكلاسيكية.',
+        t25_time: '3 أيام / ليلتان', t25_badge: 'إكسبريس',
+        t26_title: 'من مراكش إلى فاس عبر الصحراء — وتيرة مريحة لمدة 5 أيام',
+        t26_location: 'مراكش ← آيت بن حدو ← ورزازات ← سكورة ← وادي الورود ← وادي دادس ← أخدود تودرا ← مرزوكة (ليلتان) ← فاس',
+        t26_desc: 'طريقتنا الأكثر راحة لعبور الصحراء بالاتجاه المعاكس — نفس المسار الذي لا يُنسى من مراكش إلى فاس، موزعاً على 5 أيام و4 ليالٍ دون استعجال، مع ليلة إضافية وتوقفين حصريين لا تتضمنهما النسخ الأقصر إطلاقاً: واحة سكورة الخصبة ووادي الورود العطري في قلعة مكونة. مزيد من الوقت للاستراحة، لمن لا يريد الاستعجال.',
+        t26_time: '5 أيام / 4 ليالٍ', t26_badge: 'وتيرة مريحة',
+      },
+    };
+  </script>
+  <script src="js/main.js" defer></script>
+  <script src="js/i18n.js" defer></script>
+</body>
+</html>

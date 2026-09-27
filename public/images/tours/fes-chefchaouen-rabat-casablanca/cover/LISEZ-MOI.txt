@@ -1,0 +1,14 @@
+📸 COVER / PHOTO PRINCIPALE DU TOUR
+=====================================
+Placez ici UNE photo principale pour la carte du tour sur la page d'accueil.
+
+Nom recommandé : cover.jpg (ou cover.webp)
+Taille recommandée : 800 × 530 px
+Poids max : 150 KB (utilisez squoosh.app pour compresser)
+
+Sujet idéal : Chefchaouen ou une vue panoramique des 4 villes
+
+Après avoir ajouté la photo, dans index.html remplacez la classe :
+  class="tli-img tour-img--northern"
+par :
+  class="tli-img" style="background-image:url('public/images/tours/fes-chefchaouen-rabat-casablanca/cover/cover.jpg'); background-size:cover; background-position:center;"
